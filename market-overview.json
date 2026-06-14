@@ -3,6 +3,7 @@
   "dashboard_status": "forecast_validation",
   "data_quality_summary": {
     "average_breadth_quality_score": 91.0,
+    "average_flow_quality_score": 100.0,
     "breadth_impact_summary": {
       "breadth_conflicts_primary_count": 0,
       "breadth_supports_primary_count": 4,
@@ -25,7 +26,9 @@
     "finnhub_available": true,
     "finnhub_missing": false,
     "finnhub_rate_limited": false,
+    "flow_available": true,
     "flow_provider_status": "proxy",
+    "flow_proxy_only": true,
     "flow_required": true,
     "fred_available": true,
     "fred_effect_summary": {
@@ -38,57 +41,57 @@
           "edge_status_changed": false,
           "edge_status_with_fred": "MODERATE_EDGE",
           "edge_status_without_fred": "MODERATE_EDGE",
-          "failed_bounce_delta": 0.0039,
-          "failed_bounce_with_fred": 0.2529,
-          "failed_bounce_without_fred": 0.249,
+          "failed_bounce_delta": 0.0038,
+          "failed_bounce_with_fred": 0.3336,
+          "failed_bounce_without_fred": 0.3298,
           "primary_scenario_changed": false,
           "primary_scenario_with_fred": "bounce_path",
           "primary_scenario_without_fred": "bounce_path",
           "risk_expansion_delta": 0.0105,
-          "risk_expansion_with_fred": 0.3058,
-          "risk_expansion_without_fred": 0.2953
+          "risk_expansion_with_fred": 0.3549,
+          "risk_expansion_without_fred": 0.3444
         },
         "IWM": {
           "edge_status_changed": false,
           "edge_status_with_fred": "MODERATE_EDGE",
           "edge_status_without_fred": "MODERATE_EDGE",
           "failed_bounce_delta": 0.0038,
-          "failed_bounce_with_fred": 0.2725,
-          "failed_bounce_without_fred": 0.2687,
+          "failed_bounce_with_fred": 0.3026,
+          "failed_bounce_without_fred": 0.2988,
           "primary_scenario_changed": false,
           "primary_scenario_with_fred": "bounce_path",
           "primary_scenario_without_fred": "bounce_path",
-          "risk_expansion_delta": 0.0105,
-          "risk_expansion_with_fred": 0.3126,
-          "risk_expansion_without_fred": 0.3021
+          "risk_expansion_delta": 0.0106,
+          "risk_expansion_with_fred": 0.3394,
+          "risk_expansion_without_fred": 0.3288
         },
         "QQQ": {
           "edge_status_changed": false,
           "edge_status_with_fred": "MODERATE_EDGE",
           "edge_status_without_fred": "MODERATE_EDGE",
           "failed_bounce_delta": 0.0039,
-          "failed_bounce_with_fred": 0.3283,
-          "failed_bounce_without_fred": 0.3244,
+          "failed_bounce_with_fred": 0.3539,
+          "failed_bounce_without_fred": 0.35,
           "primary_scenario_changed": false,
           "primary_scenario_with_fred": "bounce_path",
           "primary_scenario_without_fred": "bounce_path",
           "risk_expansion_delta": 0.0105,
-          "risk_expansion_with_fred": 0.3199,
-          "risk_expansion_without_fred": 0.3094
+          "risk_expansion_with_fred": 0.3418,
+          "risk_expansion_without_fred": 0.3313
         },
         "SPY": {
           "edge_status_changed": false,
           "edge_status_with_fred": "MODERATE_EDGE",
           "edge_status_without_fred": "MODERATE_EDGE",
           "failed_bounce_delta": 0.0039,
-          "failed_bounce_with_fred": 0.2163,
-          "failed_bounce_without_fred": 0.2124,
+          "failed_bounce_with_fred": 0.275,
+          "failed_bounce_without_fred": 0.2711,
           "primary_scenario_changed": false,
           "primary_scenario_with_fred": "bounce_path",
           "primary_scenario_without_fred": "bounce_path",
           "risk_expansion_delta": 0.0105,
-          "risk_expansion_with_fred": 0.3031,
-          "risk_expansion_without_fred": 0.2926
+          "risk_expansion_with_fred": 0.3251,
+          "risk_expansion_without_fred": 0.3146
         }
       },
       "target_85_met_with_fred": true
@@ -101,14 +104,14 @@
     "fred_required": true,
     "fred_successful_series": [
       "BAA_SPREAD",
-      "DGS3MO",
       "DGS2",
       "IG_OAS",
       "HY_OAS",
-      "DFII10",
-      "RECESSION",
       "DGS10",
-      "FINANCIAL_STRESS"
+      "DGS3MO",
+      "DFII10",
+      "FINANCIAL_STRESS",
+      "RECESSION"
     ],
     "gamma_available": false,
     "gamma_exposure_available": false,
@@ -127,6 +130,12 @@
       "finnhub_rates_data",
       "finnhub_alternative_data"
     ],
+    "missing_real_flow_feeds": [
+      "ETF fund flow",
+      "prime brokerage positioning",
+      "CFTC positioning",
+      "dealer gamma/option flow"
+    ],
     "options_available": true,
     "options_missing": false,
     "options_partial": false,
@@ -136,6 +145,8 @@
     "options_source": "market_data_cache/yahoo/stooq",
     "options_stale": false,
     "options_structure_status": "available",
+    "overall_flow_confirmation_score": 73.6,
+    "overall_flow_conflict_score": 23.71,
     "put_call_available": false,
     "quality_note": "V4 score rewards real FRED/Finnhub/market data, gives partial credit to explicitly labeled proxies, and keeps missing options/flow/breadth details visible.",
     "real_market_data": true,
@@ -149,6 +160,7 @@
       "QQQ",
       "DIA"
     ],
+    "true_flow_available": false,
     "unavailable_categories": [
       "news"
     ],
@@ -164,6 +176,7 @@
         "credit_volatility_no_strong_conflict": true,
         "current_regime_identified": true,
         "data_completeness_ge_80": true,
+        "flow_proxy_not_conflicting": true,
         "historical_analog_not_conflicting": false,
         "macro_event_risk_not_high": false,
         "market_internals_not_surface_only": true,
@@ -173,7 +186,7 @@
       "has_usable_prediction_edge_today": true,
       "market_edge_status": "MODERATE_EDGE",
       "no_edge_note": "",
-      "passed_conditions": 7,
+      "passed_conditions": 8,
       "risk_warning": false,
       "summary": "有一定预测优势，但仍需观察冲突信号和失效条件。"
     },
@@ -183,6 +196,7 @@
         "credit_volatility_no_strong_conflict": true,
         "current_regime_identified": true,
         "data_completeness_ge_80": true,
+        "flow_proxy_not_conflicting": true,
         "historical_analog_not_conflicting": true,
         "macro_event_risk_not_high": false,
         "market_internals_not_surface_only": true,
@@ -192,7 +206,7 @@
       "has_usable_prediction_edge_today": true,
       "market_edge_status": "MODERATE_EDGE",
       "no_edge_note": "",
-      "passed_conditions": 8,
+      "passed_conditions": 9,
       "risk_warning": false,
       "summary": "有一定预测优势，但仍需观察冲突信号和失效条件。"
     },
@@ -202,6 +216,7 @@
         "credit_volatility_no_strong_conflict": true,
         "current_regime_identified": true,
         "data_completeness_ge_80": true,
+        "flow_proxy_not_conflicting": true,
         "historical_analog_not_conflicting": false,
         "macro_event_risk_not_high": false,
         "market_internals_not_surface_only": true,
@@ -211,7 +226,7 @@
       "has_usable_prediction_edge_today": true,
       "market_edge_status": "MODERATE_EDGE",
       "no_edge_note": "",
-      "passed_conditions": 7,
+      "passed_conditions": 8,
       "risk_warning": false,
       "summary": "有一定预测优势，但仍需观察冲突信号和失效条件。"
     },
@@ -221,6 +236,7 @@
         "credit_volatility_no_strong_conflict": true,
         "current_regime_identified": true,
         "data_completeness_ge_80": true,
+        "flow_proxy_not_conflicting": true,
         "historical_analog_not_conflicting": true,
         "macro_event_risk_not_high": false,
         "market_internals_not_surface_only": true,
@@ -230,7 +246,7 @@
       "has_usable_prediction_edge_today": true,
       "market_edge_status": "MODERATE_EDGE",
       "no_edge_note": "",
-      "passed_conditions": 8,
+      "passed_conditions": 9,
       "risk_warning": false,
       "summary": "有一定预测优势，但仍需观察冲突信号和失效条件。"
     }
@@ -241,16 +257,18 @@
         "analog_support": 0.45,
         "breadth_quality": 1.0,
         "data_completeness": 0.9,
+        "flow_conflict": 0.2371,
+        "flow_quality": 1.0,
         "internal_resonance": 0.7809,
         "options_quality": 0.92,
-        "predictor_consistency": 0.512,
-        "prior_confidence": 0.7,
-        "signal_confirmation": 0.97
+        "predictor_consistency": 0.5677,
+        "prior_confidence": 0.73,
+        "signal_confirmation": 0.7
       },
       "confidence_level": "high",
-      "confidence_score": 83,
+      "confidence_score": 77,
       "why_confidence_is_limited": [
-        "仍有关键证据缺失：put/call ratio / gamma exposure / news",
+        "仍有关键证据缺失：put/call ratio / gamma exposure / true flow feed / news",
         "短周期 historical analog 仍有冲突。"
       ]
     },
@@ -259,16 +277,18 @@
         "analog_support": 0.45,
         "breadth_quality": 0.64,
         "data_completeness": 0.9,
+        "flow_conflict": 0.2371,
+        "flow_quality": 1.0,
         "internal_resonance": 0.6021,
         "options_quality": 0.92,
-        "predictor_consistency": 0.5977000000000001,
-        "prior_confidence": 0.74,
+        "predictor_consistency": 0.5608,
+        "prior_confidence": 0.77,
         "signal_confirmation": 0.7
       },
       "confidence_level": "medium",
-      "confidence_score": 73,
+      "confidence_score": 74,
       "why_confidence_is_limited": [
-        "仍有关键证据缺失：market internal resonance / put/call ratio / gamma exposure / historical analog support / news",
+        "仍有关键证据缺失：market internal resonance / put/call ratio / gamma exposure / true flow feed / historical analog support",
         "市场宽度数据质量或覆盖率仍限制预测可信度。"
       ]
     },
@@ -277,16 +297,18 @@
         "analog_support": 0.45,
         "breadth_quality": 1.0,
         "data_completeness": 0.9,
+        "flow_conflict": 0.2371,
+        "flow_quality": 1.0,
         "internal_resonance": 0.7077,
         "options_quality": 0.92,
-        "predictor_consistency": 0.7350000000000001,
-        "prior_confidence": 0.68,
+        "predictor_consistency": 0.6918,
+        "prior_confidence": 0.71,
         "signal_confirmation": 0.7
       },
       "confidence_level": "high",
-      "confidence_score": 76,
+      "confidence_score": 77,
       "why_confidence_is_limited": [
-        "仍有关键证据缺失：market internal resonance / put/call ratio / gamma exposure / news",
+        "仍有关键证据缺失：market internal resonance / put/call ratio / gamma exposure / true flow feed / news",
         "短周期 historical analog 仍有冲突。"
       ]
     },
@@ -295,23 +317,25 @@
         "analog_support": 0.7,
         "breadth_quality": 1.0,
         "data_completeness": 0.9,
+        "flow_conflict": 0.2371,
+        "flow_quality": 1.0,
         "internal_resonance": 0.8312,
         "options_quality": 0.92,
-        "predictor_consistency": 0.3702000000000001,
-        "prior_confidence": 0.78,
-        "signal_confirmation": 1.0
+        "predictor_consistency": 0.3991,
+        "prior_confidence": 0.81,
+        "signal_confirmation": 0.7
       },
       "confidence_level": "high",
-      "confidence_score": 87,
+      "confidence_score": 79,
       "why_confidence_is_limited": [
-        "仍有关键证据缺失：put/call ratio / gamma exposure / news",
+        "仍有关键证据缺失：put/call ratio / gamma exposure / true flow feed / news",
         "短周期 historical analog 仍有冲突。"
       ]
     }
   },
   "signal_agreement_by_symbol": {
     "DIA": {
-      "agreement_level": "mixed",
+      "agreement_level": "strong",
       "conflicting_signals": [
         {
           "detail": "3d/5d/10d analogs are weak or negative.",
@@ -330,7 +354,7 @@
         }
       ],
       "data_completeness_cap_applied": false,
-      "signal_agreement_score": 69,
+      "signal_agreement_score": 79,
       "supporting_signals": [
         {
           "detail": "Frozen Alpha v1 is currently triggered.",
@@ -361,6 +385,16 @@
           "detail": "Liquidity proxy is not stressed.",
           "name": "liquidity proxy",
           "score": 0.08
+        },
+        {
+          "detail": "Finnhub market-news risk score is low.",
+          "name": "news risk low",
+          "score": 0.06
+        },
+        {
+          "detail": "Proxy flow/positioning confirms risk appetite or participation.",
+          "name": "flow confirmation",
+          "score": 0.1
         }
       ]
     },
@@ -384,7 +418,7 @@
         }
       ],
       "data_completeness_cap_applied": false,
-      "signal_agreement_score": 79,
+      "signal_agreement_score": 89,
       "supporting_signals": [
         {
           "detail": "Frozen Alpha v1 is currently triggered.",
@@ -420,11 +454,21 @@
           "detail": "Liquidity proxy is not stressed.",
           "name": "liquidity proxy",
           "score": 0.08
+        },
+        {
+          "detail": "Finnhub market-news risk score is low.",
+          "name": "news risk low",
+          "score": 0.06
+        },
+        {
+          "detail": "Proxy flow/positioning confirms risk appetite or participation.",
+          "name": "flow confirmation",
+          "score": 0.1
         }
       ]
     },
     "QQQ": {
-      "agreement_level": "mixed",
+      "agreement_level": "strong",
       "conflicting_signals": [
         {
           "detail": "3d/5d/10d analogs are weak or negative.",
@@ -448,7 +492,7 @@
         }
       ],
       "data_completeness_cap_applied": false,
-      "signal_agreement_score": 60,
+      "signal_agreement_score": 70,
       "supporting_signals": [
         {
           "detail": "Frozen Alpha v1 is currently triggered.",
@@ -479,6 +523,16 @@
           "detail": "Liquidity proxy is not stressed.",
           "name": "liquidity proxy",
           "score": 0.08
+        },
+        {
+          "detail": "Finnhub market-news risk score is low.",
+          "name": "news risk low",
+          "score": 0.06
+        },
+        {
+          "detail": "Proxy flow/positioning confirms risk appetite or participation.",
+          "name": "flow confirmation",
+          "score": 0.1
         }
       ]
     },
@@ -497,7 +551,7 @@
         }
       ],
       "data_completeness_cap_applied": false,
-      "signal_agreement_score": 83,
+      "signal_agreement_score": 94,
       "supporting_signals": [
         {
           "detail": "Frozen Alpha v1 is currently triggered.",
@@ -528,6 +582,16 @@
           "detail": "Liquidity proxy is not stressed.",
           "name": "liquidity proxy",
           "score": 0.08
+        },
+        {
+          "detail": "Finnhub market-news risk score is low.",
+          "name": "news risk low",
+          "score": 0.06
+        },
+        {
+          "detail": "Proxy flow/positioning confirms risk appetite or participation.",
+          "name": "flow confirmation",
+          "score": 0.1
         }
       ]
     }
@@ -535,7 +599,7 @@
   "signal_confirmation_by_symbol": {
     "DIA": {
       "confirmation_level": "strong",
-      "confirmation_score": 97,
+      "confirmation_score": 70,
       "conflicting_evidence": [
         {
           "detail": "Macro/event calendar risk is elevated.",
@@ -561,12 +625,16 @@
           "name": "gamma exposure"
         },
         {
+          "detail": "True fund-flow / positioning feed is not connected; current flow evidence is proxy-only.",
+          "name": "true flow feed"
+        },
+        {
           "detail": "news evidence is missing.",
           "name": "news"
         }
       ],
-      "missing_evidence_cap_applied": false,
-      "signal_confirmation_score": 97,
+      "missing_evidence_cap_applied": true,
+      "signal_confirmation_score": 70,
       "supporting_evidence": [
         {
           "detail": "Frozen Alpha v1 is triggered; this remains research-only.",
@@ -599,9 +667,9 @@
           "score": 0.1
         },
         {
-          "detail": "Rotation/flow proxy is not risk-off.",
+          "detail": "Proxy flow/positioning confirms risk appetite or broad participation.",
           "name": "flow / positioning proxy",
-          "score": 0.07
+          "score": 0.09
         },
         {
           "detail": "20d price trend is not negative.",
@@ -642,6 +710,10 @@
           "name": "gamma exposure"
         },
         {
+          "detail": "True fund-flow / positioning feed is not connected; current flow evidence is proxy-only.",
+          "name": "true flow feed"
+        },
+        {
           "detail": "Historical analog support is mixed by horizon.",
           "name": "historical analog support"
         },
@@ -679,9 +751,9 @@
           "score": 0.1
         },
         {
-          "detail": "Rotation/flow proxy is not risk-off.",
+          "detail": "Proxy flow/positioning confirms risk appetite or broad participation.",
           "name": "flow / positioning proxy",
-          "score": 0.07
+          "score": 0.09
         },
         {
           "detail": "20d price trend is not negative.",
@@ -727,6 +799,10 @@
           "name": "gamma exposure"
         },
         {
+          "detail": "True fund-flow / positioning feed is not connected; current flow evidence is proxy-only.",
+          "name": "true flow feed"
+        },
+        {
           "detail": "news evidence is missing.",
           "name": "news"
         }
@@ -760,25 +836,20 @@
           "score": 0.1
         },
         {
-          "detail": "Rotation/flow proxy is not risk-off.",
+          "detail": "Proxy flow/positioning confirms risk appetite or broad participation.",
           "name": "flow / positioning proxy",
-          "score": 0.07
+          "score": 0.09
         },
         {
           "detail": "20d price trend is not negative.",
           "name": "price trend",
-          "score": 0.06
-        },
-        {
-          "detail": "Failed-bounce risk is contained.",
-          "name": "failed bounce risk",
           "score": 0.06
         }
       ]
     },
     "SPY": {
       "confirmation_level": "strong",
-      "confirmation_score": 100,
+      "confirmation_score": 70,
       "conflicting_evidence": [
         {
           "detail": "Macro/event calendar risk is elevated.",
@@ -804,12 +875,16 @@
           "name": "gamma exposure"
         },
         {
+          "detail": "True fund-flow / positioning feed is not connected; current flow evidence is proxy-only.",
+          "name": "true flow feed"
+        },
+        {
           "detail": "news evidence is missing.",
           "name": "news"
         }
       ],
-      "missing_evidence_cap_applied": false,
-      "signal_confirmation_score": 100,
+      "missing_evidence_cap_applied": true,
+      "signal_confirmation_score": 70,
       "supporting_evidence": [
         {
           "detail": "Frozen Alpha v1 is triggered; this remains research-only.",
@@ -842,9 +917,9 @@
           "score": 0.1
         },
         {
-          "detail": "Rotation/flow proxy is not risk-off.",
+          "detail": "Proxy flow/positioning confirms risk appetite or broad participation.",
           "name": "flow / positioning proxy",
-          "score": 0.07
+          "score": 0.09
         },
         {
           "detail": "20d/60d analog support is positive.",
@@ -863,13 +938,13 @@
   "strongest_symbol": "SPY",
   "symbols": {
     "DIA": {
-      "analog_path_weight": 0.2286,
+      "analog_path_weight": 0.2137,
       "as_of": "2026-06-12",
-      "base_path_weight": 0.1085,
-      "bearish_path_weight": 0.2096,
-      "bounce_path_weight": 0.4533,
+      "base_path_weight": 0.1441,
+      "bearish_path_weight": 0.2337,
+      "bounce_path_weight": 0.4085,
       "bounce_probability": 0.57070947,
-      "current_integrated_judgment": "DIA 当前 edge 状态：MODERATE_EDGE。最大概率路径是“反抽情景”(45%)，第二路径是“历史均值情景”(23%)，差距 22%。多源确认分数 97/100，模型可信度 83/100。可以观察主路径，但仍需按失效条件动态切换。",
+      "current_integrated_judgment": "DIA 当前 edge 状态：MODERATE_EDGE。最大概率路径是“反抽情景”(41%)，第二路径是“失败反抽情景”(23%)，差距 17%。多源确认分数 70/100，模型可信度 77/100。可以观察主路径，但仍需按失效条件动态切换。",
       "current_price": 513.05999756,
       "data_source_status": "real_market_data",
       "distance_to_threshold": -0.24536636,
@@ -1018,10 +1093,10 @@
           "ig_oas_20d_change": 0.0
         },
         "daily_market_brief": {
-          "brief": "Finnhub quote 513.06; news risk 40%; macro event risk flagged; rates pressure 22%.",
+          "brief": "Finnhub quote 513.06; news risk 30%; macro event risk flagged; rates pressure 22%.",
           "finnhub_quote_available": true,
           "macro_event_risk_flag": true,
-          "news_risk_score": 0.4,
+          "news_risk_score": 0.3,
           "rates_pressure_score": 0.21559568792778516,
           "symbol": "DIA"
         },
@@ -1036,12 +1111,33 @@
           "sentiment_score": null
         },
         "flow_positioning_proxy": {
-          "data_note": "Proxy only; no true fund-flow or positioning feed connected.",
-          "defensive_vs_cyclical_20d": 0.01108516209386513,
-          "etf_relative_volume_20d": 1.5356295733242973,
-          "high_beta_vs_low_vol_20d": 0.03227781116516204,
-          "risk_off_rotation_score": 0.055425810469325654,
-          "volume_zscore_20d": 2.605324605162294
+          "credit_risk_appetite_20d": -0.003111,
+          "crowding_proxy_score": 0.5084000000000001,
+          "crowding_proxy_score_raw": 50.84,
+          "data_note": "Proxy only: ETF volume, factor rotation, sector rotation, HYG/LQD, TLT and UUP. No true fund-flow or positioning feed.",
+          "defensive_vs_cyclical_20d": 0.011085,
+          "equal_weight_vs_cap_weight_20d": 0.047813,
+          "etf_relative_volume_20d": 1.5859,
+          "flow_confirmation_score": 0.7594,
+          "flow_confirmation_score_raw": 75.94,
+          "flow_conflict_score": 0.2371,
+          "flow_conflict_score_raw": 23.71,
+          "flow_quality_score": 1.0,
+          "flow_quality_score_raw": 100.0,
+          "high_beta_vs_low_vol_20d": 0.032278,
+          "is_proxy": true,
+          "latest_date": "2026-06-12",
+          "risk_off_flow_score": 0.3626,
+          "risk_off_rotation_score": 0.3626,
+          "risk_on_flow_score": 0.9163,
+          "risk_on_rotation_20d": 0.007293,
+          "sector_participation_proxy": 0.6364,
+          "small_cap_vs_large_cap_20d": 0.038463,
+          "source": "market_data_proxy",
+          "status": "proxy",
+          "true_flow_available": false,
+          "volume_confirmation_score": 0.8,
+          "volume_zscore_20d": 2.6053
         },
         "macro_event_calendar": {
           "cpi_date": "2026-07-14",
@@ -1067,13 +1163,13 @@
         "news": {
           "market_news_status": "available",
           "news_item_count": 40,
-          "news_risk_score": 0.4,
+          "news_risk_score": 0.3,
           "top_headlines": [
+            "JetBlue bets big on Fort Lauderdale, from a new airport lounge to an international gateway",
+            "Israel says military attacks Hezbollah targets in Beirut's southern suburbs - Reuters",
             "Iran says draft US deal includes oil sanctions waiver, nuclear limits and asset release - Reuters",
-            "Israeli military says Hezbollah launched three projectiles towards northern Israel - Reuters",
             "UK forces board sanctioned Russian shadow fleet oil tanker",
-            "Iran says limited cyberattack disrupts services at four banks, state media says - Reuters",
-            "US and Iran inch closer to deal, Trump says Sunday but timing is unclear - Reuters"
+            "Iran says limited cyberattack disrupts services at four banks, state media says - Reuters"
           ]
         },
         "price": {
@@ -1238,6 +1334,7 @@
           "credit_volatility_no_strong_conflict": true,
           "current_regime_identified": true,
           "data_completeness_ge_80": true,
+          "flow_proxy_not_conflicting": true,
           "historical_analog_not_conflicting": false,
           "macro_event_risk_not_high": false,
           "market_internals_not_surface_only": true,
@@ -1247,7 +1344,7 @@
         "has_usable_prediction_edge_today": true,
         "market_edge_status": "MODERATE_EDGE",
         "no_edge_note": "",
-        "passed_conditions": 7,
+        "passed_conditions": 8,
         "risk_warning": false,
         "summary": "有一定预测优势，但仍需观察冲突信号和失效条件。"
       },
@@ -1373,27 +1470,29 @@
           "analog_support": 0.45,
           "breadth_quality": 1.0,
           "data_completeness": 0.9,
+          "flow_conflict": 0.2371,
+          "flow_quality": 1.0,
           "internal_resonance": 0.7809,
           "options_quality": 0.92,
-          "predictor_consistency": 0.512,
-          "prior_confidence": 0.7,
-          "signal_confirmation": 0.97
+          "predictor_consistency": 0.5677,
+          "prior_confidence": 0.73,
+          "signal_confirmation": 0.7
         },
         "confidence_level": "high",
-        "confidence_score": 83,
+        "confidence_score": 77,
         "why_confidence_is_limited": [
-          "仍有关键证据缺失：put/call ratio / gamma exposure / news",
+          "仍有关键证据缺失：put/call ratio / gamma exposure / true flow feed / news",
           "短周期 historical analog 仍有冲突。"
         ]
       },
       "name": "Dow Jones",
       "path_weight_model": {
-        "analog_path_weight": 0.2286,
-        "base_path_weight": 0.1085,
-        "bearish_path_weight": 0.2096,
-        "bounce_path_weight": 0.4533,
+        "analog_path_weight": 0.2137,
+        "base_path_weight": 0.1441,
+        "bearish_path_weight": 0.2337,
+        "bounce_path_weight": 0.4085,
         "low_confidence_simulation": false,
-        "simulation_confidence_level": "high",
+        "simulation_confidence_level": "medium",
         "weight_factors": {
           "bounce_probability": 0.5707,
           "breadth_confirmation": 0.9072,
@@ -1401,26 +1500,30 @@
           "breadth_quality": 1.0,
           "breadth_support": 0.9072,
           "credit_stability": 0.9768,
+          "crowding_proxy": 0.5084,
           "data_completeness": 0.88,
           "failed_bounce_options_risk": 0.2395,
-          "failed_bounce_risk": 0.3504,
+          "failed_bounce_risk": 0.3889,
+          "flow_confirmation": 0.7594,
+          "flow_conflict": 0.2371,
+          "flow_quality": 1.0,
           "historical_analog_support": 0.15,
           "internal_resonance": 0.7809,
           "internal_resonance_state": "aligned",
           "macro_event_risk": 1.0,
-          "news_risk": 0.4,
+          "news_risk": 0.3,
           "options_quality": 0.92,
           "options_stress": 0.2487,
           "panic_release": 0.7419,
           "rates_pressure": 0.2156,
-          "risk_expansion": 0.3058,
-          "signal_agreement": 0.69,
-          "signal_confirmation": 0.97,
+          "risk_expansion": 0.3549,
+          "signal_agreement": 0.79,
+          "signal_confirmation": 0.7,
           "tail_risk": 0.2638,
           "volatility_reversal": 1.0
         },
         "weight_source_notes": [
-          "V4 path weights come from the four independent predictors, signal confirmation, historical analog distribution, data completeness, macro event risk and options/volatility structure.",
+          "V4 path weights come from the four independent predictors, signal confirmation, historical analog distribution, data completeness, macro event risk, options/volatility structure and proxy flow/positioning.",
           "If primary and secondary differ by less than 8 percentage points, close_call is true and single-path conviction should be reduced."
         ]
       },
@@ -1430,7 +1533,7 @@
           "analog_best_path": 0.040223953939106494,
           "analog_hit_rate": 0.4,
           "analog_worst_path": -0.029518478068982335,
-          "bounce_probability": 0.5798192615000001,
+          "bounce_probability": 0.6095742615,
           "confidence": 0.441,
           "down_probability": 0.5181379887255372,
           "expected_direction": "偏下行/反抽失败风险",
@@ -1439,7 +1542,7 @@
             -0.029518478068982335,
             0.040223953939106494
           ],
-          "failed_bounce_risk": 0.4821767922072,
+          "failed_bounce_risk": 0.5033517922072,
           "historical_support": "weak",
           "market_edge_status": "MODERATE_EDGE",
           "up_probability": 0.48186201127446276
@@ -1461,8 +1564,8 @@
           "failed_bounce_risk": 0.543237316016,
           "historical_support": "supportive",
           "market_edge_status": "MODERATE_EDGE",
-          "risk_expansion_probability": 0.3759,
-          "trend_reversal_probability": 0.4531,
+          "risk_expansion_probability": 0.4182,
+          "trend_reversal_probability": 0.4986,
           "up_probability": 0.5984509337864641
         },
         "3d": {
@@ -1470,7 +1573,7 @@
           "analog_best_path": 0.038450618190532415,
           "analog_hit_rate": 0.4,
           "analog_worst_path": -0.029603216317034775,
-          "bounce_probability": 0.5798192615000001,
+          "bounce_probability": 0.6095742615,
           "confidence": 0.441,
           "down_probability": 0.5195358256796426,
           "expected_direction": "偏下行/反抽失败风险",
@@ -1479,7 +1582,7 @@
             -0.029603216317034775,
             0.038450618190532415
           ],
-          "failed_bounce_risk": 0.4821767922072,
+          "failed_bounce_risk": 0.5033517922072,
           "historical_support": "weak",
           "market_edge_status": "MODERATE_EDGE",
           "up_probability": 0.4804641743203573
@@ -1489,7 +1592,7 @@
           "analog_best_path": 0.042122705403438765,
           "analog_hit_rate": 0.7,
           "analog_worst_path": -0.02466933234073798,
-          "bounce_probability": 0.6203192615,
+          "bounce_probability": 0.6500742615000001,
           "confidence": 0.441,
           "down_probability": 0.40213686587577857,
           "expected_direction": "偏上行/反抽",
@@ -1498,7 +1601,7 @@
             -0.02466933234073798,
             0.042122705403438765
           ],
-          "failed_bounce_risk": 0.4371767922072,
+          "failed_bounce_risk": 0.4583517922072,
           "historical_support": "supportive",
           "market_edge_status": "MODERATE_EDGE",
           "up_probability": 0.5978631341242214
@@ -1520,15 +1623,15 @@
           "failed_bounce_risk": 0.643237316016,
           "historical_support": "weak",
           "market_edge_status": "MODERATE_EDGE",
-          "risk_expansion_probability": 0.3759,
-          "trend_reversal_probability": 0.4531,
+          "risk_expansion_probability": 0.4182,
+          "trend_reversal_probability": 0.4986,
           "up_probability": 0.45490403859371054
         }
       },
       "predictors": {
         "bounce_predictor": {
           "best_horizon": "3d-10d",
-          "confidence": 0.7275,
+          "confidence": 0.7625,
           "historical_analog_support": "weak",
           "invalidation_conditions": [
             "VIX turns higher again",
@@ -1540,13 +1643,13 @@
             "VIX rollover: 1.00",
             "credit stabilization: 0.98",
             "breadth confirmation: 0.91",
-            "Alpha v1 bounce probability: 0.57"
+            "flow confirmation: 0.76"
           ],
-          "probability": 0.62
+          "probability": 0.6741
         },
         "downside_continuation_predictor": {
           "best_horizon": "5d-20d",
-          "confidence": 0.6145,
+          "confidence": 0.5795,
           "historical_analog_support": "weak",
           "invalidation_conditions": [
             "VIX falls and stays lower",
@@ -1556,15 +1659,15 @@
           ],
           "main_drivers": [
             "base downside continuation: 0.54",
-            "rates pressure: 0.22",
-            "breadth conflict: 0.19",
-            "liquidity stress proxy: 0.10"
+            "risk-off rotation: 0.36",
+            "flow conflict: 0.24",
+            "rates pressure: 0.22"
           ],
-          "probability": 0.3504
+          "probability": 0.3889
         },
         "risk_expansion_predictor": {
           "best_horizon": "20d-60d",
-          "confidence": 0.6376,
+          "confidence": 0.6524,
           "historical_analog_support": "high",
           "invalidation_conditions": [
             "credit proxy stabilizes",
@@ -1575,14 +1678,14 @@
           "main_drivers": [
             "macro event risk: 1.00",
             "VIX percentile: 0.60",
-            "news risk: 0.40",
-            "breadth deterioration: 0.24"
+            "risk-off rotation: 0.36",
+            "news risk: 0.30"
           ],
-          "probability": 0.3759
+          "probability": 0.4182
         },
         "trend_reversal_predictor": {
           "best_horizon": "20d-60d",
-          "confidence": 0.7275,
+          "confidence": 0.7625,
           "historical_analog_support": "weak",
           "invalidation_conditions": [
             "20d/60d analogs turn weak",
@@ -1593,20 +1696,24 @@
           "main_drivers": [
             "credit stabilization: 0.98",
             "breadth confirmation: 0.91",
-            "60d trend: 0.65",
-            "medium-term analog support: 0.00"
+            "flow confirmation: 0.76",
+            "60d trend: 0.65"
           ],
-          "probability": 0.4531
+          "probability": 0.4986
         }
       },
       "predictors_v4": {
         "bounce_predictor": {
           "best_horizon": "3d-10d",
-          "bounce_probability": 0.7409,
+          "bounce_probability": 0.7659,
           "breadth_confirmation": 0.9072,
           "breadth_quality": 1.0,
-          "confidence": 0.7275,
+          "confidence": 0.7625,
           "conflicting_evidence": [],
+          "crowding_proxy_score": 0.5084,
+          "flow_confirmation_score": 0.7594,
+          "flow_conflict_score": 0.2371,
+          "flow_quality_score": 1.0,
           "historical_analog_support": "weak",
           "internal_resonance_score": 0.7809,
           "internal_resonance_state": "aligned",
@@ -1620,17 +1727,17 @@
             "VIX rollover: 1.00",
             "credit stabilization: 0.98",
             "breadth confirmation: 0.91",
-            "Alpha v1 bounce probability: 0.57"
+            "flow confirmation: 0.76"
           ],
           "main_drivers": [
             "VIX rollover: 1.00",
             "credit stabilization: 0.98",
             "breadth confirmation: 0.91",
-            "Alpha v1 bounce probability: 0.57"
+            "flow confirmation: 0.76"
           ],
           "options_quality": 0.92,
           "panic_release_score": 0.7419,
-          "probability": 0.7409,
+          "probability": 0.7659,
           "tail_risk_score": 0.2638,
           "term_structure_state": "contango",
           "volatility_reversal_score": 1.0
@@ -1640,9 +1747,13 @@
           "breadth_conflict": 0.1856,
           "breadth_quality": 1.0,
           "break_level": 493.98,
-          "confidence": 0.6145,
-          "downside_continuation_probability": 0.2529,
+          "confidence": 0.5795,
+          "crowding_proxy_score": 0.5084,
+          "downside_continuation_probability": 0.3336,
           "failed_bounce_options_risk": 0.2395,
+          "flow_confirmation_score": 0.7594,
+          "flow_conflict_score": 0.2371,
+          "flow_quality_score": 1.0,
           "historical_analog_support": "weak",
           "internal_resonance_score": 0.7809,
           "internal_resonance_state": "aligned",
@@ -1654,12 +1765,12 @@
           ],
           "main_drivers": [
             "base downside continuation: 0.54",
-            "rates pressure: 0.22",
-            "breadth conflict: 0.19",
-            "liquidity stress proxy: 0.10"
+            "risk-off rotation: 0.36",
+            "flow conflict: 0.24",
+            "rates pressure: 0.22"
           ],
           "options_quality": 0.92,
-          "probability": 0.2529,
+          "probability": 0.3336,
           "risk_triggers": [
             "VIX rising",
             "HYG/LQD weakens",
@@ -1674,9 +1785,13 @@
           "best_horizon": "20d-60d",
           "breadth_quality": 1.0,
           "breadth_risk": 0.1856,
-          "confidence": 0.6376,
+          "confidence": 0.6524,
           "credit_risk": 0.0332,
+          "crowding_proxy_score": 0.5084,
           "failed_bounce_options_risk": 0.2395,
+          "flow_confirmation_score": 0.7594,
+          "flow_conflict_score": 0.2371,
+          "flow_quality_score": 1.0,
           "historical_analog_support": "high",
           "internal_resonance_score": 0.7809,
           "internal_resonance_state": "aligned",
@@ -1691,12 +1806,12 @@
           "main_drivers": [
             "macro event risk: 1.00",
             "VIX percentile: 0.60",
-            "news risk: 0.40",
-            "breadth deterioration: 0.24"
+            "risk-off rotation: 0.36",
+            "news risk: 0.30"
           ],
           "options_quality": 0.92,
-          "probability": 0.3058,
-          "risk_expansion_probability": 0.3058,
+          "probability": 0.3549,
+          "risk_expansion_probability": 0.3549,
           "tail_risk_score": 0.2638,
           "term_structure_state": "contango",
           "volatility_risk": 0.2487
@@ -1705,13 +1820,17 @@
           "best_horizon": "20d-60d",
           "breadth_confirmation": 0.9072,
           "breadth_quality": 1.0,
-          "confidence": 0.7275,
+          "confidence": 0.7625,
           "confirmation_requirements": [
             "20d/60d analog support remains positive",
             "constituent/proxy breadth keeps improving",
             "credit proxy stays stable",
             "price holds above recent low"
           ],
+          "crowding_proxy_score": 0.5084,
+          "flow_confirmation_score": 0.7594,
+          "flow_conflict_score": 0.2371,
+          "flow_quality_score": 1.0,
           "historical_analog_support": "weak",
           "internal_resonance_score": 0.7809,
           "internal_resonance_state": "aligned",
@@ -1724,84 +1843,84 @@
           "main_drivers": [
             "credit stabilization: 0.98",
             "breadth confirmation: 0.91",
-            "60d trend: 0.65",
-            "medium-term analog support: 0.00"
+            "flow confirmation: 0.76",
+            "60d trend: 0.65"
           ],
           "options_quality": 0.92,
-          "probability": 0.5688,
+          "probability": 0.6039,
           "regime_support": "weak",
           "term_structure_state": "contango",
-          "trend_reversal_probability": 0.5688,
+          "trend_reversal_probability": 0.6039,
           "volatility_reversal_score": 1.0
         }
       },
       "scenario_ranking": {
         "all_scenarios": [
           {
-            "confidence": "high",
+            "confidence": "medium",
             "expected_horizon": "10d-20d",
             "label": "反抽情景",
-            "probability": 0.4533,
-            "reason": "Bounce Predictor 74%，多源确认 97/100，20d/60d historical support 为 weak。",
+            "probability": 0.4085,
+            "reason": "Bounce Predictor 77%，多源确认 70/100，20d/60d historical support 为 weak。",
             "scenario": "bounce_path"
           },
           {
-            "confidence": "high",
+            "confidence": "medium",
+            "expected_horizon": "3d-10d",
+            "label": "失败反抽情景",
+            "probability": 0.2337,
+            "reason": "Downside/Risk predictors 为 33%/35%，若波动率、信用或价格低点恶化，反抽会失败。",
+            "scenario": "bearish_path"
+          },
+          {
+            "confidence": "medium",
             "expected_horizon": "20d-60d",
             "label": "历史均值情景",
-            "probability": 0.2286,
+            "probability": 0.2137,
             "reason": "历史相似样本质量 high，样本数 20，中期支持 weak。",
             "scenario": "analog_average_path"
           },
           {
-            "confidence": "high",
-            "expected_horizon": "3d-10d",
-            "label": "失败反抽情景",
-            "probability": 0.2096,
-            "reason": "Downside/Risk predictors 为 25%/31%，若波动率、信用或价格低点恶化，反抽会失败。",
-            "scenario": "bearish_path"
-          },
-          {
-            "confidence": "high",
+            "confidence": "medium",
             "expected_horizon": "3d-20d",
             "label": "综合期望情景",
-            "probability": 0.1085,
+            "probability": 0.1441,
             "reason": "综合期望用于平衡反抽、失败反抽、历史均值和数据不完整带来的不确定性。",
             "scenario": "expected_path"
           }
         ],
         "close_call": false,
         "close_call_note": "",
-        "path_reliability": "high",
+        "path_reliability": "medium",
         "primary": {
-          "confidence": "high",
+          "confidence": "medium",
           "expected_horizon": "10d-20d",
           "label": "反抽情景",
-          "probability": 0.4533,
-          "reason": "Bounce Predictor 74%，多源确认 97/100，20d/60d historical support 为 weak。",
+          "probability": 0.4085,
+          "reason": "Bounce Predictor 77%，多源确认 70/100，20d/60d historical support 为 weak。",
           "scenario": "bounce_path"
         },
         "primary_scenario": "bounce_path",
-        "primary_secondary_gap": 0.2247,
+        "primary_secondary_gap": 0.1748,
         "primary_to_secondary_switch_conditions": [
           "VIX 重新上升",
           "HYG/LQD 转弱",
           "DIA 跌破近期低点",
           "historical support 转弱"
         ],
-        "probability_gap": 0.2247,
+        "probability_gap": 0.1748,
         "ranking_note": "V4 scenario ranking is derived from predictor probabilities, signal confirmation, historical analog distribution, data completeness and macro event risk. It is not a guaranteed forecast.",
         "risk_scenario": "bearish_path",
-        "scenario_probability": 0.4533,
+        "scenario_probability": 0.4085,
         "secondary": {
-          "confidence": "high",
-          "expected_horizon": "20d-60d",
-          "label": "历史均值情景",
-          "probability": 0.2286,
-          "reason": "历史相似样本质量 high，样本数 20，中期支持 weak。",
-          "scenario": "analog_average_path"
+          "confidence": "medium",
+          "expected_horizon": "3d-10d",
+          "label": "失败反抽情景",
+          "probability": 0.2337,
+          "reason": "Downside/Risk predictors 为 33%/35%，若波动率、信用或价格低点恶化，反抽会失败。",
+          "scenario": "bearish_path"
         },
-        "secondary_scenario": "analog_average_path",
+        "secondary_scenario": "bearish_path",
         "switching_conditions": [
           "VIX 重新上升",
           "HYG/LQD 转弱",
@@ -1809,22 +1928,22 @@
           "historical support 转弱"
         ],
         "tertiary": {
-          "confidence": "high",
-          "expected_horizon": "3d-10d",
-          "label": "失败反抽情景",
-          "probability": 0.2096,
-          "reason": "Downside/Risk predictors 为 25%/31%，若波动率、信用或价格低点恶化，反抽会失败。",
-          "scenario": "bearish_path"
+          "confidence": "medium",
+          "expected_horizon": "20d-60d",
+          "label": "历史均值情景",
+          "probability": 0.2137,
+          "reason": "历史相似样本质量 high，样本数 20，中期支持 weak。",
+          "scenario": "analog_average_path"
         }
       },
       "scenario_weights": {
-        "base_scenario": 0.1085,
-        "bearish_scenario": 0.2096,
-        "bounce_scenario": 0.4533,
-        "historical_analog_average": 0.2286
+        "base_scenario": 0.1441,
+        "bearish_scenario": 0.2337,
+        "bounce_scenario": 0.4085,
+        "historical_analog_average": 0.2137
       },
       "signal_agreement": {
-        "agreement_level": "mixed",
+        "agreement_level": "strong",
         "conflicting_signals": [
           {
             "detail": "3d/5d/10d analogs are weak or negative.",
@@ -1843,7 +1962,7 @@
           }
         ],
         "data_completeness_cap_applied": false,
-        "signal_agreement_score": 69,
+        "signal_agreement_score": 79,
         "supporting_signals": [
           {
             "detail": "Frozen Alpha v1 is currently triggered.",
@@ -1874,12 +1993,22 @@
             "detail": "Liquidity proxy is not stressed.",
             "name": "liquidity proxy",
             "score": 0.08
+          },
+          {
+            "detail": "Finnhub market-news risk score is low.",
+            "name": "news risk low",
+            "score": 0.06
+          },
+          {
+            "detail": "Proxy flow/positioning confirms risk appetite or participation.",
+            "name": "flow confirmation",
+            "score": 0.1
           }
         ]
       },
       "signal_confirmation": {
         "confirmation_level": "strong",
-        "confirmation_score": 97,
+        "confirmation_score": 70,
         "conflicting_evidence": [
           {
             "detail": "Macro/event calendar risk is elevated.",
@@ -1905,12 +2034,16 @@
             "name": "gamma exposure"
           },
           {
+            "detail": "True fund-flow / positioning feed is not connected; current flow evidence is proxy-only.",
+            "name": "true flow feed"
+          },
+          {
             "detail": "news evidence is missing.",
             "name": "news"
           }
         ],
-        "missing_evidence_cap_applied": false,
-        "signal_confirmation_score": 97,
+        "missing_evidence_cap_applied": true,
+        "signal_confirmation_score": 70,
         "supporting_evidence": [
           {
             "detail": "Frozen Alpha v1 is triggered; this remains research-only.",
@@ -1943,9 +2076,9 @@
             "score": 0.1
           },
           {
-            "detail": "Rotation/flow proxy is not risk-off.",
+            "detail": "Proxy flow/positioning confirms risk appetite or broad participation.",
             "name": "flow / positioning proxy",
-            "score": 0.07
+            "score": 0.09
           },
           {
             "detail": "20d price trend is not negative.",
@@ -1959,18 +2092,18 @@
           }
         ]
       },
-      "signal_confirmation_score": 97,
+      "signal_confirmation_score": 70,
       "symbol": "DIA",
       "trend_reversal_probability": 0.31497261963287615
     },
     "IWM": {
-      "analog_path_weight": 0.2423,
+      "analog_path_weight": 0.239,
       "as_of": "2026-06-12",
-      "base_path_weight": 0.1751,
-      "bearish_path_weight": 0.2139,
-      "bounce_path_weight": 0.3686,
+      "base_path_weight": 0.1642,
+      "bearish_path_weight": 0.2171,
+      "bounce_path_weight": 0.3797,
       "bounce_probability": 0.40434541,
-      "current_integrated_judgment": "IWM 当前 edge 状态：MODERATE_EDGE。最大概率路径是“反抽情景”(37%)，第二路径是“历史均值情景”(24%)，差距 13%。多源确认分数 70/100，模型可信度 73/100。可以观察主路径，但仍需按失效条件动态切换。",
+      "current_integrated_judgment": "IWM 当前 edge 状态：MODERATE_EDGE。最大概率路径是“反抽情景”(38%)，第二路径是“历史均值情景”(24%)，差距 14%。多源确认分数 70/100，模型可信度 74/100。可以观察主路径，但仍需按失效条件动态切换。",
       "current_price": 292.95001221,
       "data_source_status": "real_market_data",
       "distance_to_threshold": -0.0790023,
@@ -2119,10 +2252,10 @@
           "ig_oas_20d_change": 0.0
         },
         "daily_market_brief": {
-          "brief": "Finnhub quote 292.95; news risk 40%; macro event risk flagged; rates pressure 22%.",
+          "brief": "Finnhub quote 292.95; news risk 30%; macro event risk flagged; rates pressure 22%.",
           "finnhub_quote_available": true,
           "macro_event_risk_flag": true,
-          "news_risk_score": 0.4,
+          "news_risk_score": 0.3,
           "rates_pressure_score": 0.21559568792778516,
           "symbol": "IWM"
         },
@@ -2137,12 +2270,33 @@
           "sentiment_score": null
         },
         "flow_positioning_proxy": {
-          "data_note": "Proxy only; no true fund-flow or positioning feed connected.",
-          "defensive_vs_cyclical_20d": 0.01108516209386513,
-          "etf_relative_volume_20d": 1.155171220705441,
-          "high_beta_vs_low_vol_20d": 0.03227781116516204,
-          "risk_off_rotation_score": 0.055425810469325654,
-          "volume_zscore_20d": 0.7254975738201928
+          "credit_risk_appetite_20d": -0.003111,
+          "crowding_proxy_score": 0.10880000000000001,
+          "crowding_proxy_score_raw": 10.88,
+          "data_note": "Proxy only: ETF volume, factor rotation, sector rotation, HYG/LQD, TLT and UUP. No true fund-flow or positioning feed.",
+          "defensive_vs_cyclical_20d": 0.011085,
+          "equal_weight_vs_cap_weight_20d": 0.047813,
+          "etf_relative_volume_20d": 1.189,
+          "flow_confirmation_score": 0.7443000000000001,
+          "flow_confirmation_score_raw": 74.43,
+          "flow_conflict_score": 0.2371,
+          "flow_conflict_score_raw": 23.71,
+          "flow_quality_score": 1.0,
+          "flow_quality_score_raw": 100.0,
+          "high_beta_vs_low_vol_20d": 0.032278,
+          "is_proxy": true,
+          "latest_date": "2026-06-12",
+          "risk_off_flow_score": 0.3626,
+          "risk_off_rotation_score": 0.3626,
+          "risk_on_flow_score": 0.9114,
+          "risk_on_rotation_20d": 0.007293,
+          "sector_participation_proxy": 0.6364,
+          "small_cap_vs_large_cap_20d": 0.038463,
+          "source": "market_data_proxy",
+          "status": "proxy",
+          "true_flow_available": false,
+          "volume_confirmation_score": 0.7381,
+          "volume_zscore_20d": 0.7255
         },
         "macro_event_calendar": {
           "cpi_date": "2026-07-14",
@@ -2168,13 +2322,13 @@
         "news": {
           "market_news_status": "available",
           "news_item_count": 40,
-          "news_risk_score": 0.4,
+          "news_risk_score": 0.3,
           "top_headlines": [
+            "JetBlue bets big on Fort Lauderdale, from a new airport lounge to an international gateway",
+            "Israel says military attacks Hezbollah targets in Beirut's southern suburbs - Reuters",
             "Iran says draft US deal includes oil sanctions waiver, nuclear limits and asset release - Reuters",
-            "Israeli military says Hezbollah launched three projectiles towards northern Israel - Reuters",
             "UK forces board sanctioned Russian shadow fleet oil tanker",
-            "Iran says limited cyberattack disrupts services at four banks, state media says - Reuters",
-            "US and Iran inch closer to deal, Trump says Sunday but timing is unclear - Reuters"
+            "Iran says limited cyberattack disrupts services at four banks, state media says - Reuters"
           ]
         },
         "price": {
@@ -2339,6 +2493,7 @@
           "credit_volatility_no_strong_conflict": true,
           "current_regime_identified": true,
           "data_completeness_ge_80": true,
+          "flow_proxy_not_conflicting": true,
           "historical_analog_not_conflicting": true,
           "macro_event_risk_not_high": false,
           "market_internals_not_surface_only": true,
@@ -2348,7 +2503,7 @@
         "has_usable_prediction_edge_today": true,
         "market_edge_status": "MODERATE_EDGE",
         "no_edge_note": "",
-        "passed_conditions": 8,
+        "passed_conditions": 9,
         "risk_warning": false,
         "summary": "有一定预测优势，但仍需观察冲突信号和失效条件。"
       },
@@ -2489,25 +2644,27 @@
           "analog_support": 0.45,
           "breadth_quality": 0.64,
           "data_completeness": 0.9,
+          "flow_conflict": 0.2371,
+          "flow_quality": 1.0,
           "internal_resonance": 0.6021,
           "options_quality": 0.92,
-          "predictor_consistency": 0.5977000000000001,
-          "prior_confidence": 0.74,
+          "predictor_consistency": 0.5608,
+          "prior_confidence": 0.77,
           "signal_confirmation": 0.7
         },
         "confidence_level": "medium",
-        "confidence_score": 73,
+        "confidence_score": 74,
         "why_confidence_is_limited": [
-          "仍有关键证据缺失：market internal resonance / put/call ratio / gamma exposure / historical analog support / news",
+          "仍有关键证据缺失：market internal resonance / put/call ratio / gamma exposure / true flow feed / historical analog support",
           "市场宽度数据质量或覆盖率仍限制预测可信度。"
         ]
       },
       "name": "Russell 2000",
       "path_weight_model": {
-        "analog_path_weight": 0.2423,
-        "base_path_weight": 0.1751,
-        "bearish_path_weight": 0.2139,
-        "bounce_path_weight": 0.3686,
+        "analog_path_weight": 0.239,
+        "base_path_weight": 0.1642,
+        "bearish_path_weight": 0.2171,
+        "bounce_path_weight": 0.3797,
         "low_confidence_simulation": false,
         "simulation_confidence_level": "medium",
         "weight_factors": {
@@ -2517,26 +2674,30 @@
           "breadth_quality": 0.64,
           "breadth_support": 0.7757,
           "credit_stability": 0.9768,
+          "crowding_proxy": 0.1088,
           "data_completeness": 0.88,
           "failed_bounce_options_risk": 0.2395,
-          "failed_bounce_risk": 0.3151,
+          "failed_bounce_risk": 0.3376,
+          "flow_confirmation": 0.7443,
+          "flow_conflict": 0.2371,
+          "flow_quality": 1.0,
           "historical_analog_support": 0.575,
           "internal_resonance": 0.6021,
           "internal_resonance_state": "mixed",
           "macro_event_risk": 1.0,
-          "news_risk": 0.4,
+          "news_risk": 0.3,
           "options_quality": 0.92,
           "options_stress": 0.2487,
           "panic_release": 0.7419,
           "rates_pressure": 0.2156,
-          "risk_expansion": 0.3126,
-          "signal_agreement": 0.79,
+          "risk_expansion": 0.3394,
+          "signal_agreement": 0.89,
           "signal_confirmation": 0.7,
           "tail_risk": 0.2638,
           "volatility_reversal": 1.0
         },
         "weight_source_notes": [
-          "V4 path weights come from the four independent predictors, signal confirmation, historical analog distribution, data completeness, macro event risk and options/volatility structure.",
+          "V4 path weights come from the four independent predictors, signal confirmation, historical analog distribution, data completeness, macro event risk, options/volatility structure and proxy flow/positioning.",
           "If primary and secondary differ by less than 8 percentage points, close_call is true and single-path conviction should be reduced."
         ]
       },
@@ -2546,7 +2707,7 @@
           "analog_best_path": 0.06585872378573088,
           "analog_hit_rate": 0.55,
           "analog_worst_path": -0.03890791768285917,
-          "bounce_probability": 0.5797204345,
+          "bounce_probability": 0.6089804345000001,
           "confidence": 0.513,
           "down_probability": 0.43451899175249536,
           "expected_direction": "偏上行/反抽",
@@ -2555,7 +2716,7 @@
             -0.03890791768285917,
             0.06585872378573088
           ],
-          "failed_bounce_risk": 0.454086964718013,
+          "failed_bounce_risk": 0.46646196471801304,
           "historical_support": "supportive",
           "market_edge_status": "STRONG_EDGE",
           "up_probability": 0.5654810082475047
@@ -2577,8 +2738,8 @@
           "failed_bounce_risk": 0.7239599215955844,
           "historical_support": "weak",
           "market_edge_status": "STRONG_EDGE",
-          "risk_expansion_probability": 0.3786,
-          "trend_reversal_probability": 0.5292,
+          "risk_expansion_probability": 0.401,
+          "trend_reversal_probability": 0.5739,
           "up_probability": 0.44069433366571326
         },
         "3d": {
@@ -2586,7 +2747,7 @@
           "analog_best_path": 0.04947346375331296,
           "analog_hit_rate": 0.6,
           "analog_worst_path": -0.012640662559037175,
-          "bounce_probability": 0.5797204345,
+          "bounce_probability": 0.6089804345000001,
           "confidence": 0.513,
           "down_probability": 0.43224020498844196,
           "expected_direction": "偏上行/反抽",
@@ -2595,7 +2756,7 @@
             -0.012640662559037175,
             0.04947346375331296
           ],
-          "failed_bounce_risk": 0.454086964718013,
+          "failed_bounce_risk": 0.46646196471801304,
           "historical_support": "supportive",
           "market_edge_status": "STRONG_EDGE",
           "up_probability": 0.567759795011558
@@ -2605,7 +2766,7 @@
           "analog_best_path": 0.036593176190090615,
           "analog_hit_rate": 0.55,
           "analog_worst_path": -0.04048378795281027,
-          "bounce_probability": 0.5797204345,
+          "bounce_probability": 0.6089804345000001,
           "confidence": 0.513,
           "down_probability": 0.4374841262817995,
           "expected_direction": "偏上行/反抽",
@@ -2614,7 +2775,7 @@
             -0.04048378795281027,
             0.036593176190090615
           ],
-          "failed_bounce_risk": 0.454086964718013,
+          "failed_bounce_risk": 0.46646196471801304,
           "historical_support": "supportive",
           "market_edge_status": "STRONG_EDGE",
           "up_probability": 0.5625158737182006
@@ -2636,15 +2797,15 @@
           "failed_bounce_risk": 0.6239599215955844,
           "historical_support": "supportive",
           "market_edge_status": "STRONG_EDGE",
-          "risk_expansion_probability": 0.3786,
-          "trend_reversal_probability": 0.5292,
+          "risk_expansion_probability": 0.401,
+          "trend_reversal_probability": 0.5739,
           "up_probability": 0.5850414141921713
         }
       },
       "predictors": {
         "bounce_predictor": {
           "best_horizon": "3d-10d",
-          "confidence": 0.8125,
+          "confidence": 0.8475,
           "historical_analog_support": "supportive",
           "invalidation_conditions": [
             "VIX turns higher again",
@@ -2658,11 +2819,11 @@
             "credit stabilization: 0.98",
             "breadth confirmation: 0.78"
           ],
-          "probability": 0.6823
+          "probability": 0.7355
         },
         "downside_continuation_predictor": {
           "best_horizon": "5d-20d",
-          "confidence": 0.5795,
+          "confidence": 0.5445,
           "historical_analog_support": "supportive",
           "invalidation_conditions": [
             "VIX falls and stays lower",
@@ -2672,15 +2833,15 @@
           ],
           "main_drivers": [
             "base downside continuation: 0.62",
+            "risk-off rotation: 0.36",
             "breadth conflict: 0.29",
-            "rates pressure: 0.22",
-            "liquidity stress proxy: 0.10"
+            "flow conflict: 0.24"
           ],
-          "probability": 0.3151
+          "probability": 0.3376
         },
         "risk_expansion_predictor": {
           "best_horizon": "20d-60d",
-          "confidence": 0.6385,
+          "confidence": 0.6463,
           "historical_analog_support": "high",
           "invalidation_conditions": [
             "credit proxy stabilizes",
@@ -2691,14 +2852,14 @@
           "main_drivers": [
             "macro event risk: 1.00",
             "VIX percentile: 0.60",
-            "news risk: 0.40",
-            "breadth deterioration: 0.27"
+            "risk-off rotation: 0.36",
+            "news risk: 0.30"
           ],
-          "probability": 0.3786
+          "probability": 0.401
         },
         "trend_reversal_predictor": {
           "best_horizon": "20d-60d",
-          "confidence": 0.7625,
+          "confidence": 0.7975,
           "historical_analog_support": "weak",
           "invalidation_conditions": [
             "20d/60d analogs turn weak",
@@ -2710,19 +2871,23 @@
             "60d trend: 1.14",
             "credit stabilization: 0.98",
             "breadth confirmation: 0.78",
-            "medium-term analog support: 0.00"
+            "flow confirmation: 0.74"
           ],
-          "probability": 0.5292
+          "probability": 0.5739
         }
       },
       "predictors_v4": {
         "bounce_predictor": {
           "best_horizon": "3d-10d",
-          "bounce_probability": 0.6748,
+          "bounce_probability": 0.7418,
           "breadth_confirmation": 0.7757,
           "breadth_quality": 0.64,
-          "confidence": 0.8125,
+          "confidence": 0.8475,
           "conflicting_evidence": [],
+          "crowding_proxy_score": 0.1088,
+          "flow_confirmation_score": 0.7443,
+          "flow_conflict_score": 0.2371,
+          "flow_quality_score": 1.0,
           "historical_analog_support": "supportive",
           "internal_resonance_score": 0.6021,
           "internal_resonance_state": "mixed",
@@ -2746,7 +2911,7 @@
           ],
           "options_quality": 0.92,
           "panic_release_score": 0.7419,
-          "probability": 0.6748,
+          "probability": 0.7418,
           "tail_risk_score": 0.2638,
           "term_structure_state": "contango",
           "volatility_reversal_score": 1.0
@@ -2756,9 +2921,13 @@
           "breadth_conflict": 0.2936,
           "breadth_quality": 0.64,
           "break_level": 273.0,
-          "confidence": 0.5795,
-          "downside_continuation_probability": 0.2725,
+          "confidence": 0.5445,
+          "crowding_proxy_score": 0.1088,
+          "downside_continuation_probability": 0.3026,
           "failed_bounce_options_risk": 0.2395,
+          "flow_confirmation_score": 0.7443,
+          "flow_conflict_score": 0.2371,
+          "flow_quality_score": 1.0,
           "historical_analog_support": "supportive",
           "internal_resonance_score": 0.6021,
           "internal_resonance_state": "mixed",
@@ -2770,12 +2939,12 @@
           ],
           "main_drivers": [
             "base downside continuation: 0.62",
+            "risk-off rotation: 0.36",
             "breadth conflict: 0.29",
-            "rates pressure: 0.22",
-            "liquidity stress proxy: 0.10"
+            "flow conflict: 0.24"
           ],
           "options_quality": 0.92,
-          "probability": 0.2725,
+          "probability": 0.3026,
           "risk_triggers": [
             "VIX rising",
             "HYG/LQD weakens",
@@ -2790,9 +2959,13 @@
           "best_horizon": "20d-60d",
           "breadth_quality": 0.64,
           "breadth_risk": 0.2936,
-          "confidence": 0.6385,
+          "confidence": 0.6463,
           "credit_risk": 0.0332,
+          "crowding_proxy_score": 0.1088,
           "failed_bounce_options_risk": 0.2395,
+          "flow_confirmation_score": 0.7443,
+          "flow_conflict_score": 0.2371,
+          "flow_quality_score": 1.0,
           "historical_analog_support": "high",
           "internal_resonance_score": 0.6021,
           "internal_resonance_state": "mixed",
@@ -2807,12 +2980,12 @@
           "main_drivers": [
             "macro event risk: 1.00",
             "VIX percentile: 0.60",
-            "news risk: 0.40",
-            "breadth deterioration: 0.27"
+            "risk-off rotation: 0.36",
+            "news risk: 0.30"
           ],
           "options_quality": 0.92,
-          "probability": 0.3126,
-          "risk_expansion_probability": 0.3126,
+          "probability": 0.3394,
+          "risk_expansion_probability": 0.3394,
           "tail_risk_score": 0.2638,
           "term_structure_state": "contango",
           "volatility_risk": 0.2487
@@ -2821,13 +2994,17 @@
           "best_horizon": "20d-60d",
           "breadth_confirmation": 0.7757,
           "breadth_quality": 0.64,
-          "confidence": 0.7625,
+          "confidence": 0.7975,
           "confirmation_requirements": [
             "20d/60d analog support remains positive",
             "constituent/proxy breadth keeps improving",
             "credit proxy stays stable",
             "price holds above recent low"
           ],
+          "crowding_proxy_score": 0.1088,
+          "flow_confirmation_score": 0.7443,
+          "flow_conflict_score": 0.2371,
+          "flow_quality_score": 1.0,
           "historical_analog_support": "weak",
           "internal_resonance_score": 0.6021,
           "internal_resonance_state": "mixed",
@@ -2841,13 +3018,13 @@
             "60d trend: 1.14",
             "credit stabilization: 0.98",
             "breadth confirmation: 0.78",
-            "medium-term analog support: 0.00"
+            "flow confirmation: 0.74"
           ],
           "options_quality": 0.92,
-          "probability": 0.5349,
+          "probability": 0.5906,
           "regime_support": "weak",
           "term_structure_state": "contango",
-          "trend_reversal_probability": 0.5349,
+          "trend_reversal_probability": 0.5906,
           "volatility_reversal_score": 1.0
         }
       },
@@ -2857,15 +3034,15 @@
             "confidence": "medium",
             "expected_horizon": "10d-20d",
             "label": "反抽情景",
-            "probability": 0.3686,
-            "reason": "Bounce Predictor 67%，多源确认 70/100，20d/60d historical support 为 weak。",
+            "probability": 0.3797,
+            "reason": "Bounce Predictor 74%，多源确认 70/100，20d/60d historical support 为 weak。",
             "scenario": "bounce_path"
           },
           {
             "confidence": "medium",
             "expected_horizon": "20d-60d",
             "label": "历史均值情景",
-            "probability": 0.2423,
+            "probability": 0.239,
             "reason": "历史相似样本质量 high，样本数 20，中期支持 weak。",
             "scenario": "analog_average_path"
           },
@@ -2873,15 +3050,15 @@
             "confidence": "medium",
             "expected_horizon": "3d-10d",
             "label": "失败反抽情景",
-            "probability": 0.2139,
-            "reason": "Downside/Risk predictors 为 27%/31%，若波动率、信用或价格低点恶化，反抽会失败。",
+            "probability": 0.2171,
+            "reason": "Downside/Risk predictors 为 30%/34%，若波动率、信用或价格低点恶化，反抽会失败。",
             "scenario": "bearish_path"
           },
           {
             "confidence": "medium",
             "expected_horizon": "3d-20d",
             "label": "综合期望情景",
-            "probability": 0.1751,
+            "probability": 0.1642,
             "reason": "综合期望用于平衡反抽、失败反抽、历史均值和数据不完整带来的不确定性。",
             "scenario": "expected_path"
           }
@@ -2893,27 +3070,27 @@
           "confidence": "medium",
           "expected_horizon": "10d-20d",
           "label": "反抽情景",
-          "probability": 0.3686,
-          "reason": "Bounce Predictor 67%，多源确认 70/100，20d/60d historical support 为 weak。",
+          "probability": 0.3797,
+          "reason": "Bounce Predictor 74%，多源确认 70/100，20d/60d historical support 为 weak。",
           "scenario": "bounce_path"
         },
         "primary_scenario": "bounce_path",
-        "primary_secondary_gap": 0.1263,
+        "primary_secondary_gap": 0.1407,
         "primary_to_secondary_switch_conditions": [
           "VIX 重新上升",
           "HYG/LQD 转弱",
           "IWM 跌破近期低点",
           "historical support 转弱"
         ],
-        "probability_gap": 0.1263,
+        "probability_gap": 0.1407,
         "ranking_note": "V4 scenario ranking is derived from predictor probabilities, signal confirmation, historical analog distribution, data completeness and macro event risk. It is not a guaranteed forecast.",
         "risk_scenario": "bearish_path",
-        "scenario_probability": 0.3686,
+        "scenario_probability": 0.3797,
         "secondary": {
           "confidence": "medium",
           "expected_horizon": "20d-60d",
           "label": "历史均值情景",
-          "probability": 0.2423,
+          "probability": 0.239,
           "reason": "历史相似样本质量 high，样本数 20，中期支持 weak。",
           "scenario": "analog_average_path"
         },
@@ -2928,16 +3105,16 @@
           "confidence": "medium",
           "expected_horizon": "3d-10d",
           "label": "失败反抽情景",
-          "probability": 0.2139,
-          "reason": "Downside/Risk predictors 为 27%/31%，若波动率、信用或价格低点恶化，反抽会失败。",
+          "probability": 0.2171,
+          "reason": "Downside/Risk predictors 为 30%/34%，若波动率、信用或价格低点恶化，反抽会失败。",
           "scenario": "bearish_path"
         }
       },
       "scenario_weights": {
-        "base_scenario": 0.1751,
-        "bearish_scenario": 0.2139,
-        "bounce_scenario": 0.3686,
-        "historical_analog_average": 0.2423
+        "base_scenario": 0.1642,
+        "bearish_scenario": 0.2171,
+        "bounce_scenario": 0.3797,
+        "historical_analog_average": 0.239
       },
       "signal_agreement": {
         "agreement_level": "strong",
@@ -2959,7 +3136,7 @@
           }
         ],
         "data_completeness_cap_applied": false,
-        "signal_agreement_score": 79,
+        "signal_agreement_score": 89,
         "supporting_signals": [
           {
             "detail": "Frozen Alpha v1 is currently triggered.",
@@ -2995,6 +3172,16 @@
             "detail": "Liquidity proxy is not stressed.",
             "name": "liquidity proxy",
             "score": 0.08
+          },
+          {
+            "detail": "Finnhub market-news risk score is low.",
+            "name": "news risk low",
+            "score": 0.06
+          },
+          {
+            "detail": "Proxy flow/positioning confirms risk appetite or participation.",
+            "name": "flow confirmation",
+            "score": 0.1
           }
         ]
       },
@@ -3023,6 +3210,10 @@
           {
             "detail": "Dealer gamma exposure is not connected; it is not inferred.",
             "name": "gamma exposure"
+          },
+          {
+            "detail": "True fund-flow / positioning feed is not connected; current flow evidence is proxy-only.",
+            "name": "true flow feed"
           },
           {
             "detail": "Historical analog support is mixed by horizon.",
@@ -3062,9 +3253,9 @@
             "score": 0.1
           },
           {
-            "detail": "Rotation/flow proxy is not risk-off.",
+            "detail": "Proxy flow/positioning confirms risk appetite or broad participation.",
             "name": "flow / positioning proxy",
-            "score": 0.07
+            "score": 0.09
           },
           {
             "detail": "20d price trend is not negative.",
@@ -3083,13 +3274,13 @@
       "trend_reversal_probability": 0.28456949892335187
     },
     "QQQ": {
-      "analog_path_weight": 0.2179,
+      "analog_path_weight": 0.2168,
       "as_of": "2026-06-12",
-      "base_path_weight": 0.1891,
-      "bearish_path_weight": 0.2361,
-      "bounce_path_weight": 0.3569,
+      "base_path_weight": 0.1776,
+      "bearish_path_weight": 0.2362,
+      "bounce_path_weight": 0.3694,
       "bounce_probability": 0.38471703,
-      "current_integrated_judgment": "QQQ 当前 edge 状态：MODERATE_EDGE。最大概率路径是“反抽情景”(36%)，第二路径是“失败反抽情景”(24%)，差距 12%。多源确认分数 70/100，模型可信度 76/100。可以观察主路径，但仍需按失效条件动态切换。",
+      "current_integrated_judgment": "QQQ 当前 edge 状态：MODERATE_EDGE。最大概率路径是“反抽情景”(37%)，第二路径是“失败反抽情景”(24%)，差距 13%。多源确认分数 70/100，模型可信度 77/100。可以观察主路径，但仍需按失效条件动态切换。",
       "current_price": 721.34002686,
       "data_source_status": "real_market_data",
       "distance_to_threshold": -0.05937392,
@@ -3238,10 +3429,10 @@
           "ig_oas_20d_change": 0.0
         },
         "daily_market_brief": {
-          "brief": "Finnhub quote 721.34; news risk 40%; macro event risk flagged; rates pressure 22%.",
+          "brief": "Finnhub quote 721.34; news risk 30%; macro event risk flagged; rates pressure 22%.",
           "finnhub_quote_available": true,
           "macro_event_risk_flag": true,
-          "news_risk_score": 0.4,
+          "news_risk_score": 0.3,
           "rates_pressure_score": 0.21559568792778516,
           "symbol": "QQQ"
         },
@@ -3256,12 +3447,33 @@
           "sentiment_score": null
         },
         "flow_positioning_proxy": {
-          "data_note": "Proxy only; no true fund-flow or positioning feed connected.",
-          "defensive_vs_cyclical_20d": 0.01108516209386513,
-          "etf_relative_volume_20d": 1.0584848216866884,
-          "high_beta_vs_low_vol_20d": 0.03227781116516204,
-          "risk_off_rotation_score": 0.055425810469325654,
-          "volume_zscore_20d": 0.14804405789493805
+          "credit_risk_appetite_20d": -0.003111,
+          "crowding_proxy_score": 0.0222,
+          "crowding_proxy_score_raw": 2.22,
+          "data_note": "Proxy only: ETF volume, factor rotation, sector rotation, HYG/LQD, TLT and UUP. No true fund-flow or positioning feed.",
+          "defensive_vs_cyclical_20d": 0.011085,
+          "equal_weight_vs_cap_weight_20d": 0.047813,
+          "etf_relative_volume_20d": 1.0784,
+          "flow_confirmation_score": 0.7209,
+          "flow_confirmation_score_raw": 72.09,
+          "flow_conflict_score": 0.2371,
+          "flow_conflict_score_raw": 23.71,
+          "flow_quality_score": 1.0,
+          "flow_quality_score_raw": 100.0,
+          "high_beta_vs_low_vol_20d": 0.032278,
+          "is_proxy": true,
+          "latest_date": "2026-06-12",
+          "risk_off_flow_score": 0.3626,
+          "risk_off_rotation_score": 0.3626,
+          "risk_on_flow_score": 0.9037000000000001,
+          "risk_on_rotation_20d": 0.007293,
+          "sector_participation_proxy": 0.6364,
+          "small_cap_vs_large_cap_20d": 0.038463,
+          "source": "market_data_proxy",
+          "status": "proxy",
+          "true_flow_available": false,
+          "volume_confirmation_score": 0.6421,
+          "volume_zscore_20d": 0.148
         },
         "macro_event_calendar": {
           "cpi_date": "2026-07-14",
@@ -3287,13 +3499,13 @@
         "news": {
           "market_news_status": "available",
           "news_item_count": 40,
-          "news_risk_score": 0.4,
+          "news_risk_score": 0.3,
           "top_headlines": [
+            "JetBlue bets big on Fort Lauderdale, from a new airport lounge to an international gateway",
+            "Israel says military attacks Hezbollah targets in Beirut's southern suburbs - Reuters",
             "Iran says draft US deal includes oil sanctions waiver, nuclear limits and asset release - Reuters",
-            "Israeli military says Hezbollah launched three projectiles towards northern Israel - Reuters",
             "UK forces board sanctioned Russian shadow fleet oil tanker",
-            "Iran says limited cyberattack disrupts services at four banks, state media says - Reuters",
-            "US and Iran inch closer to deal, Trump says Sunday but timing is unclear - Reuters"
+            "Iran says limited cyberattack disrupts services at four banks, state media says - Reuters"
           ]
         },
         "price": {
@@ -3458,6 +3670,7 @@
           "credit_volatility_no_strong_conflict": true,
           "current_regime_identified": true,
           "data_completeness_ge_80": true,
+          "flow_proxy_not_conflicting": true,
           "historical_analog_not_conflicting": false,
           "macro_event_risk_not_high": false,
           "market_internals_not_surface_only": true,
@@ -3467,7 +3680,7 @@
         "has_usable_prediction_edge_today": true,
         "market_edge_status": "MODERATE_EDGE",
         "no_edge_note": "",
-        "passed_conditions": 7,
+        "passed_conditions": 8,
         "risk_warning": false,
         "summary": "有一定预测优势，但仍需观察冲突信号和失效条件。"
       },
@@ -3602,25 +3815,27 @@
           "analog_support": 0.45,
           "breadth_quality": 1.0,
           "data_completeness": 0.9,
+          "flow_conflict": 0.2371,
+          "flow_quality": 1.0,
           "internal_resonance": 0.7077,
           "options_quality": 0.92,
-          "predictor_consistency": 0.7350000000000001,
-          "prior_confidence": 0.68,
+          "predictor_consistency": 0.6918,
+          "prior_confidence": 0.71,
           "signal_confirmation": 0.7
         },
         "confidence_level": "high",
-        "confidence_score": 76,
+        "confidence_score": 77,
         "why_confidence_is_limited": [
-          "仍有关键证据缺失：market internal resonance / put/call ratio / gamma exposure / news",
+          "仍有关键证据缺失：market internal resonance / put/call ratio / gamma exposure / true flow feed / news",
           "短周期 historical analog 仍有冲突。"
         ]
       },
       "name": "Nasdaq 100",
       "path_weight_model": {
-        "analog_path_weight": 0.2179,
-        "base_path_weight": 0.1891,
-        "bearish_path_weight": 0.2361,
-        "bounce_path_weight": 0.3569,
+        "analog_path_weight": 0.2168,
+        "base_path_weight": 0.1776,
+        "bearish_path_weight": 0.2362,
+        "bounce_path_weight": 0.3694,
         "low_confidence_simulation": false,
         "simulation_confidence_level": "medium",
         "weight_factors": {
@@ -3630,26 +3845,30 @@
           "breadth_quality": 1.0,
           "breadth_support": 0.7907,
           "credit_stability": 0.9768,
+          "crowding_proxy": 0.0222,
           "data_completeness": 0.88,
           "failed_bounce_options_risk": 0.2395,
-          "failed_bounce_risk": 0.4129,
+          "failed_bounce_risk": 0.432,
+          "flow_confirmation": 0.7209,
+          "flow_conflict": 0.2371,
+          "flow_quality": 1.0,
           "historical_analog_support": 0.15,
           "internal_resonance": 0.7077,
           "internal_resonance_state": "mixed",
           "macro_event_risk": 1.0,
-          "news_risk": 0.4,
+          "news_risk": 0.3,
           "options_quality": 0.92,
           "options_stress": 0.2487,
           "panic_release": 0.7419,
           "rates_pressure": 0.2156,
-          "risk_expansion": 0.3199,
-          "signal_agreement": 0.6,
+          "risk_expansion": 0.3418,
+          "signal_agreement": 0.7,
           "signal_confirmation": 0.7,
           "tail_risk": 0.2638,
           "volatility_reversal": 1.0
         },
         "weight_source_notes": [
-          "V4 path weights come from the four independent predictors, signal confirmation, historical analog distribution, data completeness, macro event risk and options/volatility structure.",
+          "V4 path weights come from the four independent predictors, signal confirmation, historical analog distribution, data completeness, macro event risk, options/volatility structure and proxy flow/positioning.",
           "If primary and secondary differ by less than 8 percentage points, close_call is true and single-path conviction should be reduced."
         ]
       },
@@ -3659,7 +3878,7 @@
           "analog_best_path": 0.04275835159659991,
           "analog_hit_rate": 0.6,
           "analog_worst_path": -0.05937379636838658,
-          "bounce_probability": 0.4365576635,
+          "bounce_probability": 0.46504766350000004,
           "confidence": 0.468,
           "down_probability": 0.5626570845291613,
           "expected_direction": "偏下行/反抽失败风险",
@@ -3668,9 +3887,9 @@
             -0.05937379636838658,
             0.04275835159659991
           ],
-          "failed_bounce_risk": 0.570808797940826,
+          "failed_bounce_risk": 0.5813137979408259,
           "historical_support": "weak",
-          "market_edge_status": "WEAK_EDGE",
+          "market_edge_status": "MODERATE_EDGE",
           "up_probability": 0.43734291547083876
         },
         "20d": {
@@ -3689,9 +3908,9 @@
           ],
           "failed_bounce_risk": 0.763808439868502,
           "historical_support": "weak",
-          "market_edge_status": "WEAK_EDGE",
-          "risk_expansion_probability": 0.3916,
-          "trend_reversal_probability": 0.5516,
+          "market_edge_status": "MODERATE_EDGE",
+          "risk_expansion_probability": 0.4096,
+          "trend_reversal_probability": 0.5949,
           "up_probability": 0.42602108070956873
         },
         "3d": {
@@ -3699,7 +3918,7 @@
           "analog_best_path": 0.03658810507227139,
           "analog_hit_rate": 0.75,
           "analog_worst_path": -0.04368237134685249,
-          "bounce_probability": 0.47705766350000006,
+          "bounce_probability": 0.5055476635,
           "confidence": 0.468,
           "down_probability": 0.44391535520549336,
           "expected_direction": "偏上行/反抽",
@@ -3708,9 +3927,9 @@
             -0.04368237134685249,
             0.03658810507227139
           ],
-          "failed_bounce_risk": 0.5258087979408259,
+          "failed_bounce_risk": 0.5363137979408259,
           "historical_support": "supportive",
-          "market_edge_status": "WEAK_EDGE",
+          "market_edge_status": "MODERATE_EDGE",
           "up_probability": 0.5560846447945067
         },
         "5d": {
@@ -3718,7 +3937,7 @@
           "analog_best_path": 0.03437433286772329,
           "analog_hit_rate": 0.75,
           "analog_worst_path": -0.03612173763231907,
-          "bounce_probability": 0.47705766350000006,
+          "bounce_probability": 0.5055476635,
           "confidence": 0.468,
           "down_probability": 0.44185655596802853,
           "expected_direction": "偏上行/反抽",
@@ -3727,9 +3946,9 @@
             -0.03612173763231907,
             0.03437433286772329
           ],
-          "failed_bounce_risk": 0.5258087979408259,
+          "failed_bounce_risk": 0.5363137979408259,
           "historical_support": "supportive",
-          "market_edge_status": "WEAK_EDGE",
+          "market_edge_status": "MODERATE_EDGE",
           "up_probability": 0.5581434440319715
         },
         "60d": {
@@ -3748,16 +3967,16 @@
           ],
           "failed_bounce_risk": 0.763808439868502,
           "historical_support": "weak",
-          "market_edge_status": "WEAK_EDGE",
-          "risk_expansion_probability": 0.3916,
-          "trend_reversal_probability": 0.5516,
+          "market_edge_status": "MODERATE_EDGE",
+          "risk_expansion_probability": 0.4096,
+          "trend_reversal_probability": 0.5949,
           "up_probability": 0.41756068859941337
         }
       },
       "predictors": {
         "bounce_predictor": {
           "best_horizon": "3d-10d",
-          "confidence": 0.696,
+          "confidence": 0.731,
           "historical_analog_support": "weak",
           "invalidation_conditions": [
             "VIX turns higher again",
@@ -3769,13 +3988,13 @@
             "VIX rollover: 1.00",
             "credit stabilization: 0.98",
             "breadth confirmation: 0.79",
-            "Alpha v1 bounce probability: 0.38"
+            "flow confirmation: 0.72"
           ],
-          "probability": 0.5117
+          "probability": 0.5635
         },
         "downside_continuation_predictor": {
           "best_horizon": "5d-20d",
-          "confidence": 0.646,
+          "confidence": 0.611,
           "historical_analog_support": "weak",
           "invalidation_conditions": [
             "VIX falls and stays lower",
@@ -3785,15 +4004,15 @@
           ],
           "main_drivers": [
             "base downside continuation: 0.66",
+            "risk-off rotation: 0.36",
             "breadth conflict: 0.30",
-            "rates pressure: 0.22",
-            "liquidity stress proxy: 0.10"
+            "flow conflict: 0.24"
           ],
-          "probability": 0.4129
+          "probability": 0.432
         },
         "risk_expansion_predictor": {
           "best_horizon": "20d-60d",
-          "confidence": 0.646,
+          "confidence": 0.6494,
           "historical_analog_support": "high",
           "invalidation_conditions": [
             "credit proxy stabilizes",
@@ -3805,13 +4024,13 @@
             "macro event risk: 1.00",
             "VIX percentile: 0.60",
             "breadth deterioration: 0.40",
-            "news risk: 0.40"
+            "risk-off rotation: 0.36"
           ],
-          "probability": 0.3916
+          "probability": 0.4096
         },
         "trend_reversal_predictor": {
           "best_horizon": "20d-60d",
-          "confidence": 0.696,
+          "confidence": 0.731,
           "historical_analog_support": "weak",
           "invalidation_conditions": [
             "20d/60d analogs turn weak",
@@ -3823,19 +4042,23 @@
             "60d trend: 1.28",
             "credit stabilization: 0.98",
             "breadth confirmation: 0.79",
-            "medium-term analog support: 0.00"
+            "flow confirmation: 0.72"
           ],
-          "probability": 0.5516
+          "probability": 0.5949
         }
       },
       "predictors_v4": {
         "bounce_predictor": {
           "best_horizon": "3d-10d",
-          "bounce_probability": 0.5849,
+          "bounce_probability": 0.65,
           "breadth_confirmation": 0.7907,
           "breadth_quality": 1.0,
-          "confidence": 0.696,
+          "confidence": 0.731,
           "conflicting_evidence": [],
+          "crowding_proxy_score": 0.0222,
+          "flow_confirmation_score": 0.7209,
+          "flow_conflict_score": 0.2371,
+          "flow_quality_score": 1.0,
           "historical_analog_support": "weak",
           "internal_resonance_score": 0.7077,
           "internal_resonance_state": "mixed",
@@ -3849,17 +4072,17 @@
             "VIX rollover: 1.00",
             "credit stabilization: 0.98",
             "breadth confirmation: 0.79",
-            "Alpha v1 bounce probability: 0.38"
+            "flow confirmation: 0.72"
           ],
           "main_drivers": [
             "VIX rollover: 1.00",
             "credit stabilization: 0.98",
             "breadth confirmation: 0.79",
-            "Alpha v1 bounce probability: 0.38"
+            "flow confirmation: 0.72"
           ],
           "options_quality": 0.92,
           "panic_release_score": 0.7419,
-          "probability": 0.5849,
+          "probability": 0.65,
           "tail_risk_score": 0.2638,
           "term_structure_state": "contango",
           "volatility_reversal_score": 1.0
@@ -3869,9 +4092,13 @@
           "breadth_conflict": 0.3046,
           "breadth_quality": 1.0,
           "break_level": 693.69,
-          "confidence": 0.646,
-          "downside_continuation_probability": 0.3283,
+          "confidence": 0.611,
+          "crowding_proxy_score": 0.0222,
+          "downside_continuation_probability": 0.3539,
           "failed_bounce_options_risk": 0.2395,
+          "flow_confirmation_score": 0.7209,
+          "flow_conflict_score": 0.2371,
+          "flow_quality_score": 1.0,
           "historical_analog_support": "weak",
           "internal_resonance_score": 0.7077,
           "internal_resonance_state": "mixed",
@@ -3883,12 +4110,12 @@
           ],
           "main_drivers": [
             "base downside continuation: 0.66",
+            "risk-off rotation: 0.36",
             "breadth conflict: 0.30",
-            "rates pressure: 0.22",
-            "liquidity stress proxy: 0.10"
+            "flow conflict: 0.24"
           ],
           "options_quality": 0.92,
-          "probability": 0.3283,
+          "probability": 0.3539,
           "risk_triggers": [
             "VIX rising",
             "HYG/LQD weakens",
@@ -3903,9 +4130,13 @@
           "best_horizon": "20d-60d",
           "breadth_quality": 1.0,
           "breadth_risk": 0.3046,
-          "confidence": 0.646,
+          "confidence": 0.6494,
           "credit_risk": 0.0332,
+          "crowding_proxy_score": 0.0222,
           "failed_bounce_options_risk": 0.2395,
+          "flow_confirmation_score": 0.7209,
+          "flow_conflict_score": 0.2371,
+          "flow_quality_score": 1.0,
           "historical_analog_support": "high",
           "internal_resonance_score": 0.7077,
           "internal_resonance_state": "mixed",
@@ -3921,11 +4152,11 @@
             "macro event risk: 1.00",
             "VIX percentile: 0.60",
             "breadth deterioration: 0.40",
-            "news risk: 0.40"
+            "risk-off rotation: 0.36"
           ],
           "options_quality": 0.92,
-          "probability": 0.3199,
-          "risk_expansion_probability": 0.3199,
+          "probability": 0.3418,
+          "risk_expansion_probability": 0.3418,
           "tail_risk_score": 0.2638,
           "term_structure_state": "contango",
           "volatility_risk": 0.2487
@@ -3934,13 +4165,17 @@
           "best_horizon": "20d-60d",
           "breadth_confirmation": 0.7907,
           "breadth_quality": 1.0,
-          "confidence": 0.696,
+          "confidence": 0.731,
           "confirmation_requirements": [
             "20d/60d analog support remains positive",
             "constituent/proxy breadth keeps improving",
             "credit proxy stays stable",
             "price holds above recent low"
           ],
+          "crowding_proxy_score": 0.0222,
+          "flow_confirmation_score": 0.7209,
+          "flow_conflict_score": 0.2371,
+          "flow_quality_score": 1.0,
           "historical_analog_support": "weak",
           "internal_resonance_score": 0.7077,
           "internal_resonance_state": "mixed",
@@ -3954,13 +4189,13 @@
             "60d trend: 1.28",
             "credit stabilization: 0.98",
             "breadth confirmation: 0.79",
-            "medium-term analog support: 0.00"
+            "flow confirmation: 0.72"
           ],
           "options_quality": 0.92,
-          "probability": 0.5533,
+          "probability": 0.6073,
           "regime_support": "weak",
           "term_structure_state": "contango",
-          "trend_reversal_probability": 0.5533,
+          "trend_reversal_probability": 0.6073,
           "volatility_reversal_score": 1.0
         }
       },
@@ -3970,23 +4205,23 @@
             "confidence": "medium",
             "expected_horizon": "10d-20d",
             "label": "反抽情景",
-            "probability": 0.3569,
-            "reason": "Bounce Predictor 58%，多源确认 70/100，20d/60d historical support 为 weak。",
+            "probability": 0.3694,
+            "reason": "Bounce Predictor 65%，多源确认 70/100，20d/60d historical support 为 weak。",
             "scenario": "bounce_path"
           },
           {
             "confidence": "medium",
             "expected_horizon": "3d-10d",
             "label": "失败反抽情景",
-            "probability": 0.2361,
-            "reason": "Downside/Risk predictors 为 33%/32%，若波动率、信用或价格低点恶化，反抽会失败。",
+            "probability": 0.2362,
+            "reason": "Downside/Risk predictors 为 35%/34%，若波动率、信用或价格低点恶化，反抽会失败。",
             "scenario": "bearish_path"
           },
           {
             "confidence": "medium",
             "expected_horizon": "20d-60d",
             "label": "历史均值情景",
-            "probability": 0.2179,
+            "probability": 0.2168,
             "reason": "历史相似样本质量 high，样本数 20，中期支持 weak。",
             "scenario": "analog_average_path"
           },
@@ -3994,7 +4229,7 @@
             "confidence": "medium",
             "expected_horizon": "3d-20d",
             "label": "综合期望情景",
-            "probability": 0.1891,
+            "probability": 0.1776,
             "reason": "综合期望用于平衡反抽、失败反抽、历史均值和数据不完整带来的不确定性。",
             "scenario": "expected_path"
           }
@@ -4006,28 +4241,28 @@
           "confidence": "medium",
           "expected_horizon": "10d-20d",
           "label": "反抽情景",
-          "probability": 0.3569,
-          "reason": "Bounce Predictor 58%，多源确认 70/100，20d/60d historical support 为 weak。",
+          "probability": 0.3694,
+          "reason": "Bounce Predictor 65%，多源确认 70/100，20d/60d historical support 为 weak。",
           "scenario": "bounce_path"
         },
         "primary_scenario": "bounce_path",
-        "primary_secondary_gap": 0.1208,
+        "primary_secondary_gap": 0.1332,
         "primary_to_secondary_switch_conditions": [
           "VIX 重新上升",
           "HYG/LQD 转弱",
           "QQQ 跌破近期低点",
           "historical support 转弱"
         ],
-        "probability_gap": 0.1208,
+        "probability_gap": 0.1332,
         "ranking_note": "V4 scenario ranking is derived from predictor probabilities, signal confirmation, historical analog distribution, data completeness and macro event risk. It is not a guaranteed forecast.",
         "risk_scenario": "bearish_path",
-        "scenario_probability": 0.3569,
+        "scenario_probability": 0.3694,
         "secondary": {
           "confidence": "medium",
           "expected_horizon": "3d-10d",
           "label": "失败反抽情景",
-          "probability": 0.2361,
-          "reason": "Downside/Risk predictors 为 33%/32%，若波动率、信用或价格低点恶化，反抽会失败。",
+          "probability": 0.2362,
+          "reason": "Downside/Risk predictors 为 35%/34%，若波动率、信用或价格低点恶化，反抽会失败。",
           "scenario": "bearish_path"
         },
         "secondary_scenario": "bearish_path",
@@ -4041,19 +4276,19 @@
           "confidence": "medium",
           "expected_horizon": "20d-60d",
           "label": "历史均值情景",
-          "probability": 0.2179,
+          "probability": 0.2168,
           "reason": "历史相似样本质量 high，样本数 20，中期支持 weak。",
           "scenario": "analog_average_path"
         }
       },
       "scenario_weights": {
-        "base_scenario": 0.1891,
-        "bearish_scenario": 0.2361,
-        "bounce_scenario": 0.3569,
-        "historical_analog_average": 0.2179
+        "base_scenario": 0.1776,
+        "bearish_scenario": 0.2362,
+        "bounce_scenario": 0.3694,
+        "historical_analog_average": 0.2168
       },
       "signal_agreement": {
-        "agreement_level": "mixed",
+        "agreement_level": "strong",
         "conflicting_signals": [
           {
             "detail": "3d/5d/10d analogs are weak or negative.",
@@ -4077,7 +4312,7 @@
           }
         ],
         "data_completeness_cap_applied": false,
-        "signal_agreement_score": 60,
+        "signal_agreement_score": 70,
         "supporting_signals": [
           {
             "detail": "Frozen Alpha v1 is currently triggered.",
@@ -4108,6 +4343,16 @@
             "detail": "Liquidity proxy is not stressed.",
             "name": "liquidity proxy",
             "score": 0.08
+          },
+          {
+            "detail": "Finnhub market-news risk score is low.",
+            "name": "news risk low",
+            "score": 0.06
+          },
+          {
+            "detail": "Proxy flow/positioning confirms risk appetite or participation.",
+            "name": "flow confirmation",
+            "score": 0.1
           }
         ]
       },
@@ -4143,6 +4388,10 @@
             "name": "gamma exposure"
           },
           {
+            "detail": "True fund-flow / positioning feed is not connected; current flow evidence is proxy-only.",
+            "name": "true flow feed"
+          },
+          {
             "detail": "news evidence is missing.",
             "name": "news"
           }
@@ -4176,18 +4425,13 @@
             "score": 0.1
           },
           {
-            "detail": "Rotation/flow proxy is not risk-off.",
+            "detail": "Proxy flow/positioning confirms risk appetite or broad participation.",
             "name": "flow / positioning proxy",
-            "score": 0.07
+            "score": 0.09
           },
           {
             "detail": "20d price trend is not negative.",
             "name": "price trend",
-            "score": 0.06
-          },
-          {
-            "detail": "Failed-bounce risk is contained.",
-            "name": "failed bounce risk",
             "score": 0.06
           }
         ]
@@ -4197,13 +4441,13 @@
       "trend_reversal_probability": 0.2629852193517149
     },
     "SPY": {
-      "analog_path_weight": 0.2718,
+      "analog_path_weight": 0.2564,
       "as_of": "2026-06-12",
-      "base_path_weight": 0.0916,
-      "bearish_path_weight": 0.1795,
-      "bounce_path_weight": 0.4571,
+      "base_path_weight": 0.1318,
+      "bearish_path_weight": 0.1955,
+      "bounce_path_weight": 0.4163,
       "bounce_probability": 0.59293002,
-      "current_integrated_judgment": "SPY 当前 edge 状态：MODERATE_EDGE。最大概率路径是“反抽情景”(46%)，第二路径是“历史均值情景”(27%)，差距 19%。多源确认分数 100/100，模型可信度 87/100。可以观察主路径，但仍需按失效条件动态切换。",
+      "current_integrated_judgment": "SPY 当前 edge 状态：MODERATE_EDGE。最大概率路径是“反抽情景”(42%)，第二路径是“历史均值情景”(26%)，差距 16%。多源确认分数 70/100，模型可信度 79/100。可以观察主路径，但仍需按失效条件动态切换。",
       "current_price": 741.75,
       "data_source_status": "real_market_data",
       "distance_to_threshold": -0.26758691,
@@ -4352,10 +4596,10 @@
           "ig_oas_20d_change": 0.0
         },
         "daily_market_brief": {
-          "brief": "Finnhub quote 741.75; news risk 40%; macro event risk flagged; rates pressure 22%.",
+          "brief": "Finnhub quote 741.75; news risk 30%; macro event risk flagged; rates pressure 22%.",
           "finnhub_quote_available": true,
           "macro_event_risk_flag": true,
-          "news_risk_score": 0.4,
+          "news_risk_score": 0.3,
           "rates_pressure_score": 0.21559568792778516,
           "symbol": "SPY"
         },
@@ -4370,12 +4614,33 @@
           "sentiment_score": null
         },
         "flow_positioning_proxy": {
-          "data_note": "Proxy only; no true fund-flow or positioning feed connected.",
-          "defensive_vs_cyclical_20d": 0.01108516209386513,
-          "etf_relative_volume_20d": 1.0501749882813967,
-          "high_beta_vs_low_vol_20d": 0.03227781116516204,
-          "risk_off_rotation_score": 0.055425810469325654,
-          "volume_zscore_20d": 0.16624531238925908
+          "credit_risk_appetite_20d": -0.003111,
+          "crowding_proxy_score": 0.024900000000000002,
+          "crowding_proxy_score_raw": 2.49,
+          "data_note": "Proxy only: ETF volume, factor rotation, sector rotation, HYG/LQD, TLT and UUP. No true fund-flow or positioning feed.",
+          "defensive_vs_cyclical_20d": 0.011085,
+          "equal_weight_vs_cap_weight_20d": 0.047813,
+          "etf_relative_volume_20d": 1.0616,
+          "flow_confirmation_score": 0.7193999999999999,
+          "flow_confirmation_score_raw": 71.94,
+          "flow_conflict_score": 0.2371,
+          "flow_conflict_score_raw": 23.71,
+          "flow_quality_score": 1.0,
+          "flow_quality_score_raw": 100.0,
+          "high_beta_vs_low_vol_20d": 0.032278,
+          "is_proxy": true,
+          "latest_date": "2026-06-12",
+          "risk_off_flow_score": 0.3626,
+          "risk_off_rotation_score": 0.3626,
+          "risk_on_flow_score": 0.9031999999999999,
+          "risk_on_rotation_20d": 0.007293,
+          "sector_participation_proxy": 0.6364,
+          "small_cap_vs_large_cap_20d": 0.038463,
+          "source": "market_data_proxy",
+          "status": "proxy",
+          "true_flow_available": false,
+          "volume_confirmation_score": 0.636,
+          "volume_zscore_20d": 0.1662
         },
         "macro_event_calendar": {
           "cpi_date": "2026-07-14",
@@ -4401,13 +4666,13 @@
         "news": {
           "market_news_status": "available",
           "news_item_count": 40,
-          "news_risk_score": 0.4,
+          "news_risk_score": 0.3,
           "top_headlines": [
+            "JetBlue bets big on Fort Lauderdale, from a new airport lounge to an international gateway",
+            "Israel says military attacks Hezbollah targets in Beirut's southern suburbs - Reuters",
             "Iran says draft US deal includes oil sanctions waiver, nuclear limits and asset release - Reuters",
-            "Israeli military says Hezbollah launched three projectiles towards northern Israel - Reuters",
             "UK forces board sanctioned Russian shadow fleet oil tanker",
-            "Iran says limited cyberattack disrupts services at four banks, state media says - Reuters",
-            "US and Iran inch closer to deal, Trump says Sunday but timing is unclear - Reuters"
+            "Iran says limited cyberattack disrupts services at four banks, state media says - Reuters"
           ]
         },
         "price": {
@@ -4572,6 +4837,7 @@
           "credit_volatility_no_strong_conflict": true,
           "current_regime_identified": true,
           "data_completeness_ge_80": true,
+          "flow_proxy_not_conflicting": true,
           "historical_analog_not_conflicting": true,
           "macro_event_risk_not_high": false,
           "market_internals_not_surface_only": true,
@@ -4581,7 +4847,7 @@
         "has_usable_prediction_edge_today": true,
         "market_edge_status": "MODERATE_EDGE",
         "no_edge_note": "",
-        "passed_conditions": 8,
+        "passed_conditions": 9,
         "risk_warning": false,
         "summary": "有一定预测优势，但仍需观察冲突信号和失效条件。"
       },
@@ -4713,27 +4979,29 @@
           "analog_support": 0.7,
           "breadth_quality": 1.0,
           "data_completeness": 0.9,
+          "flow_conflict": 0.2371,
+          "flow_quality": 1.0,
           "internal_resonance": 0.8312,
           "options_quality": 0.92,
-          "predictor_consistency": 0.3702000000000001,
-          "prior_confidence": 0.78,
-          "signal_confirmation": 1.0
+          "predictor_consistency": 0.3991,
+          "prior_confidence": 0.81,
+          "signal_confirmation": 0.7
         },
         "confidence_level": "high",
-        "confidence_score": 87,
+        "confidence_score": 79,
         "why_confidence_is_limited": [
-          "仍有关键证据缺失：put/call ratio / gamma exposure / news",
+          "仍有关键证据缺失：put/call ratio / gamma exposure / true flow feed / news",
           "短周期 historical analog 仍有冲突。"
         ]
       },
       "name": "S&P 500",
       "path_weight_model": {
-        "analog_path_weight": 0.2718,
-        "base_path_weight": 0.0916,
-        "bearish_path_weight": 0.1795,
-        "bounce_path_weight": 0.4571,
+        "analog_path_weight": 0.2564,
+        "base_path_weight": 0.1318,
+        "bearish_path_weight": 0.1955,
+        "bounce_path_weight": 0.4163,
         "low_confidence_simulation": false,
-        "simulation_confidence_level": "high",
+        "simulation_confidence_level": "medium",
         "weight_factors": {
           "bounce_probability": 0.5929,
           "breadth_confirmation": 0.9829,
@@ -4741,26 +5009,30 @@
           "breadth_quality": 1.0,
           "breadth_support": 0.9829,
           "credit_stability": 0.9768,
+          "crowding_proxy": 0.0249,
           "data_completeness": 0.88,
           "failed_bounce_options_risk": 0.2395,
-          "failed_bounce_risk": 0.2946,
+          "failed_bounce_risk": 0.3138,
+          "flow_confirmation": 0.7194,
+          "flow_conflict": 0.2371,
+          "flow_quality": 1.0,
           "historical_analog_support": 0.575,
           "internal_resonance": 0.8312,
           "internal_resonance_state": "aligned",
           "macro_event_risk": 1.0,
-          "news_risk": 0.4,
+          "news_risk": 0.3,
           "options_quality": 0.92,
           "options_stress": 0.2487,
           "panic_release": 0.7419,
           "rates_pressure": 0.2156,
-          "risk_expansion": 0.3031,
-          "signal_agreement": 0.83,
-          "signal_confirmation": 1.0,
+          "risk_expansion": 0.3251,
+          "signal_agreement": 0.94,
+          "signal_confirmation": 0.7,
           "tail_risk": 0.2638,
           "volatility_reversal": 1.0
         },
         "weight_source_notes": [
-          "V4 path weights come from the four independent predictors, signal confirmation, historical analog distribution, data completeness, macro event risk and options/volatility structure.",
+          "V4 path weights come from the four independent predictors, signal confirmation, historical analog distribution, data completeness, macro event risk, options/volatility structure and proxy flow/positioning.",
           "If primary and secondary differ by less than 8 percentage points, close_call is true and single-path conviction should be reduced."
         ]
       },
@@ -4770,7 +5042,7 @@
           "analog_best_path": 0.03084991429141004,
           "analog_hit_rate": 0.4,
           "analog_worst_path": -0.030486369566841365,
-          "bounce_probability": 0.613798509,
+          "bounce_probability": 0.643223509,
           "confidence": 0.522,
           "down_probability": 0.4885245602973188,
           "expected_direction": "偏下行/反抽失败风险",
@@ -4779,7 +5051,7 @@
             -0.030486369566841365,
             0.03084991429141004
           ],
-          "failed_bounce_risk": 0.37396836163279545,
+          "failed_bounce_risk": 0.38452836163279547,
           "historical_support": "weak",
           "market_edge_status": "STRONG_EDGE",
           "up_probability": 0.5114754397026814
@@ -4801,8 +5073,8 @@
           "failed_bounce_risk": 0.37097413696176773,
           "historical_support": "supportive",
           "market_edge_status": "STRONG_EDGE",
-          "risk_expansion_probability": 0.3729,
-          "trend_reversal_probability": 0.7632,
+          "risk_expansion_probability": 0.391,
+          "trend_reversal_probability": 0.8064,
           "up_probability": 0.6463351620429129
         },
         "3d": {
@@ -4810,7 +5082,7 @@
           "analog_best_path": 0.02370684376897536,
           "analog_hit_rate": 0.35,
           "analog_worst_path": -0.033125078535713115,
-          "bounce_probability": 0.613798509,
+          "bounce_probability": 0.643223509,
           "confidence": 0.522,
           "down_probability": 0.4970059222000698,
           "expected_direction": "偏下行/反抽失败风险",
@@ -4819,7 +5091,7 @@
             -0.033125078535713115,
             0.02370684376897536
           ],
-          "failed_bounce_risk": 0.37396836163279545,
+          "failed_bounce_risk": 0.38452836163279547,
           "historical_support": "weak",
           "market_edge_status": "STRONG_EDGE",
           "up_probability": 0.5029940777999303
@@ -4829,7 +5101,7 @@
           "analog_best_path": 0.0239858130688948,
           "analog_hit_rate": 0.35,
           "analog_worst_path": -0.04054406755435924,
-          "bounce_probability": 0.613798509,
+          "bounce_probability": 0.643223509,
           "confidence": 0.522,
           "down_probability": 0.5016664237451672,
           "expected_direction": "偏下行/反抽失败风险",
@@ -4838,7 +5110,7 @@
             -0.04054406755435924,
             0.0239858130688948
           ],
-          "failed_bounce_risk": 0.37396836163279545,
+          "failed_bounce_risk": 0.38452836163279547,
           "historical_support": "weak",
           "market_edge_status": "STRONG_EDGE",
           "up_probability": 0.4983335762548328
@@ -4860,15 +5132,15 @@
           "failed_bounce_risk": 0.37097413696176773,
           "historical_support": "supportive",
           "market_edge_status": "STRONG_EDGE",
-          "risk_expansion_probability": 0.3729,
-          "trend_reversal_probability": 0.7632,
+          "risk_expansion_probability": 0.391,
+          "trend_reversal_probability": 0.8064,
           "up_probability": 0.6676258605669345
         }
       },
       "predictors": {
         "bounce_predictor": {
           "best_horizon": "3d-10d",
-          "confidence": 0.7765,
+          "confidence": 0.815,
           "historical_analog_support": "weak",
           "invalidation_conditions": [
             "VIX turns higher again",
@@ -4880,13 +5152,13 @@
             "VIX rollover: 1.00",
             "breadth confirmation: 0.98",
             "credit stabilization: 0.98",
-            "Alpha v1 bounce probability: 0.59"
+            "flow confirmation: 0.72"
           ],
-          "probability": 0.6636
+          "probability": 0.7171
         },
         "downside_continuation_predictor": {
           "best_horizon": "5d-20d",
-          "confidence": 0.5655,
+          "confidence": 0.527,
           "historical_analog_support": "weak",
           "invalidation_conditions": [
             "VIX falls and stays lower",
@@ -4896,15 +5168,15 @@
           ],
           "main_drivers": [
             "base downside continuation: 0.37",
-            "rates pressure: 0.22",
-            "breadth conflict: 0.16",
-            "liquidity stress proxy: 0.10"
+            "risk-off rotation: 0.36",
+            "flow conflict: 0.24",
+            "rates pressure: 0.22"
           ],
-          "probability": 0.2946
+          "probability": 0.3138
         },
         "risk_expansion_predictor": {
           "best_horizon": "20d-60d",
-          "confidence": 0.6365,
+          "confidence": 0.6429,
           "historical_analog_support": "high",
           "invalidation_conditions": [
             "credit proxy stabilizes",
@@ -4915,14 +5187,14 @@
           "main_drivers": [
             "macro event risk: 1.00",
             "VIX percentile: 0.60",
-            "news risk: 0.40",
-            "breadth deterioration: 0.21"
+            "risk-off rotation: 0.36",
+            "news risk: 0.30"
           ],
-          "probability": 0.3729
+          "probability": 0.391
         },
         "trend_reversal_predictor": {
           "best_horizon": "20d-60d",
-          "confidence": 0.8265,
+          "confidence": 0.865,
           "historical_analog_support": "supportive",
           "invalidation_conditions": [
             "20d/60d analogs turn weak",
@@ -4936,17 +5208,21 @@
             "credit stabilization: 0.98",
             "60d trend: 0.73"
           ],
-          "probability": 0.7632
+          "probability": 0.8064
         }
       },
       "predictors_v4": {
         "bounce_predictor": {
           "best_horizon": "3d-10d",
-          "bounce_probability": 0.7814,
+          "bounce_probability": 0.7994,
           "breadth_confirmation": 0.9829,
           "breadth_quality": 1.0,
-          "confidence": 0.7765,
+          "confidence": 0.815,
           "conflicting_evidence": [],
+          "crowding_proxy_score": 0.0249,
+          "flow_confirmation_score": 0.7194,
+          "flow_conflict_score": 0.2371,
+          "flow_quality_score": 1.0,
           "historical_analog_support": "weak",
           "internal_resonance_score": 0.8312,
           "internal_resonance_state": "aligned",
@@ -4960,17 +5236,17 @@
             "VIX rollover: 1.00",
             "breadth confirmation: 0.98",
             "credit stabilization: 0.98",
-            "Alpha v1 bounce probability: 0.59"
+            "flow confirmation: 0.72"
           ],
           "main_drivers": [
             "VIX rollover: 1.00",
             "breadth confirmation: 0.98",
             "credit stabilization: 0.98",
-            "Alpha v1 bounce probability: 0.59"
+            "flow confirmation: 0.72"
           ],
           "options_quality": 0.92,
           "panic_release_score": 0.7419,
-          "probability": 0.7814,
+          "probability": 0.7994,
           "tail_risk_score": 0.2638,
           "term_structure_state": "contango",
           "volatility_reversal_score": 1.0
@@ -4980,9 +5256,13 @@
           "breadth_conflict": 0.1627,
           "breadth_quality": 1.0,
           "break_level": 725.43,
-          "confidence": 0.5655,
-          "downside_continuation_probability": 0.2163,
+          "confidence": 0.527,
+          "crowding_proxy_score": 0.0249,
+          "downside_continuation_probability": 0.275,
           "failed_bounce_options_risk": 0.2395,
+          "flow_confirmation_score": 0.7194,
+          "flow_conflict_score": 0.2371,
+          "flow_quality_score": 1.0,
           "historical_analog_support": "weak",
           "internal_resonance_score": 0.8312,
           "internal_resonance_state": "aligned",
@@ -4994,12 +5274,12 @@
           ],
           "main_drivers": [
             "base downside continuation: 0.37",
-            "rates pressure: 0.22",
-            "breadth conflict: 0.16",
-            "liquidity stress proxy: 0.10"
+            "risk-off rotation: 0.36",
+            "flow conflict: 0.24",
+            "rates pressure: 0.22"
           ],
           "options_quality": 0.92,
-          "probability": 0.2163,
+          "probability": 0.275,
           "risk_triggers": [
             "VIX rising",
             "HYG/LQD weakens",
@@ -5014,9 +5294,13 @@
           "best_horizon": "20d-60d",
           "breadth_quality": 1.0,
           "breadth_risk": 0.1627,
-          "confidence": 0.6365,
+          "confidence": 0.6429,
           "credit_risk": 0.0332,
+          "crowding_proxy_score": 0.0249,
           "failed_bounce_options_risk": 0.2395,
+          "flow_confirmation_score": 0.7194,
+          "flow_conflict_score": 0.2371,
+          "flow_quality_score": 1.0,
           "historical_analog_support": "high",
           "internal_resonance_score": 0.8312,
           "internal_resonance_state": "aligned",
@@ -5031,12 +5315,12 @@
           "main_drivers": [
             "macro event risk: 1.00",
             "VIX percentile: 0.60",
-            "news risk: 0.40",
-            "breadth deterioration: 0.21"
+            "risk-off rotation: 0.36",
+            "news risk: 0.30"
           ],
           "options_quality": 0.92,
-          "probability": 0.3031,
-          "risk_expansion_probability": 0.3031,
+          "probability": 0.3251,
+          "risk_expansion_probability": 0.3251,
           "tail_risk_score": 0.2638,
           "term_structure_state": "contango",
           "volatility_risk": 0.2487
@@ -5045,13 +5329,17 @@
           "best_horizon": "20d-60d",
           "breadth_confirmation": 0.9829,
           "breadth_quality": 1.0,
-          "confidence": 0.8265,
+          "confidence": 0.865,
           "confirmation_requirements": [
             "20d/60d analog support remains positive",
             "constituent/proxy breadth keeps improving",
             "credit proxy stays stable",
             "price holds above recent low"
           ],
+          "crowding_proxy_score": 0.0249,
+          "flow_confirmation_score": 0.7194,
+          "flow_conflict_score": 0.2371,
+          "flow_quality_score": 1.0,
           "historical_analog_support": "supportive",
           "internal_resonance_score": 0.8312,
           "internal_resonance_state": "aligned",
@@ -5068,76 +5356,76 @@
             "60d trend: 0.73"
           ],
           "options_quality": 0.92,
-          "probability": 0.8461,
+          "probability": 0.8759,
           "regime_support": "supportive",
           "term_structure_state": "contango",
-          "trend_reversal_probability": 0.8461,
+          "trend_reversal_probability": 0.8759,
           "volatility_reversal_score": 1.0
         }
       },
       "scenario_ranking": {
         "all_scenarios": [
           {
-            "confidence": "high",
+            "confidence": "medium",
             "expected_horizon": "10d-20d",
             "label": "反抽情景",
-            "probability": 0.4571,
-            "reason": "Bounce Predictor 78%，多源确认 100/100，20d/60d historical support 为 supportive。",
+            "probability": 0.4163,
+            "reason": "Bounce Predictor 80%，多源确认 70/100，20d/60d historical support 为 supportive。",
             "scenario": "bounce_path"
           },
           {
-            "confidence": "high",
+            "confidence": "medium",
             "expected_horizon": "20d-60d",
             "label": "历史均值情景",
-            "probability": 0.2718,
+            "probability": 0.2564,
             "reason": "历史相似样本质量 high，样本数 20，中期支持 supportive。",
             "scenario": "analog_average_path"
           },
           {
-            "confidence": "high",
+            "confidence": "medium",
             "expected_horizon": "3d-10d",
             "label": "失败反抽情景",
-            "probability": 0.1795,
-            "reason": "Downside/Risk predictors 为 22%/30%，若波动率、信用或价格低点恶化，反抽会失败。",
+            "probability": 0.1955,
+            "reason": "Downside/Risk predictors 为 28%/33%，若波动率、信用或价格低点恶化，反抽会失败。",
             "scenario": "bearish_path"
           },
           {
-            "confidence": "high",
+            "confidence": "medium",
             "expected_horizon": "3d-20d",
             "label": "综合期望情景",
-            "probability": 0.0916,
+            "probability": 0.1318,
             "reason": "综合期望用于平衡反抽、失败反抽、历史均值和数据不完整带来的不确定性。",
             "scenario": "expected_path"
           }
         ],
         "close_call": false,
         "close_call_note": "",
-        "path_reliability": "high",
+        "path_reliability": "medium",
         "primary": {
-          "confidence": "high",
+          "confidence": "medium",
           "expected_horizon": "10d-20d",
           "label": "反抽情景",
-          "probability": 0.4571,
-          "reason": "Bounce Predictor 78%，多源确认 100/100，20d/60d historical support 为 supportive。",
+          "probability": 0.4163,
+          "reason": "Bounce Predictor 80%，多源确认 70/100，20d/60d historical support 为 supportive。",
           "scenario": "bounce_path"
         },
         "primary_scenario": "bounce_path",
-        "primary_secondary_gap": 0.1853,
+        "primary_secondary_gap": 0.1599,
         "primary_to_secondary_switch_conditions": [
           "VIX 重新上升",
           "HYG/LQD 转弱",
           "SPY 跌破近期低点",
           "historical support 转弱"
         ],
-        "probability_gap": 0.1853,
+        "probability_gap": 0.1599,
         "ranking_note": "V4 scenario ranking is derived from predictor probabilities, signal confirmation, historical analog distribution, data completeness and macro event risk. It is not a guaranteed forecast.",
         "risk_scenario": "bearish_path",
-        "scenario_probability": 0.4571,
+        "scenario_probability": 0.4163,
         "secondary": {
-          "confidence": "high",
+          "confidence": "medium",
           "expected_horizon": "20d-60d",
           "label": "历史均值情景",
-          "probability": 0.2718,
+          "probability": 0.2564,
           "reason": "历史相似样本质量 high，样本数 20，中期支持 supportive。",
           "scenario": "analog_average_path"
         },
@@ -5149,19 +5437,19 @@
           "historical support 转弱"
         ],
         "tertiary": {
-          "confidence": "high",
+          "confidence": "medium",
           "expected_horizon": "3d-10d",
           "label": "失败反抽情景",
-          "probability": 0.1795,
-          "reason": "Downside/Risk predictors 为 22%/30%，若波动率、信用或价格低点恶化，反抽会失败。",
+          "probability": 0.1955,
+          "reason": "Downside/Risk predictors 为 28%/33%，若波动率、信用或价格低点恶化，反抽会失败。",
           "scenario": "bearish_path"
         }
       },
       "scenario_weights": {
-        "base_scenario": 0.0916,
-        "bearish_scenario": 0.1795,
-        "bounce_scenario": 0.4571,
-        "historical_analog_average": 0.2718
+        "base_scenario": 0.1318,
+        "bearish_scenario": 0.1955,
+        "bounce_scenario": 0.4163,
+        "historical_analog_average": 0.2564
       },
       "signal_agreement": {
         "agreement_level": "strong",
@@ -5178,7 +5466,7 @@
           }
         ],
         "data_completeness_cap_applied": false,
-        "signal_agreement_score": 83,
+        "signal_agreement_score": 94,
         "supporting_signals": [
           {
             "detail": "Frozen Alpha v1 is currently triggered.",
@@ -5209,12 +5497,22 @@
             "detail": "Liquidity proxy is not stressed.",
             "name": "liquidity proxy",
             "score": 0.08
+          },
+          {
+            "detail": "Finnhub market-news risk score is low.",
+            "name": "news risk low",
+            "score": 0.06
+          },
+          {
+            "detail": "Proxy flow/positioning confirms risk appetite or participation.",
+            "name": "flow confirmation",
+            "score": 0.1
           }
         ]
       },
       "signal_confirmation": {
         "confirmation_level": "strong",
-        "confirmation_score": 100,
+        "confirmation_score": 70,
         "conflicting_evidence": [
           {
             "detail": "Macro/event calendar risk is elevated.",
@@ -5240,12 +5538,16 @@
             "name": "gamma exposure"
           },
           {
+            "detail": "True fund-flow / positioning feed is not connected; current flow evidence is proxy-only.",
+            "name": "true flow feed"
+          },
+          {
             "detail": "news evidence is missing.",
             "name": "news"
           }
         ],
-        "missing_evidence_cap_applied": false,
-        "signal_confirmation_score": 100,
+        "missing_evidence_cap_applied": true,
+        "signal_confirmation_score": 70,
         "supporting_evidence": [
           {
             "detail": "Frozen Alpha v1 is triggered; this remains research-only.",
@@ -5278,9 +5580,9 @@
             "score": 0.1
           },
           {
-            "detail": "Rotation/flow proxy is not risk-off.",
+            "detail": "Proxy flow/positioning confirms risk appetite or broad participation.",
             "name": "flow / positioning proxy",
-            "score": 0.07
+            "score": 0.09
           },
           {
             "detail": "20d/60d analog support is positive.",
@@ -5294,7 +5596,7 @@
           }
         ]
       },
-      "signal_confirmation_score": 100,
+      "signal_confirmation_score": 70,
       "symbol": "SPY",
       "trend_reversal_probability": 0.529342532788427
     }
