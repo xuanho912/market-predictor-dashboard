@@ -1,0 +1,138 @@
+{
+  "active_model_version": "baseline_v1",
+  "generated_at": "2026-06-14T16:43:16.558131+00:00",
+  "guardrails": [
+    "Alpha v1 threshold remains frozen at 0.32534311.",
+    "Baseline v1 records are immutable except realized-outcome backfills.",
+    "Challengers must run as shadow forecasts before replacing baseline.",
+    "Historical replay cannot promote a model without forward validation.",
+    "This system validates market probability paths, not execution guidance or portfolio accounting.",
+    "If a challenger only wins one horizon while degrading others, it cannot be promoted.",
+    "Historical replay can create research priority, not active-model promotion.",
+    "Only forward validation can promote a challenger to active_model."
+  ],
+  "minimum_sample_gates": {
+    "10d": 30,
+    "20d": 50,
+    "3d": 20,
+    "5d": 20,
+    "60d": 50
+  },
+  "models": [
+    {
+      "eligible": false,
+      "failed_gates": [
+        "3d",
+        "5d",
+        "10d",
+        "20d",
+        "60d"
+      ],
+      "model_version": "challenger_v2_options_flow",
+      "reason": "Forward validation sample gates are not met.",
+      "status": "insufficient_forward_evidence",
+      "wins_vs_baseline": 0
+    },
+    {
+      "eligible": false,
+      "failed_gates": [
+        "put_call_available"
+      ],
+      "model_version": "challenger_v2_put_call",
+      "reason": "Missing put_call_available; cannot generate this shadow forecast without stable real put/call ratio data.",
+      "status": "blocked_missing_required_data",
+      "wins_vs_baseline": 0
+    },
+    {
+      "eligible": false,
+      "failed_gates": [
+        "gamma_available"
+      ],
+      "model_version": "challenger_v2_gamma_proxy",
+      "reason": "Missing gamma_available; cannot generate this shadow forecast without reliable gamma exposure source or defensible proxy.",
+      "status": "blocked_missing_required_data",
+      "wins_vs_baseline": 0
+    },
+    {
+      "eligible": false,
+      "failed_gates": [
+        "true_flow_available"
+      ],
+      "model_version": "challenger_v2_real_flow",
+      "reason": "Missing true_flow_available; cannot generate this shadow forecast without true flow / positioning feed.",
+      "status": "blocked_missing_required_data",
+      "wins_vs_baseline": 0
+    },
+    {
+      "eligible": false,
+      "failed_gates": [
+        "macro_event_quality_available"
+      ],
+      "model_version": "challenger_v2_macro_event_risk",
+      "reason": "Missing macro_event_quality_available; cannot generate this shadow forecast without validated macro event quality data.",
+      "status": "blocked_missing_required_data",
+      "wins_vs_baseline": 0
+    },
+    {
+      "eligible": false,
+      "failed_gates": [
+        "put_call_available",
+        "gamma_available",
+        "true_flow_available",
+        "macro_event_quality_available"
+      ],
+      "model_version": "challenger_v3_full_options_flow",
+      "reason": "Missing put_call_available, gamma_available, true_flow_available, macro_event_quality_available; cannot generate this shadow forecast without all component challengers passing their own shadow validation gates.",
+      "status": "blocked_missing_required_data",
+      "wins_vs_baseline": 0
+    }
+  ],
+  "required_majority_win_metrics": [
+    "primary scenario hit rate",
+    "primary vs secondary accuracy spread",
+    "mean absolute path error",
+    "median absolute path error",
+    "high confidence accuracy",
+    "signal confirmation top 10% performance",
+    "edge status performance",
+    "calibration quality",
+    "max adverse path control"
+  ],
+  "validation_standards": {
+    "forward_completed_samples_by_horizon": {
+      "10d": 0,
+      "20d": 0,
+      "3d": 0,
+      "5d": 0,
+      "60d": 0
+    },
+    "high_precision_standard": {
+      "definition_doc": "docs/forecast_accuracy_definition.md",
+      "reasons": [
+        "forward completed samples are below the minimum validation gate",
+        "MODERATE_EDGE / STRONG_EDGE samples are not yet proven better than NO_EDGE",
+        "5d / 20d primary-path advantage is not yet forward validated"
+      ],
+      "status": "not_yet_validated"
+    },
+    "stable_alpha_standard": {
+      "alpha_v1_status": "RESEARCH ALPHA CANDIDATE",
+      "definition_doc": "docs/stable_alpha_definition.md",
+      "reasons": [
+        "forward-only samples are too small for stable alpha",
+        "Alpha v1 remains RESEARCH ALPHA CANDIDATE and cannot be upgraded by historical replay"
+      ],
+      "status": "not_yet_validated"
+    },
+    "summary": "Current system is an auditable baseline and challenger framework, not yet a high-precision or stable-alpha system.",
+    "validated_forecasting_system_standard": {
+      "reasons": [
+        "forecast accuracy ledger has insufficient completed forward samples",
+        "no challenger has qualified for promotion against baseline_v1"
+      ],
+      "requires_forward_validation": true,
+      "status": "not_yet_validated"
+    }
+  },
+  "version": "model_promotion_status_v1"
+}
