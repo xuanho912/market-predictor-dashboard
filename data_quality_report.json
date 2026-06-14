@@ -12,8 +12,8 @@
     },
     "credit": {
       "available_items": 2,
-      "detail": "FRED HY/IG OAS plus HYG/LQD proxy",
-      "expected_items": 4,
+      "detail": "FRED HY/IG/BAA/stress plus HYG/LQD proxy",
+      "expected_items": 6,
       "fallback_used": false,
       "proxy_used": true,
       "real_data": false,
@@ -84,8 +84,8 @@
     },
     "rates": {
       "available_items": 1,
-      "detail": "FRED 10Y/2Y/3M/TIPS plus ^TNX",
-      "expected_items": 5,
+      "detail": "FRED 10Y/2Y/3M/TIPS/recession plus ^TNX",
+      "expected_items": 6,
       "fallback_used": false,
       "proxy_used": false,
       "real_data": false,
@@ -101,22 +101,38 @@
       "status": "available"
     }
   },
-  "generated_at": "2026-06-13T19:10:07.732374+00:00",
+  "generated_at": "2026-06-14T08:30:49.442434+00:00",
   "notes": [
     "Breadth and flow are ETF/sector proxies, not constituent-level feeds.",
     "Macro event risk uses rule-based calendar fallback until a real economic calendar is connected.",
-    "Put/call ratio, gamma exposure and true fund flow remain missing unless a real feed is added."
+    "Put/call ratio, gamma exposure and true fund flow remain missing unless a real feed is added.",
+    "V4 target is 85/100. If not reached, the blocking items are listed in missing_key_sources and unavailable_categories."
   ],
   "sources": {
+    "BAA_SPREAD": {
+      "fallback_used": false,
+      "latest_date": null,
+      "latest_value": null,
+      "missing_data": true,
+      "point_in_time_safe": false,
+      "real_data": false,
+      "rows": 0,
+      "series_id": "BAA10Y",
+      "source": "fred",
+      "stale_data": false,
+      "status": "missing",
+      "symbol": "BAA_SPREAD"
+    },
     "DFII10": {
       "fallback_used": false,
       "latest_date": null,
+      "latest_value": null,
       "missing_data": true,
       "point_in_time_safe": false,
       "real_data": false,
       "rows": 0,
       "series_id": "DFII10",
-      "source": "missing",
+      "source": "fred",
       "stale_data": false,
       "status": "missing",
       "symbol": "DFII10"
@@ -124,12 +140,13 @@
     "DGS10": {
       "fallback_used": false,
       "latest_date": null,
+      "latest_value": null,
       "missing_data": true,
       "point_in_time_safe": false,
       "real_data": false,
       "rows": 0,
       "series_id": "DGS10",
-      "source": "missing",
+      "source": "fred",
       "stale_data": false,
       "status": "missing",
       "symbol": "DGS10"
@@ -137,12 +154,13 @@
     "DGS2": {
       "fallback_used": false,
       "latest_date": null,
+      "latest_value": null,
       "missing_data": true,
       "point_in_time_safe": false,
       "real_data": false,
       "rows": 0,
       "series_id": "DGS2",
-      "source": "missing",
+      "source": "fred",
       "stale_data": false,
       "status": "missing",
       "symbol": "DGS2"
@@ -150,12 +168,13 @@
     "DGS3MO": {
       "fallback_used": false,
       "latest_date": null,
+      "latest_value": null,
       "missing_data": true,
       "point_in_time_safe": false,
       "real_data": false,
       "rows": 0,
       "series_id": "DGS3MO",
-      "source": "missing",
+      "source": "fred",
       "stale_data": false,
       "status": "missing",
       "symbol": "DGS3MO"
@@ -171,6 +190,20 @@
       "stale_data": false,
       "status": "available",
       "symbol": "DIA"
+    },
+    "FINANCIAL_STRESS": {
+      "fallback_used": false,
+      "latest_date": null,
+      "latest_value": null,
+      "missing_data": true,
+      "point_in_time_safe": false,
+      "real_data": false,
+      "rows": 0,
+      "series_id": "STLFSI4",
+      "source": "fred",
+      "stale_data": false,
+      "status": "missing",
+      "symbol": "FINANCIAL_STRESS"
     },
     "FINNHUB_API": {
       "fallback_used": false,
@@ -200,12 +233,13 @@
     "HY_OAS": {
       "fallback_used": false,
       "latest_date": null,
+      "latest_value": null,
       "missing_data": true,
       "point_in_time_safe": false,
       "real_data": false,
       "rows": 0,
       "series_id": "BAMLH0A0HYM2",
-      "source": "missing",
+      "source": "fred",
       "stale_data": false,
       "status": "missing",
       "symbol": "HY_OAS"
@@ -213,12 +247,13 @@
     "IG_OAS": {
       "fallback_used": false,
       "latest_date": null,
+      "latest_value": null,
       "missing_data": true,
       "point_in_time_safe": false,
       "real_data": false,
       "rows": 0,
       "series_id": "BAMLC0A0CM",
-      "source": "missing",
+      "source": "fred",
       "stale_data": false,
       "status": "missing",
       "symbol": "IG_OAS"
@@ -258,6 +293,20 @@
       "stale_data": false,
       "status": "available",
       "symbol": "QQQ"
+    },
+    "RECESSION": {
+      "fallback_used": false,
+      "latest_date": null,
+      "latest_value": null,
+      "missing_data": true,
+      "point_in_time_safe": false,
+      "real_data": false,
+      "rows": 0,
+      "series_id": "USREC",
+      "source": "fred",
+      "stale_data": false,
+      "status": "missing",
+      "symbol": "RECESSION"
     },
     "RSP": {
       "fallback_used": false,
@@ -796,24 +845,113 @@
     }
   },
   "summary": {
+    "breadth_provider_status": "proxy",
+    "breadth_proxy_only": true,
     "breadth_required": true,
-    "data_completeness_score": 79,
+    "data_completeness_score": 80,
     "data_source_status": "real_core_with_proxies",
     "fallback_used": true,
     "finnhub_available": true,
     "finnhub_missing": false,
     "finnhub_rate_limited": false,
+    "flow_provider_status": "proxy",
     "flow_required": true,
+    "fred_available": false,
+    "fred_effect_summary": {
+      "data_completeness_delta": 0,
+      "data_completeness_with_fred": 80,
+      "data_completeness_without_fred": 80,
+      "note": "This compares the current run against the same run with FRED disabled. It does not change Alpha v1.",
+      "symbols": {
+        "DIA": {
+          "edge_status_changed": false,
+          "edge_status_with_fred": "MODERATE_EDGE",
+          "edge_status_without_fred": "MODERATE_EDGE",
+          "failed_bounce_delta": 0.0,
+          "failed_bounce_with_fred": 0.3443,
+          "failed_bounce_without_fred": 0.3443,
+          "primary_scenario_changed": false,
+          "primary_scenario_with_fred": "bounce_path",
+          "primary_scenario_without_fred": "bounce_path",
+          "risk_expansion_delta": 0.0,
+          "risk_expansion_with_fred": 0.3128,
+          "risk_expansion_without_fred": 0.3128
+        },
+        "IWM": {
+          "edge_status_changed": false,
+          "edge_status_with_fred": "MODERATE_EDGE",
+          "edge_status_without_fred": "MODERATE_EDGE",
+          "failed_bounce_delta": 0.0,
+          "failed_bounce_with_fred": 0.2971,
+          "failed_bounce_without_fred": 0.2971,
+          "primary_scenario_changed": false,
+          "primary_scenario_with_fred": "bounce_path",
+          "primary_scenario_without_fred": "bounce_path",
+          "risk_expansion_delta": 0.0,
+          "risk_expansion_with_fred": 0.3128,
+          "risk_expansion_without_fred": 0.3128
+        },
+        "QQQ": {
+          "edge_status_changed": false,
+          "edge_status_with_fred": "MODERATE_EDGE",
+          "edge_status_without_fred": "MODERATE_EDGE",
+          "failed_bounce_delta": 0.0,
+          "failed_bounce_with_fred": 0.3798,
+          "failed_bounce_without_fred": 0.3798,
+          "primary_scenario_changed": false,
+          "primary_scenario_with_fred": "bounce_path",
+          "primary_scenario_without_fred": "bounce_path",
+          "risk_expansion_delta": 0.0,
+          "risk_expansion_with_fred": 0.3128,
+          "risk_expansion_without_fred": 0.3128
+        },
+        "SPY": {
+          "edge_status_changed": false,
+          "edge_status_with_fred": "MODERATE_EDGE",
+          "edge_status_without_fred": "MODERATE_EDGE",
+          "failed_bounce_delta": 0.0,
+          "failed_bounce_with_fred": 0.2934,
+          "failed_bounce_without_fred": 0.2934,
+          "primary_scenario_changed": false,
+          "primary_scenario_with_fred": "bounce_path",
+          "primary_scenario_without_fred": "bounce_path",
+          "risk_expansion_delta": 0.0,
+          "risk_expansion_with_fred": 0.3128,
+          "risk_expansion_without_fred": 0.3128
+        }
+      },
+      "target_85_met_with_fred": false
+    },
+    "fred_failed_series": [
+      "DGS10",
+      "IG_OAS",
+      "DGS2",
+      "BAA_SPREAD",
+      "HY_OAS",
+      "DGS3MO",
+      "RECESSION",
+      "FINANCIAL_STRESS",
+      "DFII10"
+    ],
+    "fred_fallback_used": true,
+    "fred_missing": true,
+    "fred_provider_status": "missing",
+    "fred_rate_limited": false,
     "fred_required": true,
+    "fred_successful_series": [],
+    "gamma_exposure_available": false,
     "latest_date": "2026-06-12",
     "missing_data": true,
     "missing_key_sources": [
+      "BAA_SPREAD",
       "DFII10",
       "DGS10",
       "DGS2",
       "DGS3MO",
+      "FINANCIAL_STRESS",
       "HY_OAS",
       "IG_OAS",
+      "RECESSION",
       "finnhub_candle_SPY",
       "finnhub_candle_QQQ",
       "finnhub_candle_IWM",
@@ -826,16 +964,21 @@
       "finnhub_rates_data",
       "finnhub_alternative_data"
     ],
+    "options_provider_status": "partial",
     "options_required": true,
-    "quality_note": "Score includes real data plus explicitly labeled proxy/fallback categories; it is not equal to institutional-grade data coverage.",
+    "options_structure_status": "partial",
+    "put_call_available": false,
+    "quality_note": "V4 score rewards real FRED/Finnhub/market data, gives partial credit to explicitly labeled proxies, and keeps missing options/flow/breadth details visible.",
     "real_market_data": true,
     "stale_data": true,
     "synthetic_used": false,
-    "target_completeness_score": 75,
+    "target_completeness_score": 85,
+    "true_breadth_available": false,
     "unavailable_categories": [
       "news"
     ],
+    "v4_target_met": false,
     "yahoo_fallback_used": true
   },
-  "version": "market_intelligence_engine_v3_data_quality"
+  "version": "market_intelligence_engine_v4_data_quality"
 }
