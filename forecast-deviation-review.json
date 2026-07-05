@@ -10,7 +10,7 @@
     "risk_on_flow_underweighted": 18,
     "volatility_repair_underweighted": 9
   },
-  "generated_at": "2026-07-05T14:58:42.870715+00:00",
+  "generated_at": "2026-07-05T15:36:38.649212+00:00",
   "guardrails": [
     "This is forecast error attribution, not a trading or PnL report.",
     "Attribution is diagnostic and probabilistic; it is not proof of causality.",
@@ -93,7 +93,7 @@
         "price trend",
         "risk_off_news_event"
       ],
-      "diagnostic_note": "实际走势弱于预测，复盘优先检查是否低估了新闻/事件风险或利空价格确认。",
+      "diagnostic_note": "实际走势弱于预测，优先检查是否低估了新闻/事件风险，或利空是否得到了价格确认。",
       "error_direction": "actual_weaker_than_forecast",
       "expected_return": -0.008046,
       "expected_return_source": "stored_scenario_path",
@@ -264,7 +264,7 @@
         "price trend",
         "risk_off_news_event"
       ],
-      "diagnostic_note": "实际走势弱于预测，复盘优先检查是否低估了新闻/事件风险或利空价格确认。",
+      "diagnostic_note": "实际走势弱于预测，优先检查是否低估了新闻/事件风险，或利空是否得到了价格确认。",
       "error_direction": "actual_weaker_than_forecast",
       "expected_return": 0.005603,
       "expected_return_source": "stored_scenario_path",
@@ -490,7 +490,7 @@
         "price trend",
         "risk_off_news_event"
       ],
-      "diagnostic_note": "实际走势弱于预测，复盘优先检查是否低估了新闻/事件风险或利空价格确认。",
+      "diagnostic_note": "实际走势弱于预测，优先检查是否低估了新闻/事件风险，或利空是否得到了价格确认。",
       "error_direction": "actual_weaker_than_forecast",
       "expected_return": 0.010071,
       "expected_return_source": "stored_scenario_path",
@@ -1890,7 +1890,7 @@
         "price trend",
         "risk_off_news_event"
       ],
-      "diagnostic_note": "实际走势弱于预测，复盘优先检查是否低估了新闻/事件风险或利空价格确认。",
+      "diagnostic_note": "实际走势弱于预测，优先检查是否低估了新闻/事件风险，或利空是否得到了价格确认。",
       "error_direction": "actual_weaker_than_forecast",
       "expected_return": 0.000845,
       "expected_return_source": "stored_scenario_path",
@@ -1954,7 +1954,7 @@
         "price trend",
         "risk_off_news_event"
       ],
-      "diagnostic_note": "实际走势弱于预测，复盘优先检查是否低估了新闻/事件风险或利空价格确认。",
+      "diagnostic_note": "实际走势弱于预测，优先检查是否低估了新闻/事件风险，或利空是否得到了价格确认。",
       "error_direction": "actual_weaker_than_forecast",
       "expected_return": 0.005544,
       "expected_return_source": "stored_scenario_path",
@@ -3107,7 +3107,7 @@
         "price trend",
         "risk_off_news_event"
       ],
-      "diagnostic_note": "出现实质偏差，需要检查当时支持/冲突证据的权重是否合理。",
+      "diagnostic_note": "实际走势强于预测，可能低估了风险偏好资金流与成交量共振的短线弹性。",
       "error_direction": "actual_stronger_than_forecast",
       "expected_return": -0.018351,
       "expected_return_source": "stored_scenario_path",
@@ -3338,7 +3338,7 @@
         "price trend",
         "risk_off_news_event"
       ],
-      "diagnostic_note": "出现实质偏差，需要检查当时支持/冲突证据的权重是否合理。",
+      "diagnostic_note": "实际走势强于预测，可能低估了风险偏好资金流与成交量共振的短线弹性。",
       "error_direction": "actual_stronger_than_forecast",
       "expected_return": -0.013913,
       "expected_return_source": "stored_scenario_path",
@@ -3397,7 +3397,7 @@
         "price trend",
         "risk_off_news_event"
       ],
-      "diagnostic_note": "出现实质偏差，需要检查当时支持/冲突证据的权重是否合理。",
+      "diagnostic_note": "实际走势强于预测，可能低估了风险偏好资金流与成交量共振的短线弹性。",
       "error_direction": "actual_stronger_than_forecast",
       "expected_return": -0.014258,
       "expected_return_source": "stored_scenario_path",
@@ -3538,7 +3538,7 @@
         "count": 27,
         "driver": "risk_off_news_overweighted_or_resolved",
         "future_model_action": "shadow-test news_decay：未被价格确认或快速缓和的 risk-off 新闻权重衰减。",
-        "lesson": "risk-off 新闻若快速缓和或未被价格确认，不能继续压低主路径。"
+        "lesson": "risk-off 新闻若快速缓和或未被价格确认，不应继续压低主路径。"
       },
       {
         "baseline_change_allowed": false,
@@ -3552,7 +3552,7 @@
         "count": 9,
         "driver": "volatility_repair_underweighted",
         "future_model_action": "shadow-test vol_repair_boost：VIX term 修复提高短周期 bounce 权重。",
-        "lesson": "波动率结构修复会放大短线反抽，需要进入 1d/3d/5d 权重。"
+        "lesson": "波动率结构修复会放大短线反抽，需要进入 1d/3d/5d 权重验证。"
       },
       {
         "baseline_change_allowed": false,
@@ -3583,9 +3583,9 @@
     "在 challenger 中提高 risk-on flow proxy 与成交量确认的共振权重。"
   ],
   "review_questions": [
-    "预测方向是否错了，还是方向对但幅度低估/高估？",
+    "预测方向错了，还是方向对但幅度低估/高估？",
     "主路径是否输给了第二路径或风险路径？",
-    "偏差是否来自新闻/事件驱动、波动率修复、信用、宽度、资金流、价格结构或数据缺失？",
+    "偏差是否来自新闻/事件、波动率修复、信用、宽度、资金流、价格结构或数据缺口？",
     "高置信样本是否真的比普通样本偏差更小？"
   ],
   "summary": {
