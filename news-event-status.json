@@ -10,365 +10,17 @@
     "source": "finnhub",
     "status": "failed"
   },
-  "event_detection_confidence": 74,
+  "event_detection_confidence": 63,
   "event_risk_level": "high",
-  "generated_at": "2026-06-19T23:43:29.406539+00:00",
+  "generated_at": "2026-07-05T14:58:36.615324+00:00",
   "limits": [
     "News/event intelligence is an explanatory forecast input, not a standalone forecast model.",
     "Headline classification is rules-based and must be forward validated before it can raise model confidence materially.",
     "The provider never exposes API keys and never lets frontend call Finnhub directly.",
     "Economic calendar items are treated as event-risk context, not automatic directional forecasts."
   ],
-  "major_event_count": 18,
+  "major_event_count": 2,
   "major_events": [
-    {
-      "affected_assets": [
-        "SPY",
-        "QQQ",
-        "IWM",
-        "DIA",
-        "^VIX",
-        "USO",
-        "UUP",
-        "TLT"
-      ],
-      "confidence": "high",
-      "confidence_score": 79,
-      "detected_event_conditions": [
-        "geopolitical_risk_escalation"
-      ],
-      "event_type": "geopolitical_risk_escalation",
-      "expected_horizon": "intraday-5d",
-      "expected_market_direction": "risk_off",
-      "freshness_score": 91,
-      "headline": "DOJ rebuffs judge's request to put in writing it won't move forward with 'anti-weaponization' fund",
-      "importance_score": 100,
-      "narrative": "geopolitics_escalation_risk_off",
-      "provider": "finnhub",
-      "published_at": "2026-06-19T19:50:56+00:00",
-      "source": "CNBC"
-    },
-    {
-      "affected_assets": [
-        "SPY",
-        "QQQ",
-        "IWM",
-        "DIA",
-        "^VIX",
-        "HYG",
-        "LQD",
-        "USO",
-        "CL=F",
-        "UUP",
-        "ES=F",
-        "NQ=F"
-      ],
-      "confidence": "high",
-      "confidence_score": 79,
-      "detected_event_conditions": [
-        "geopolitical_risk_easing"
-      ],
-      "event_type": "geopolitical_risk_easing",
-      "expected_horizon": "1d-5d",
-      "expected_market_direction": "risk_on",
-      "freshness_score": 91,
-      "headline": "Lebanon ceasefire agreed after US-Iran talks in Switzerland scrapped - Reuters",
-      "importance_score": 99,
-      "narrative": "geopolitics_easing_risk_on",
-      "provider": "finnhub",
-      "published_at": "2026-06-19T19:58:37+00:00",
-      "source": "Reuters"
-    },
-    {
-      "affected_assets": [
-        "SPY",
-        "QQQ",
-        "IWM",
-        "DIA",
-        "^VIX",
-        "USO",
-        "UUP",
-        "TLT"
-      ],
-      "confidence": "high",
-      "confidence_score": 78,
-      "detected_event_conditions": [
-        "geopolitical_risk_escalation"
-      ],
-      "event_type": "geopolitical_risk_escalation",
-      "expected_horizon": "intraday-5d",
-      "expected_market_direction": "risk_off",
-      "freshness_score": 85,
-      "headline": "Fedspeak vs. war deal: Here are the things that drove this week's stock market",
-      "importance_score": 100,
-      "narrative": "geopolitics_escalation_risk_off",
-      "provider": "finnhub",
-      "published_at": "2026-06-19T17:24:10+00:00",
-      "source": "CNBC"
-    },
-    {
-      "affected_assets": [
-        "SPY",
-        "QQQ",
-        "IWM",
-        "DIA",
-        "^VIX",
-        "HYG",
-        "LQD",
-        "USO",
-        "CL=F",
-        "UUP",
-        "ES=F",
-        "NQ=F"
-      ],
-      "confidence": "high",
-      "confidence_score": 94,
-      "detected_event_conditions": [
-        "geopolitical_risk_easing"
-      ],
-      "event_type": "geopolitical_risk_easing",
-      "expected_horizon": "1d-5d",
-      "expected_market_direction": "risk_on",
-      "freshness_score": 78,
-      "headline": "Shares ease as investors ponder US-Iran peace talks; yen nears 40-year lows - Reuters",
-      "importance_score": 100,
-      "narrative": "geopolitics_easing_risk_on",
-      "provider": "finnhub",
-      "published_at": "2026-06-19T14:28:28+00:00",
-      "source": "Reuters"
-    },
-    {
-      "affected_assets": [
-        "SPY",
-        "QQQ",
-        "IWM",
-        "DIA",
-        "^VIX",
-        "USO",
-        "UUP",
-        "TLT"
-      ],
-      "confidence": "high",
-      "confidence_score": 76,
-      "detected_event_conditions": [
-        "geopolitical_risk_escalation"
-      ],
-      "event_type": "geopolitical_risk_escalation",
-      "expected_horizon": "intraday-5d",
-      "expected_market_direction": "risk_off",
-      "freshness_score": 78,
-      "headline": "Pentagon tells US lawmakers it needs $80 billion for Iran war and other bills, WSJ reports - Reuters",
-      "importance_score": 100,
-      "narrative": "geopolitics_escalation_risk_off",
-      "provider": "finnhub",
-      "published_at": "2026-06-19T14:25:44+00:00",
-      "source": "Reuters"
-    },
-    {
-      "affected_assets": [
-        "SPY",
-        "QQQ",
-        "IWM",
-        "DIA",
-        "^VIX",
-        "HYG",
-        "LQD",
-        "USO",
-        "CL=F",
-        "UUP",
-        "ES=F",
-        "NQ=F"
-      ],
-      "confidence": "high",
-      "confidence_score": 75,
-      "detected_event_conditions": [
-        "geopolitical_risk_easing"
-      ],
-      "event_type": "geopolitical_risk_easing",
-      "expected_horizon": "1d-5d",
-      "expected_market_direction": "risk_on",
-      "freshness_score": 75,
-      "headline": "Israel, Hezbollah agree to ceasefire starting on Friday -U.S. official - Reuters",
-      "importance_score": 98,
-      "narrative": "geopolitics_easing_risk_on",
-      "provider": "finnhub",
-      "published_at": "2026-06-19T13:18:55+00:00",
-      "source": "Reuters"
-    },
-    {
-      "affected_assets": [
-        "SPY",
-        "QQQ",
-        "IWM",
-        "DIA",
-        "^VIX",
-        "USO",
-        "UUP",
-        "TLT"
-      ],
-      "confidence": "medium",
-      "confidence_score": 71,
-      "detected_event_conditions": [
-        "geopolitical_risk_escalation"
-      ],
-      "event_type": "geopolitical_risk_escalation",
-      "expected_horizon": "intraday-5d",
-      "expected_market_direction": "risk_off",
-      "freshness_score": 58,
-      "headline": "EXCLUSIVE: Iran's Revolutionary Guards set up covert Iraqi cells to attack Gulf neighbors, sources say - Reuters",
-      "importance_score": 100,
-      "narrative": "geopolitics_escalation_risk_off",
-      "provider": "finnhub",
-      "published_at": "2026-06-19T06:03:00+00:00",
-      "source": "Reuters"
-    },
-    {
-      "affected_assets": [
-        "SPY",
-        "QQQ",
-        "IWM",
-        "DIA",
-        "^VIX",
-        "HYG",
-        "LQD",
-        "USO",
-        "CL=F",
-        "UUP",
-        "ES=F",
-        "NQ=F"
-      ],
-      "confidence": "high",
-      "confidence_score": 100,
-      "detected_event_conditions": [
-        "geopolitical_risk_easing"
-      ],
-      "event_type": "geopolitical_risk_easing",
-      "expected_horizon": "1d-5d",
-      "expected_market_direction": "risk_on",
-      "freshness_score": 57,
-      "headline": "US-Iran peace talks in Switzerland called off, clouding prospects for lasting truce - Reuters",
-      "importance_score": 100,
-      "narrative": "geopolitics_easing_risk_on",
-      "provider": "finnhub",
-      "published_at": "2026-06-19T05:55:00+00:00",
-      "source": "Reuters"
-    },
-    {
-      "affected_assets": [
-        "SPY",
-        "QQQ",
-        "IWM",
-        "DIA",
-        "^VIX",
-        "USO",
-        "UUP",
-        "TLT"
-      ],
-      "confidence": "medium",
-      "confidence_score": 70,
-      "detected_event_conditions": [
-        "geopolitical_risk_escalation"
-      ],
-      "event_type": "geopolitical_risk_escalation",
-      "expected_horizon": "intraday-5d",
-      "expected_market_direction": "risk_off",
-      "freshness_score": 55,
-      "headline": "Gulf airlines get back to business as flights near pre-war levels - Reuters",
-      "importance_score": 100,
-      "narrative": "geopolitics_escalation_risk_off",
-      "provider": "finnhub",
-      "published_at": "2026-06-19T05:02:00+00:00",
-      "source": "Reuters"
-    },
-    {
-      "affected_assets": [
-        "SPY",
-        "QQQ",
-        "IWM",
-        "DIA",
-        "^VIX",
-        "HYG",
-        "LQD",
-        "USO",
-        "CL=F",
-        "UUP",
-        "ES=F",
-        "NQ=F"
-      ],
-      "confidence": "medium",
-      "confidence_score": 71,
-      "detected_event_conditions": [
-        "geopolitical_risk_easing"
-      ],
-      "event_type": "geopolitical_risk_easing",
-      "expected_horizon": "1d-5d",
-      "expected_market_direction": "risk_on",
-      "freshness_score": 58,
-      "headline": "Israel, Hezbollah agree to ceasefire in Lebanon, U.S. official says - Reuters",
-      "importance_score": 96,
-      "narrative": "geopolitics_easing_risk_on",
-      "provider": "finnhub",
-      "published_at": "2026-06-19T06:10:00+00:00",
-      "source": "Reuters"
-    },
-    {
-      "affected_assets": [
-        "SPY",
-        "QQQ",
-        "IWM",
-        "DIA",
-        "^VIX",
-        "HYG",
-        "LQD",
-        "USO",
-        "CL=F",
-        "UUP",
-        "ES=F",
-        "NQ=F"
-      ],
-      "confidence": "medium",
-      "confidence_score": 69,
-      "detected_event_conditions": [
-        "geopolitical_risk_easing"
-      ],
-      "event_type": "geopolitical_risk_easing",
-      "expected_horizon": "1d-5d",
-      "expected_market_direction": "risk_on",
-      "freshness_score": 48,
-      "headline": "Brent set for 8% weekly fall as Israel, Hezbollah agree ceasefire - Reuters",
-      "importance_score": 95,
-      "narrative": "geopolitics_easing_risk_on",
-      "provider": "finnhub",
-      "published_at": "2026-06-19T02:00:00+00:00",
-      "source": "Reuters"
-    },
-    {
-      "affected_assets": [
-        "SPY",
-        "QQQ",
-        "IWM",
-        "DIA",
-        "^VIX",
-        "USO",
-        "UUP",
-        "TLT"
-      ],
-      "confidence": "medium",
-      "confidence_score": 66,
-      "detected_event_conditions": [
-        "geopolitical_risk_escalation"
-      ],
-      "event_type": "geopolitical_risk_escalation",
-      "expected_horizon": "intraday-5d",
-      "expected_market_direction": "risk_off",
-      "freshness_score": 36,
-      "headline": "Trading Day: Stocks rally, oil hits pre-Iran-war lows as Strait of Hormuz reopens for business - Reuters",
-      "importance_score": 100,
-      "narrative": "geopolitics_escalation_risk_off",
-      "provider": "finnhub",
-      "published_at": "2026-06-18T21:03:43+00:00",
-      "source": "Reuters"
-    },
     {
       "affected_assets": [
         "SPY",
@@ -388,12 +40,12 @@
       "event_type": "geopolitical_risk_escalation",
       "expected_horizon": "intraday-5d",
       "expected_market_direction": "risk_off",
-      "freshness_score": 32,
-      "headline": "Vance warns Israeli critics over Iran deal: Trump is your only ally - Reuters",
+      "freshness_score": 33,
+      "headline": "Mass grief in Iran at Khamenei funeral after US, Israel war killing - Reuters",
       "importance_score": 100,
       "narrative": "geopolitics_escalation_risk_off",
       "provider": "finnhub",
-      "published_at": "2026-06-18T19:29:34+00:00",
+      "published_at": "2026-07-04T11:02:00+00:00",
       "source": "Reuters"
     },
     {
@@ -408,140 +60,20 @@
         "TLT"
       ],
       "confidence": "medium",
-      "confidence_score": 63,
+      "confidence_score": 61,
       "detected_event_conditions": [
         "geopolitical_risk_escalation"
       ],
       "event_type": "geopolitical_risk_escalation",
       "expected_horizon": "intraday-5d",
       "expected_market_direction": "risk_off",
-      "freshness_score": 27,
-      "headline": "Markets are set for a much more hawkish Warsh Fed than expected",
+      "freshness_score": 18,
+      "headline": "Oil is little changed as Persian Gulf flows near pre-war levels",
       "importance_score": 100,
       "narrative": "geopolitics_escalation_risk_off",
       "provider": "finnhub",
-      "published_at": "2026-06-18T17:24:56+00:00",
-      "source": "CNBC"
-    },
-    {
-      "affected_assets": [
-        "SPY",
-        "QQQ",
-        "IWM",
-        "DIA",
-        "^VIX",
-        "HYG",
-        "LQD",
-        "USO",
-        "CL=F",
-        "UUP",
-        "ES=F",
-        "NQ=F"
-      ],
-      "confidence": "high",
-      "confidence_score": 81,
-      "detected_event_conditions": [
-        "geopolitical_risk_easing"
-      ],
-      "event_type": "geopolitical_risk_easing",
-      "expected_horizon": "1d-5d",
-      "expected_market_direction": "risk_on",
-      "freshness_score": 26,
-      "headline": "Trump’s Iran deal extends ceasefire, opens Hormuz",
-      "importance_score": 100,
-      "narrative": "geopolitics_easing_risk_on",
-      "provider": "finnhub",
-      "published_at": "2026-06-18T16:47:56+00:00",
+      "published_at": "2026-07-04T04:50:17+00:00",
       "source": "Bloomberg"
-    },
-    {
-      "affected_assets": [
-        "SPY",
-        "QQQ",
-        "IWM",
-        "DIA",
-        "^VIX",
-        "USO",
-        "UUP",
-        "TLT"
-      ],
-      "confidence": "medium",
-      "confidence_score": 63,
-      "detected_event_conditions": [
-        "geopolitical_risk_escalation"
-      ],
-      "event_type": "geopolitical_risk_escalation",
-      "expected_horizon": "intraday-5d",
-      "expected_market_direction": "risk_off",
-      "freshness_score": 25,
-      "headline": "Accenture forecast takes hit from Iran war, shares tumble over 17% - Reuters",
-      "importance_score": 100,
-      "narrative": "geopolitics_escalation_risk_off",
-      "provider": "finnhub",
-      "published_at": "2026-06-18T16:36:47+00:00",
-      "source": "Reuters"
-    },
-    {
-      "affected_assets": [
-        "SPY",
-        "QQQ",
-        "IWM",
-        "DIA",
-        "^VIX",
-        "HYG",
-        "LQD",
-        "USO",
-        "CL=F",
-        "UUP",
-        "ES=F",
-        "NQ=F"
-      ],
-      "confidence": "medium",
-      "confidence_score": 66,
-      "detected_event_conditions": [
-        "geopolitical_risk_easing"
-      ],
-      "event_type": "geopolitical_risk_easing",
-      "expected_horizon": "1d-5d",
-      "expected_market_direction": "risk_on",
-      "freshness_score": 37,
-      "headline": "Republicans blast Trump's Iran agreement as details emerge - Reuters",
-      "importance_score": 94,
-      "narrative": "geopolitics_easing_risk_on",
-      "provider": "finnhub",
-      "published_at": "2026-06-18T21:35:48+00:00",
-      "source": "Reuters"
-    },
-    {
-      "affected_assets": [
-        "SPY",
-        "QQQ",
-        "IWM",
-        "DIA",
-        "^VIX",
-        "HYG",
-        "LQD",
-        "USO",
-        "CL=F",
-        "UUP",
-        "ES=F",
-        "NQ=F"
-      ],
-      "confidence": "medium",
-      "confidence_score": 63,
-      "detected_event_conditions": [
-        "geopolitical_risk_easing"
-      ],
-      "event_type": "geopolitical_risk_easing",
-      "expected_horizon": "1d-5d",
-      "expected_market_direction": "risk_on",
-      "freshness_score": 25,
-      "headline": "White House sends text of interim US-Iran agreement to US Congress - Reuters",
-      "importance_score": 92,
-      "narrative": "geopolitics_easing_risk_on",
-      "provider": "finnhub",
-      "published_at": "2026-06-18T16:21:44+00:00",
-      "source": "Reuters"
     }
   ],
   "market_narrative": {
@@ -554,122 +86,25 @@
       "QQQ",
       "SPY"
     ],
-    "conflicting_headlines": [
-      {
-        "confidence": "high",
-        "detected_event_conditions": [
-          "geopolitical_risk_easing"
-        ],
-        "event_type": "geopolitical_risk_easing",
-        "expected_market_direction": "risk_on",
-        "headline": "Lebanon ceasefire agreed after US-Iran talks in Switzerland scrapped - Reuters",
-        "importance_score": 99,
-        "published_at": "2026-06-19T19:58:37+00:00",
-        "source": "Reuters"
-      },
-      {
-        "confidence": "high",
-        "detected_event_conditions": [
-          "geopolitical_risk_easing"
-        ],
-        "event_type": "geopolitical_risk_easing",
-        "expected_market_direction": "risk_on",
-        "headline": "Shares ease as investors ponder US-Iran peace talks; yen nears 40-year lows - Reuters",
-        "importance_score": 100,
-        "published_at": "2026-06-19T14:28:28+00:00",
-        "source": "Reuters"
-      },
-      {
-        "confidence": "high",
-        "detected_event_conditions": [
-          "geopolitical_risk_easing"
-        ],
-        "event_type": "geopolitical_risk_easing",
-        "expected_market_direction": "risk_on",
-        "headline": "Israel, Hezbollah agree to ceasefire starting on Friday -U.S. official - Reuters",
-        "importance_score": 98,
-        "published_at": "2026-06-19T13:18:55+00:00",
-        "source": "Reuters"
-      },
-      {
-        "confidence": "high",
-        "detected_event_conditions": [
-          "geopolitical_risk_easing"
-        ],
-        "event_type": "geopolitical_risk_easing",
-        "expected_market_direction": "risk_on",
-        "headline": "US-Iran peace talks in Switzerland called off, clouding prospects for lasting truce - Reuters",
-        "importance_score": 100,
-        "published_at": "2026-06-19T05:55:00+00:00",
-        "source": "Reuters"
-      },
-      {
-        "confidence": "medium",
-        "detected_event_conditions": [
-          "geopolitical_risk_easing"
-        ],
-        "event_type": "geopolitical_risk_easing",
-        "expected_market_direction": "risk_on",
-        "headline": "Israel, Hezbollah agree to ceasefire in Lebanon, U.S. official says - Reuters",
-        "importance_score": 96,
-        "published_at": "2026-06-19T06:10:00+00:00",
-        "source": "Reuters"
-      },
-      {
-        "confidence": "medium",
-        "detected_event_conditions": [
-          "geopolitical_risk_easing"
-        ],
-        "event_type": "geopolitical_risk_easing",
-        "expected_market_direction": "risk_on",
-        "headline": "Brent set for 8% weekly fall as Israel, Hezbollah agree ceasefire - Reuters",
-        "importance_score": 95,
-        "published_at": "2026-06-19T02:00:00+00:00",
-        "source": "Reuters"
-      }
-    ],
+    "conflicting_headlines": [],
     "detected_event_conditions": [
       "geopolitical_risk_escalation"
     ],
     "market_narrative": "geopolitics_escalation_risk_off",
     "narrative_direction": "supports_risk_expansion",
-    "narrative_strength": 100,
+    "narrative_strength": 67,
     "summary": "地缘风险升级会提高尾部风险和风险扩散概率，尤其需要观察油价、VIX、美元和信用代理。",
     "supporting_headlines": [
       {
-        "confidence": "high",
+        "confidence": "medium",
         "detected_event_conditions": [
           "geopolitical_risk_escalation"
         ],
         "event_type": "geopolitical_risk_escalation",
         "expected_market_direction": "risk_off",
-        "headline": "DOJ rebuffs judge's request to put in writing it won't move forward with 'anti-weaponization' fund",
+        "headline": "Mass grief in Iran at Khamenei funeral after US, Israel war killing - Reuters",
         "importance_score": 100,
-        "published_at": "2026-06-19T19:50:56+00:00",
-        "source": "CNBC"
-      },
-      {
-        "confidence": "high",
-        "detected_event_conditions": [
-          "geopolitical_risk_escalation"
-        ],
-        "event_type": "geopolitical_risk_escalation",
-        "expected_market_direction": "risk_off",
-        "headline": "Fedspeak vs. war deal: Here are the things that drove this week's stock market",
-        "importance_score": 100,
-        "published_at": "2026-06-19T17:24:10+00:00",
-        "source": "CNBC"
-      },
-      {
-        "confidence": "high",
-        "detected_event_conditions": [
-          "geopolitical_risk_escalation"
-        ],
-        "event_type": "geopolitical_risk_escalation",
-        "expected_market_direction": "risk_off",
-        "headline": "Pentagon tells US lawmakers it needs $80 billion for Iran war and other bills, WSJ reports - Reuters",
-        "importance_score": 100,
-        "published_at": "2026-06-19T14:25:44+00:00",
+        "published_at": "2026-07-04T11:02:00+00:00",
         "source": "Reuters"
       },
       {
@@ -679,34 +114,10 @@
         ],
         "event_type": "geopolitical_risk_escalation",
         "expected_market_direction": "risk_off",
-        "headline": "EXCLUSIVE: Iran's Revolutionary Guards set up covert Iraqi cells to attack Gulf neighbors, sources say - Reuters",
+        "headline": "Oil is little changed as Persian Gulf flows near pre-war levels",
         "importance_score": 100,
-        "published_at": "2026-06-19T06:03:00+00:00",
-        "source": "Reuters"
-      },
-      {
-        "confidence": "medium",
-        "detected_event_conditions": [
-          "geopolitical_risk_escalation"
-        ],
-        "event_type": "geopolitical_risk_escalation",
-        "expected_market_direction": "risk_off",
-        "headline": "Gulf airlines get back to business as flights near pre-war levels - Reuters",
-        "importance_score": 100,
-        "published_at": "2026-06-19T05:02:00+00:00",
-        "source": "Reuters"
-      },
-      {
-        "confidence": "medium",
-        "detected_event_conditions": [
-          "geopolitical_risk_escalation"
-        ],
-        "event_type": "geopolitical_risk_escalation",
-        "expected_market_direction": "risk_off",
-        "headline": "Trading Day: Stocks rally, oil hits pre-Iran-war lows as Strait of Hormuz reopens for business - Reuters",
-        "importance_score": 100,
-        "published_at": "2026-06-18T21:03:43+00:00",
-        "source": "Reuters"
+        "published_at": "2026-07-04T04:50:17+00:00",
+        "source": "Bloomberg"
       }
     ]
   },
@@ -716,16 +127,16 @@
     "direction": "supports_risk_expansion",
     "event_risk_level": "high",
     "macro_event_risk_flag": false,
-    "major_event_count": 18,
+    "major_event_count": 2,
     "not_a_trading_signal": true,
     "price_reaction_confirmed": false,
     "symbols": {
       "DIA": {
-        "after_primary_probability": 0.3282,
+        "after_primary_probability": 0.4024,
         "after_primary_scenario": "bounce_path",
-        "before_primary_probability": 0.3532,
+        "before_primary_probability": 0.4254,
         "before_primary_scenario": "bounce_path",
-        "confirmation_delta": -5.0,
+        "confirmation_delta": -4.01,
         "impact": "potential_conflict_unconfirmed",
         "not_a_trading_signal": true,
         "overlay_applied": true,
@@ -738,26 +149,26 @@
         "path_weight_deltas": {
           "analog_path_weight": 0.0,
           "base_path_weight": 0.01,
-          "bearish_path_weight": 0.0385,
-          "bounce_path_weight": -0.0135
+          "bearish_path_weight": 0.0311,
+          "bounce_path_weight": -0.0109
         },
         "predictor_deltas": {
-          "bounce_predictor": -0.0116,
-          "downside_continuation_predictor": 0.0212,
-          "risk_expansion_predictor": 0.025,
+          "bounce_predictor": -0.0093,
+          "downside_continuation_predictor": 0.0171,
+          "risk_expansion_predictor": 0.0202,
           "trend_reversal_predictor": 0.0
         },
-        "primary_probability_delta": -0.025,
+        "primary_probability_delta": -0.023,
         "primary_scenario_changed": false,
-        "reason": "risk-off news raised failed-bounce / risk-expansion path weight; signal confirmation adjusted -5.00 points; independent predictors adjusted by news/event overlay",
+        "reason": "risk-off news raised failed-bounce / risk-expansion path weight; signal confirmation adjusted -4.01 points; independent predictors adjusted by news/event overlay",
         "validation_type": "daily"
       },
       "IWM": {
-        "after_primary_probability": 0.3334,
+        "after_primary_probability": 0.3425,
         "after_primary_scenario": "bounce_path",
-        "before_primary_probability": 0.3585,
+        "before_primary_probability": 0.3637,
         "before_primary_scenario": "bounce_path",
-        "confirmation_delta": -5.0,
+        "confirmation_delta": -4.01,
         "impact": "potential_conflict_unconfirmed",
         "not_a_trading_signal": true,
         "overlay_applied": true,
@@ -770,58 +181,26 @@
         "path_weight_deltas": {
           "analog_path_weight": 0.0,
           "base_path_weight": 0.01,
-          "bearish_path_weight": 0.0385,
-          "bounce_path_weight": -0.0135
+          "bearish_path_weight": 0.0311,
+          "bounce_path_weight": -0.0109
         },
         "predictor_deltas": {
-          "bounce_predictor": -0.0116,
-          "downside_continuation_predictor": 0.0212,
-          "risk_expansion_predictor": 0.025,
+          "bounce_predictor": -0.0093,
+          "downside_continuation_predictor": 0.0171,
+          "risk_expansion_predictor": 0.0202,
           "trend_reversal_predictor": 0.0
         },
-        "primary_probability_delta": -0.0251,
+        "primary_probability_delta": -0.0212,
         "primary_scenario_changed": false,
-        "reason": "risk-off news raised failed-bounce / risk-expansion path weight; signal confirmation adjusted -5.00 points; independent predictors adjusted by news/event overlay",
+        "reason": "risk-off news raised failed-bounce / risk-expansion path weight; signal confirmation adjusted -4.01 points; independent predictors adjusted by news/event overlay",
         "validation_type": "daily"
       },
       "QQQ": {
-        "after_primary_probability": 0.3845,
-        "after_primary_scenario": "bearish_path",
-        "before_primary_probability": 0.3595,
-        "before_primary_scenario": "bearish_path",
-        "confirmation_delta": -5.0,
-        "impact": "text_support_unconfirmed",
-        "not_a_trading_signal": true,
-        "overlay_applied": true,
-        "path_overlay": {
-          "applied": false,
-          "not_a_trading_signal": true,
-          "reason": "No confirmed major directional event; short-term paths were not moved.",
-          "validation_type": "daily"
-        },
-        "path_weight_deltas": {
-          "analog_path_weight": 0.0,
-          "base_path_weight": 0.01,
-          "bearish_path_weight": 0.0385,
-          "bounce_path_weight": -0.0135
-        },
-        "predictor_deltas": {
-          "bounce_predictor": -0.0116,
-          "downside_continuation_predictor": 0.0212,
-          "risk_expansion_predictor": 0.025,
-          "trend_reversal_predictor": 0.0
-        },
-        "primary_probability_delta": 0.025,
-        "primary_scenario_changed": false,
-        "reason": "risk-off news raised failed-bounce / risk-expansion path weight; signal confirmation adjusted -5.00 points; independent predictors adjusted by news/event overlay",
-        "validation_type": "daily"
-      },
-      "SPY": {
-        "after_primary_probability": 0.3112,
-        "after_primary_scenario": "bearish_path",
-        "before_primary_probability": 0.2992,
+        "after_primary_probability": 0.351,
+        "after_primary_scenario": "bounce_path",
+        "before_primary_probability": 0.3725,
         "before_primary_scenario": "bounce_path",
-        "confirmation_delta": -5.0,
+        "confirmation_delta": -4.01,
         "impact": "potential_conflict_unconfirmed",
         "not_a_trading_signal": true,
         "overlay_applied": true,
@@ -834,18 +213,50 @@
         "path_weight_deltas": {
           "analog_path_weight": 0.0,
           "base_path_weight": 0.01,
-          "bearish_path_weight": 0.0385,
-          "bounce_path_weight": -0.0135
+          "bearish_path_weight": 0.0311,
+          "bounce_path_weight": -0.0109
         },
         "predictor_deltas": {
-          "bounce_predictor": -0.0116,
-          "downside_continuation_predictor": 0.0212,
-          "risk_expansion_predictor": 0.025,
+          "bounce_predictor": -0.0093,
+          "downside_continuation_predictor": 0.0171,
+          "risk_expansion_predictor": 0.0202,
           "trend_reversal_predictor": 0.0
         },
-        "primary_probability_delta": 0.012,
-        "primary_scenario_changed": true,
-        "reason": "risk-off news raised failed-bounce / risk-expansion path weight; signal confirmation adjusted -5.00 points; independent predictors adjusted by news/event overlay",
+        "primary_probability_delta": -0.0215,
+        "primary_scenario_changed": false,
+        "reason": "risk-off news raised failed-bounce / risk-expansion path weight; signal confirmation adjusted -4.01 points; independent predictors adjusted by news/event overlay",
+        "validation_type": "daily"
+      },
+      "SPY": {
+        "after_primary_probability": 0.3936,
+        "after_primary_scenario": "bounce_path",
+        "before_primary_probability": 0.4164,
+        "before_primary_scenario": "bounce_path",
+        "confirmation_delta": -4.01,
+        "impact": "potential_conflict_unconfirmed",
+        "not_a_trading_signal": true,
+        "overlay_applied": true,
+        "path_overlay": {
+          "applied": false,
+          "not_a_trading_signal": true,
+          "reason": "No confirmed major directional event; short-term paths were not moved.",
+          "validation_type": "daily"
+        },
+        "path_weight_deltas": {
+          "analog_path_weight": 0.0,
+          "base_path_weight": 0.01,
+          "bearish_path_weight": 0.0311,
+          "bounce_path_weight": -0.0109
+        },
+        "predictor_deltas": {
+          "bounce_predictor": -0.0093,
+          "downside_continuation_predictor": 0.0171,
+          "risk_expansion_predictor": 0.0202,
+          "trend_reversal_predictor": 0.0
+        },
+        "primary_probability_delta": -0.0228,
+        "primary_scenario_changed": false,
+        "reason": "risk-off news raised failed-bounce / risk-expansion path weight; signal confirmation adjusted -4.01 points; independent predictors adjusted by news/event overlay",
         "validation_type": "daily"
       }
     },
@@ -854,11 +265,11 @@
   },
   "price_reaction_confirmation": {
     "asset_reaction_summary": {
-      "avg_equity_1d_return": 0.0128,
-      "avg_equity_futures_1d_return": 0.0073,
+      "avg_equity_1d_return": -0.0035,
+      "avg_equity_futures_1d_return": 0.0046,
       "confirmed_checks": [
-        "VIX 上升",
-        "美元走强"
+        "股票ETF或股指期货下跌",
+        "HYG/LQD 走弱"
       ],
       "equity_futures_symbols_used": [
         "ES=F",
@@ -867,18 +278,18 @@
         "YM=F"
       ],
       "failed_checks": [
-        "股票ETF或股指期货下跌",
-        "HYG/LQD 走弱"
+        "VIX 上升",
+        "美元走强"
       ],
-      "hyg_lqd_1d_relative_return": 0.0008,
-      "oil_proxy_1d_return": 0.0024,
+      "hyg_lqd_1d_relative_return": -0.0002,
+      "oil_proxy_1d_return": 0.0041,
       "oil_proxy_symbols_used": [
         "USO",
         "CL=F"
       ],
-      "tlt_1d_return": 0.0049,
-      "uup_1d_return": 0.0043,
-      "vix_1d_return": 0.0232
+      "tlt_1d_return": -0.0001,
+      "uup_1d_return": -0.0053,
+      "vix_1d_return": -0.0265
     },
     "confirmation_score": 50,
     "contradiction_warning": "新闻方向尚未被价格反应确认，可能已经被定价或市场不认可。",
@@ -918,11 +329,11 @@
       "news_conflicts_primary_scenario": true,
       "news_supports_primary_scenario": false,
       "primary_scenario": "bounce_path",
-      "risk_scenario": "analog_average_path",
+      "risk_scenario": "bearish_path",
       "scenario_bias": [
         "bearish_path"
       ],
-      "secondary_scenario": "bearish_path"
+      "secondary_scenario": "analog_average_path"
     },
     "IWM": {
       "expected_changes": [
@@ -947,16 +358,16 @@
         "failed_bounce_risk_higher:needs_price_confirmation",
         "risk_expansion_higher:needs_price_confirmation"
       ],
-      "explanation": "QQQ 新闻层支持当前主路径，但仍需结合 VIX、HYG/LQD 和价格触发位；价格反应尚未充分确认。",
-      "impact": "text_support_unconfirmed",
-      "news_conflicts_primary_scenario": false,
-      "news_supports_primary_scenario": true,
-      "primary_scenario": "bearish_path",
+      "explanation": "QQQ 新闻层与当前主路径冲突，但仍需结合 VIX、HYG/LQD 和价格触发位；价格反应尚未充分确认。",
+      "impact": "potential_conflict_unconfirmed",
+      "news_conflicts_primary_scenario": true,
+      "news_supports_primary_scenario": false,
+      "primary_scenario": "bounce_path",
       "risk_scenario": "analog_average_path",
       "scenario_bias": [
         "bearish_path"
       ],
-      "secondary_scenario": "bounce_path"
+      "secondary_scenario": "bearish_path"
     },
     "SPY": {
       "expected_changes": [
@@ -969,11 +380,11 @@
       "news_conflicts_primary_scenario": true,
       "news_supports_primary_scenario": false,
       "primary_scenario": "bounce_path",
-      "risk_scenario": "analog_average_path",
+      "risk_scenario": "bearish_path",
       "scenario_bias": [
         "bearish_path"
       ],
-      "secondary_scenario": "bearish_path"
+      "secondary_scenario": "analog_average_path"
     }
   },
   "validation_type": "daily",

@@ -4,6 +4,228 @@
       "10d": {
         "close_call_primary_closer_rate": null,
         "close_call_sample_count": 0,
+        "completed_count": 12,
+        "primary_closer_than_secondary_rate": 0.5833,
+        "primary_path_mean_absolute_error": 0.014845,
+        "primary_path_median_absolute_error": 0.011135,
+        "primary_scenario_hit_rate": 0.1667,
+        "primary_vs_secondary_accuracy_spread": 0.0,
+        "sample_gate": "insufficient_samples",
+        "secondary_scenario_hit_rate": 0.1667
+      },
+      "1d": {
+        "close_call_primary_closer_rate": 0.4545,
+        "close_call_sample_count": 11,
+        "completed_count": 29,
+        "primary_closer_than_secondary_rate": 0.4828,
+        "primary_path_mean_absolute_error": 0.011733,
+        "primary_path_median_absolute_error": 0.006505,
+        "primary_scenario_hit_rate": 0.4138,
+        "primary_vs_secondary_accuracy_spread": 0.1034,
+        "sample_gate": "early_evidence",
+        "secondary_scenario_hit_rate": 0.3103
+      },
+      "20d": {
+        "close_call_primary_closer_rate": null,
+        "close_call_sample_count": 0,
+        "completed_count": 0,
+        "primary_closer_than_secondary_rate": null,
+        "primary_path_mean_absolute_error": null,
+        "primary_path_median_absolute_error": null,
+        "primary_scenario_hit_rate": null,
+        "primary_vs_secondary_accuracy_spread": null,
+        "sample_gate": "insufficient_samples",
+        "secondary_scenario_hit_rate": null
+      },
+      "3d": {
+        "close_call_primary_closer_rate": 0.5556,
+        "close_call_sample_count": 9,
+        "completed_count": 26,
+        "primary_closer_than_secondary_rate": 0.3077,
+        "primary_path_mean_absolute_error": 0.013384,
+        "primary_path_median_absolute_error": 0.012568,
+        "primary_scenario_hit_rate": 0.2308,
+        "primary_vs_secondary_accuracy_spread": -0.1538,
+        "sample_gate": "early_evidence",
+        "secondary_scenario_hit_rate": 0.3846
+      },
+      "5d": {
+        "close_call_primary_closer_rate": 0.3333,
+        "close_call_sample_count": 6,
+        "completed_count": 23,
+        "primary_closer_than_secondary_rate": 0.5217,
+        "primary_path_mean_absolute_error": 0.017216,
+        "primary_path_median_absolute_error": 0.009358,
+        "primary_scenario_hit_rate": 0.3913,
+        "primary_vs_secondary_accuracy_spread": 0.1739,
+        "sample_gate": "early_evidence",
+        "secondary_scenario_hit_rate": 0.2174
+      },
+      "60d": {
+        "close_call_primary_closer_rate": null,
+        "close_call_sample_count": 0,
+        "completed_count": 0,
+        "primary_closer_than_secondary_rate": null,
+        "primary_path_mean_absolute_error": null,
+        "primary_path_median_absolute_error": null,
+        "primary_scenario_hit_rate": null,
+        "primary_vs_secondary_accuracy_spread": null,
+        "sample_gate": "insufficient_samples",
+        "secondary_scenario_hit_rate": null
+      }
+    },
+    "RISK_WARNING": {
+      "10d": {
+        "close_call_primary_closer_rate": 1.0,
+        "close_call_sample_count": 3,
+        "completed_count": 8,
+        "primary_closer_than_secondary_rate": 0.5,
+        "primary_path_mean_absolute_error": 0.018469,
+        "primary_path_median_absolute_error": 0.01794,
+        "primary_scenario_hit_rate": 0.25,
+        "primary_vs_secondary_accuracy_spread": 0.125,
+        "sample_gate": "insufficient_samples",
+        "secondary_scenario_hit_rate": 0.125
+      },
+      "1d": {
+        "close_call_primary_closer_rate": 0.6,
+        "close_call_sample_count": 10,
+        "completed_count": 16,
+        "primary_closer_than_secondary_rate": 0.4375,
+        "primary_path_mean_absolute_error": 0.012213,
+        "primary_path_median_absolute_error": 0.010559,
+        "primary_scenario_hit_rate": 0.3125,
+        "primary_vs_secondary_accuracy_spread": 0.0,
+        "sample_gate": "insufficient_samples",
+        "secondary_scenario_hit_rate": 0.3125
+      },
+      "20d": {
+        "close_call_primary_closer_rate": null,
+        "close_call_sample_count": 0,
+        "completed_count": 0,
+        "primary_closer_than_secondary_rate": null,
+        "primary_path_mean_absolute_error": null,
+        "primary_path_median_absolute_error": null,
+        "primary_scenario_hit_rate": null,
+        "primary_vs_secondary_accuracy_spread": null,
+        "sample_gate": "insufficient_samples",
+        "secondary_scenario_hit_rate": null
+      },
+      "3d": {
+        "close_call_primary_closer_rate": 0.7143,
+        "close_call_sample_count": 7,
+        "completed_count": 12,
+        "primary_closer_than_secondary_rate": 0.5,
+        "primary_path_mean_absolute_error": 0.011366,
+        "primary_path_median_absolute_error": 0.010146,
+        "primary_scenario_hit_rate": 0.3333,
+        "primary_vs_secondary_accuracy_spread": 0.0833,
+        "sample_gate": "insufficient_samples",
+        "secondary_scenario_hit_rate": 0.25
+      },
+      "5d": {
+        "close_call_primary_closer_rate": 0.5714,
+        "close_call_sample_count": 7,
+        "completed_count": 12,
+        "primary_closer_than_secondary_rate": 0.4167,
+        "primary_path_mean_absolute_error": 0.022555,
+        "primary_path_median_absolute_error": 0.024962,
+        "primary_scenario_hit_rate": 0.1667,
+        "primary_vs_secondary_accuracy_spread": -0.1667,
+        "sample_gate": "insufficient_samples",
+        "secondary_scenario_hit_rate": 0.3333
+      },
+      "60d": {
+        "close_call_primary_closer_rate": null,
+        "close_call_sample_count": 0,
+        "completed_count": 0,
+        "primary_closer_than_secondary_rate": null,
+        "primary_path_mean_absolute_error": null,
+        "primary_path_median_absolute_error": null,
+        "primary_scenario_hit_rate": null,
+        "primary_vs_secondary_accuracy_spread": null,
+        "sample_gate": "insufficient_samples",
+        "secondary_scenario_hit_rate": null
+      }
+    },
+    "STRONG_EDGE": {
+      "10d": {
+        "close_call_primary_closer_rate": null,
+        "close_call_sample_count": 0,
+        "completed_count": 0,
+        "primary_closer_than_secondary_rate": null,
+        "primary_path_mean_absolute_error": null,
+        "primary_path_median_absolute_error": null,
+        "primary_scenario_hit_rate": null,
+        "primary_vs_secondary_accuracy_spread": null,
+        "sample_gate": "insufficient_samples",
+        "secondary_scenario_hit_rate": null
+      },
+      "1d": {
+        "close_call_primary_closer_rate": 0.625,
+        "close_call_sample_count": 8,
+        "completed_count": 8,
+        "primary_closer_than_secondary_rate": 0.625,
+        "primary_path_mean_absolute_error": 0.010167,
+        "primary_path_median_absolute_error": 0.011302,
+        "primary_scenario_hit_rate": 0.375,
+        "primary_vs_secondary_accuracy_spread": 0.125,
+        "sample_gate": "insufficient_samples",
+        "secondary_scenario_hit_rate": 0.25
+      },
+      "20d": {
+        "close_call_primary_closer_rate": null,
+        "close_call_sample_count": 0,
+        "completed_count": 0,
+        "primary_closer_than_secondary_rate": null,
+        "primary_path_mean_absolute_error": null,
+        "primary_path_median_absolute_error": null,
+        "primary_scenario_hit_rate": null,
+        "primary_vs_secondary_accuracy_spread": null,
+        "sample_gate": "insufficient_samples",
+        "secondary_scenario_hit_rate": null
+      },
+      "3d": {
+        "close_call_primary_closer_rate": 0.375,
+        "close_call_sample_count": 8,
+        "completed_count": 8,
+        "primary_closer_than_secondary_rate": 0.375,
+        "primary_path_mean_absolute_error": 0.011735,
+        "primary_path_median_absolute_error": 0.008987,
+        "primary_scenario_hit_rate": 0.25,
+        "primary_vs_secondary_accuracy_spread": -0.125,
+        "sample_gate": "insufficient_samples",
+        "secondary_scenario_hit_rate": 0.375
+      },
+      "5d": {
+        "close_call_primary_closer_rate": 0.5,
+        "close_call_sample_count": 4,
+        "completed_count": 4,
+        "primary_closer_than_secondary_rate": 0.5,
+        "primary_path_mean_absolute_error": 0.0085,
+        "primary_path_median_absolute_error": 0.00893,
+        "primary_scenario_hit_rate": 0.25,
+        "primary_vs_secondary_accuracy_spread": 0.0,
+        "sample_gate": "insufficient_samples",
+        "secondary_scenario_hit_rate": 0.25
+      },
+      "60d": {
+        "close_call_primary_closer_rate": null,
+        "close_call_sample_count": 0,
+        "completed_count": 0,
+        "primary_closer_than_secondary_rate": null,
+        "primary_path_mean_absolute_error": null,
+        "primary_path_median_absolute_error": null,
+        "primary_scenario_hit_rate": null,
+        "primary_vs_secondary_accuracy_spread": null,
+        "sample_gate": "insufficient_samples",
+        "secondary_scenario_hit_rate": null
+      }
+    },
+    "WEAK_EDGE": {
+      "10d": {
+        "close_call_primary_closer_rate": null,
+        "close_call_sample_count": 0,
         "completed_count": 0,
         "primary_closer_than_secondary_rate": null,
         "primary_path_mean_absolute_error": null,
@@ -16,10 +238,10 @@
       "1d": {
         "close_call_primary_closer_rate": null,
         "close_call_sample_count": 0,
-        "completed_count": 12,
-        "primary_closer_than_secondary_rate": null,
-        "primary_path_mean_absolute_error": null,
-        "primary_path_median_absolute_error": null,
+        "completed_count": 3,
+        "primary_closer_than_secondary_rate": 0.6667,
+        "primary_path_mean_absolute_error": 0.003016,
+        "primary_path_median_absolute_error": 0.002461,
         "primary_scenario_hit_rate": 0.0,
         "primary_vs_secondary_accuracy_spread": 0.0,
         "sample_gate": "insufficient_samples",
@@ -40,100 +262,26 @@
       "3d": {
         "close_call_primary_closer_rate": null,
         "close_call_sample_count": 0,
-        "completed_count": 12,
-        "primary_closer_than_secondary_rate": 0.1667,
-        "primary_path_mean_absolute_error": 0.011453,
-        "primary_path_median_absolute_error": 0.010337,
+        "completed_count": 2,
+        "primary_closer_than_secondary_rate": 0.0,
+        "primary_path_mean_absolute_error": 0.021156,
+        "primary_path_median_absolute_error": 0.021156,
         "primary_scenario_hit_rate": 0.0,
-        "primary_vs_secondary_accuracy_spread": -0.3333,
+        "primary_vs_secondary_accuracy_spread": -0.5,
         "sample_gate": "insufficient_samples",
-        "secondary_scenario_hit_rate": 0.3333
+        "secondary_scenario_hit_rate": 0.5
       },
       "5d": {
         "close_call_primary_closer_rate": null,
         "close_call_sample_count": 0,
-        "completed_count": 0,
-        "primary_closer_than_secondary_rate": null,
-        "primary_path_mean_absolute_error": null,
-        "primary_path_median_absolute_error": null,
-        "primary_scenario_hit_rate": null,
-        "primary_vs_secondary_accuracy_spread": null,
+        "completed_count": 1,
+        "primary_closer_than_secondary_rate": 0.0,
+        "primary_path_mean_absolute_error": 0.04038,
+        "primary_path_median_absolute_error": 0.04038,
+        "primary_scenario_hit_rate": 0.0,
+        "primary_vs_secondary_accuracy_spread": -1.0,
         "sample_gate": "insufficient_samples",
-        "secondary_scenario_hit_rate": null
-      },
-      "60d": {
-        "close_call_primary_closer_rate": null,
-        "close_call_sample_count": 0,
-        "completed_count": 0,
-        "primary_closer_than_secondary_rate": null,
-        "primary_path_mean_absolute_error": null,
-        "primary_path_median_absolute_error": null,
-        "primary_scenario_hit_rate": null,
-        "primary_vs_secondary_accuracy_spread": null,
-        "sample_gate": "insufficient_samples",
-        "secondary_scenario_hit_rate": null
-      }
-    },
-    "RISK_WARNING": {
-      "10d": {
-        "close_call_primary_closer_rate": null,
-        "close_call_sample_count": 0,
-        "completed_count": 0,
-        "primary_closer_than_secondary_rate": null,
-        "primary_path_mean_absolute_error": null,
-        "primary_path_median_absolute_error": null,
-        "primary_scenario_hit_rate": null,
-        "primary_vs_secondary_accuracy_spread": null,
-        "sample_gate": "insufficient_samples",
-        "secondary_scenario_hit_rate": null
-      },
-      "1d": {
-        "close_call_primary_closer_rate": 0.6667,
-        "close_call_sample_count": 3,
-        "completed_count": 8,
-        "primary_closer_than_secondary_rate": 0.375,
-        "primary_path_mean_absolute_error": 0.014683,
-        "primary_path_median_absolute_error": 0.012994,
-        "primary_scenario_hit_rate": 0.25,
-        "primary_vs_secondary_accuracy_spread": 0.0,
-        "sample_gate": "insufficient_samples",
-        "secondary_scenario_hit_rate": 0.25
-      },
-      "20d": {
-        "close_call_primary_closer_rate": null,
-        "close_call_sample_count": 0,
-        "completed_count": 0,
-        "primary_closer_than_secondary_rate": null,
-        "primary_path_mean_absolute_error": null,
-        "primary_path_median_absolute_error": null,
-        "primary_scenario_hit_rate": null,
-        "primary_vs_secondary_accuracy_spread": null,
-        "sample_gate": "insufficient_samples",
-        "secondary_scenario_hit_rate": null
-      },
-      "3d": {
-        "close_call_primary_closer_rate": null,
-        "close_call_sample_count": 0,
-        "completed_count": 0,
-        "primary_closer_than_secondary_rate": null,
-        "primary_path_mean_absolute_error": null,
-        "primary_path_median_absolute_error": null,
-        "primary_scenario_hit_rate": null,
-        "primary_vs_secondary_accuracy_spread": null,
-        "sample_gate": "insufficient_samples",
-        "secondary_scenario_hit_rate": null
-      },
-      "5d": {
-        "close_call_primary_closer_rate": null,
-        "close_call_sample_count": 0,
-        "completed_count": 0,
-        "primary_closer_than_secondary_rate": null,
-        "primary_path_mean_absolute_error": null,
-        "primary_path_median_absolute_error": null,
-        "primary_scenario_hit_rate": null,
-        "primary_vs_secondary_accuracy_spread": null,
-        "sample_gate": "insufficient_samples",
-        "secondary_scenario_hit_rate": null
+        "secondary_scenario_hit_rate": 1.0
       },
       "60d": {
         "close_call_primary_closer_rate": null,
@@ -152,28 +300,28 @@
   "by_scenario": {
     "bearish_path": {
       "10d": {
-        "close_call_primary_closer_rate": null,
-        "close_call_sample_count": 0,
-        "completed_count": 0,
-        "primary_closer_than_secondary_rate": null,
-        "primary_path_mean_absolute_error": null,
-        "primary_path_median_absolute_error": null,
-        "primary_scenario_hit_rate": null,
-        "primary_vs_secondary_accuracy_spread": null,
-        "sample_gate": "insufficient_samples",
-        "secondary_scenario_hit_rate": null
-      },
-      "1d": {
-        "close_call_primary_closer_rate": 0.0,
+        "close_call_primary_closer_rate": 1.0,
         "close_call_sample_count": 1,
         "completed_count": 2,
-        "primary_closer_than_secondary_rate": 0.0,
-        "primary_path_mean_absolute_error": 0.027292,
-        "primary_path_median_absolute_error": 0.027292,
-        "primary_scenario_hit_rate": 0.0,
-        "primary_vs_secondary_accuracy_spread": -0.5,
+        "primary_closer_than_secondary_rate": 1.0,
+        "primary_path_mean_absolute_error": 0.00492,
+        "primary_path_median_absolute_error": 0.00492,
+        "primary_scenario_hit_rate": 0.5,
+        "primary_vs_secondary_accuracy_spread": 0.5,
         "sample_gate": "insufficient_samples",
-        "secondary_scenario_hit_rate": 0.5
+        "secondary_scenario_hit_rate": 0.0
+      },
+      "1d": {
+        "close_call_primary_closer_rate": 0.4,
+        "close_call_sample_count": 10,
+        "completed_count": 15,
+        "primary_closer_than_secondary_rate": 0.4,
+        "primary_path_mean_absolute_error": 0.01087,
+        "primary_path_median_absolute_error": 0.009288,
+        "primary_scenario_hit_rate": 0.2,
+        "primary_vs_secondary_accuracy_spread": -0.2,
+        "sample_gate": "insufficient_samples",
+        "secondary_scenario_hit_rate": 0.4
       },
       "20d": {
         "close_call_primary_closer_rate": null,
@@ -188,28 +336,28 @@
         "secondary_scenario_hit_rate": null
       },
       "3d": {
-        "close_call_primary_closer_rate": null,
-        "close_call_sample_count": 0,
-        "completed_count": 0,
-        "primary_closer_than_secondary_rate": null,
-        "primary_path_mean_absolute_error": null,
-        "primary_path_median_absolute_error": null,
-        "primary_scenario_hit_rate": null,
-        "primary_vs_secondary_accuracy_spread": null,
+        "close_call_primary_closer_rate": 0.4444,
+        "close_call_sample_count": 9,
+        "completed_count": 12,
+        "primary_closer_than_secondary_rate": 0.3333,
+        "primary_path_mean_absolute_error": 0.016973,
+        "primary_path_median_absolute_error": 0.018903,
+        "primary_scenario_hit_rate": 0.25,
+        "primary_vs_secondary_accuracy_spread": -0.1667,
         "sample_gate": "insufficient_samples",
-        "secondary_scenario_hit_rate": null
+        "secondary_scenario_hit_rate": 0.4167
       },
       "5d": {
-        "close_call_primary_closer_rate": null,
-        "close_call_sample_count": 0,
-        "completed_count": 0,
-        "primary_closer_than_secondary_rate": null,
-        "primary_path_mean_absolute_error": null,
-        "primary_path_median_absolute_error": null,
-        "primary_scenario_hit_rate": null,
-        "primary_vs_secondary_accuracy_spread": null,
+        "close_call_primary_closer_rate": 0.375,
+        "close_call_sample_count": 8,
+        "completed_count": 10,
+        "primary_closer_than_secondary_rate": 0.3,
+        "primary_path_mean_absolute_error": 0.030092,
+        "primary_path_median_absolute_error": 0.034218,
+        "primary_scenario_hit_rate": 0.2,
+        "primary_vs_secondary_accuracy_spread": -0.4,
         "sample_gate": "insufficient_samples",
-        "secondary_scenario_hit_rate": null
+        "secondary_scenario_hit_rate": 0.6
       },
       "60d": {
         "close_call_primary_closer_rate": null,
@@ -226,28 +374,28 @@
     },
     "bounce_path": {
       "10d": {
-        "close_call_primary_closer_rate": null,
-        "close_call_sample_count": 0,
-        "completed_count": 0,
-        "primary_closer_than_secondary_rate": null,
-        "primary_path_mean_absolute_error": null,
-        "primary_path_median_absolute_error": null,
-        "primary_scenario_hit_rate": null,
-        "primary_vs_secondary_accuracy_spread": null,
-        "sample_gate": "insufficient_samples",
-        "secondary_scenario_hit_rate": null
-      },
-      "1d": {
         "close_call_primary_closer_rate": 1.0,
         "close_call_sample_count": 2,
         "completed_count": 18,
         "primary_closer_than_secondary_rate": 0.5,
-        "primary_path_mean_absolute_error": 0.01048,
-        "primary_path_median_absolute_error": 0.009632,
-        "primary_scenario_hit_rate": 0.1111,
-        "primary_vs_secondary_accuracy_spread": 0.0556,
+        "primary_path_mean_absolute_error": 0.017558,
+        "primary_path_median_absolute_error": 0.014348,
+        "primary_scenario_hit_rate": 0.1667,
+        "primary_vs_secondary_accuracy_spread": 0.0,
         "sample_gate": "insufficient_samples",
-        "secondary_scenario_hit_rate": 0.0556
+        "secondary_scenario_hit_rate": 0.1667
+      },
+      "1d": {
+        "close_call_primary_closer_rate": 0.6316,
+        "close_call_sample_count": 19,
+        "completed_count": 41,
+        "primary_closer_than_secondary_rate": 0.5366,
+        "primary_path_mean_absolute_error": 0.011292,
+        "primary_path_median_absolute_error": 0.008159,
+        "primary_scenario_hit_rate": 0.4146,
+        "primary_vs_secondary_accuracy_spread": 0.1707,
+        "sample_gate": "early_evidence",
+        "secondary_scenario_hit_rate": 0.2439
       },
       "20d": {
         "close_call_primary_closer_rate": null,
@@ -262,28 +410,28 @@
         "secondary_scenario_hit_rate": null
       },
       "3d": {
-        "close_call_primary_closer_rate": null,
-        "close_call_sample_count": 0,
-        "completed_count": 12,
-        "primary_closer_than_secondary_rate": 0.1667,
-        "primary_path_mean_absolute_error": 0.011453,
-        "primary_path_median_absolute_error": 0.010337,
-        "primary_scenario_hit_rate": 0.0,
-        "primary_vs_secondary_accuracy_spread": -0.3333,
-        "sample_gate": "insufficient_samples",
+        "close_call_primary_closer_rate": 0.6,
+        "close_call_sample_count": 15,
+        "completed_count": 36,
+        "primary_closer_than_secondary_rate": 0.3611,
+        "primary_path_mean_absolute_error": 0.01158,
+        "primary_path_median_absolute_error": 0.010146,
+        "primary_scenario_hit_rate": 0.25,
+        "primary_vs_secondary_accuracy_spread": -0.0833,
+        "sample_gate": "early_evidence",
         "secondary_scenario_hit_rate": 0.3333
       },
       "5d": {
-        "close_call_primary_closer_rate": null,
-        "close_call_sample_count": 0,
-        "completed_count": 0,
-        "primary_closer_than_secondary_rate": null,
-        "primary_path_mean_absolute_error": null,
-        "primary_path_median_absolute_error": null,
-        "primary_scenario_hit_rate": null,
-        "primary_vs_secondary_accuracy_spread": null,
-        "sample_gate": "insufficient_samples",
-        "secondary_scenario_hit_rate": null
+        "close_call_primary_closer_rate": 0.5556,
+        "close_call_sample_count": 9,
+        "completed_count": 30,
+        "primary_closer_than_secondary_rate": 0.5333,
+        "primary_path_mean_absolute_error": 0.014669,
+        "primary_path_median_absolute_error": 0.00849,
+        "primary_scenario_hit_rate": 0.3333,
+        "primary_vs_secondary_accuracy_spread": 0.1667,
+        "sample_gate": "early_evidence",
+        "secondary_scenario_hit_rate": 0.1667
       },
       "60d": {
         "close_call_primary_closer_rate": null,
@@ -303,28 +451,28 @@
     "breadth_confirmed": {
       "all": {
         "10d": {
-          "close_call_primary_closer_rate": null,
-          "close_call_sample_count": 0,
-          "completed_count": 0,
-          "primary_closer_than_secondary_rate": null,
-          "primary_path_mean_absolute_error": null,
-          "primary_path_median_absolute_error": null,
-          "primary_scenario_hit_rate": null,
-          "primary_vs_secondary_accuracy_spread": null,
-          "sample_gate": "insufficient_samples",
-          "secondary_scenario_hit_rate": null
-        },
-        "1d": {
           "close_call_primary_closer_rate": 1.0,
           "close_call_sample_count": 2,
           "completed_count": 18,
           "primary_closer_than_secondary_rate": 0.5,
-          "primary_path_mean_absolute_error": 0.01048,
-          "primary_path_median_absolute_error": 0.009632,
-          "primary_scenario_hit_rate": 0.1111,
-          "primary_vs_secondary_accuracy_spread": 0.0556,
+          "primary_path_mean_absolute_error": 0.017558,
+          "primary_path_median_absolute_error": 0.014348,
+          "primary_scenario_hit_rate": 0.1667,
+          "primary_vs_secondary_accuracy_spread": 0.0,
           "sample_gate": "insufficient_samples",
-          "secondary_scenario_hit_rate": 0.0556
+          "secondary_scenario_hit_rate": 0.1667
+        },
+        "1d": {
+          "close_call_primary_closer_rate": 0.625,
+          "close_call_sample_count": 16,
+          "completed_count": 37,
+          "primary_closer_than_secondary_rate": 0.5405,
+          "primary_path_mean_absolute_error": 0.009831,
+          "primary_path_median_absolute_error": 0.006505,
+          "primary_scenario_hit_rate": 0.4595,
+          "primary_vs_secondary_accuracy_spread": 0.1892,
+          "sample_gate": "early_evidence",
+          "secondary_scenario_hit_rate": 0.2703
         },
         "20d": {
           "close_call_primary_closer_rate": null,
@@ -339,28 +487,28 @@
           "secondary_scenario_hit_rate": null
         },
         "3d": {
-          "close_call_primary_closer_rate": null,
-          "close_call_sample_count": 0,
-          "completed_count": 12,
-          "primary_closer_than_secondary_rate": 0.1667,
-          "primary_path_mean_absolute_error": 0.011453,
-          "primary_path_median_absolute_error": 0.010337,
-          "primary_scenario_hit_rate": 0.0,
-          "primary_vs_secondary_accuracy_spread": -0.3333,
-          "sample_gate": "insufficient_samples",
-          "secondary_scenario_hit_rate": 0.3333
+          "close_call_primary_closer_rate": 0.4545,
+          "close_call_sample_count": 11,
+          "completed_count": 31,
+          "primary_closer_than_secondary_rate": 0.2903,
+          "primary_path_mean_absolute_error": 0.011043,
+          "primary_path_median_absolute_error": 0.009758,
+          "primary_scenario_hit_rate": 0.1935,
+          "primary_vs_secondary_accuracy_spread": -0.1935,
+          "sample_gate": "early_evidence",
+          "secondary_scenario_hit_rate": 0.3871
         },
         "5d": {
-          "close_call_primary_closer_rate": null,
-          "close_call_sample_count": 0,
-          "completed_count": 0,
-          "primary_closer_than_secondary_rate": null,
-          "primary_path_mean_absolute_error": null,
-          "primary_path_median_absolute_error": null,
-          "primary_scenario_hit_rate": null,
-          "primary_vs_secondary_accuracy_spread": null,
-          "sample_gate": "insufficient_samples",
-          "secondary_scenario_hit_rate": null
+          "close_call_primary_closer_rate": 0.4286,
+          "close_call_sample_count": 7,
+          "completed_count": 27,
+          "primary_closer_than_secondary_rate": 0.4815,
+          "primary_path_mean_absolute_error": 0.01633,
+          "primary_path_median_absolute_error": 0.00849,
+          "primary_scenario_hit_rate": 0.3333,
+          "primary_vs_secondary_accuracy_spread": 0.1111,
+          "sample_gate": "early_evidence",
+          "secondary_scenario_hit_rate": 0.2222
         },
         "60d": {
           "close_call_primary_closer_rate": null,
@@ -379,28 +527,28 @@
     "breadth_conflicted": {
       "all": {
         "10d": {
-          "close_call_primary_closer_rate": null,
-          "close_call_sample_count": 0,
-          "completed_count": 0,
-          "primary_closer_than_secondary_rate": null,
-          "primary_path_mean_absolute_error": null,
-          "primary_path_median_absolute_error": null,
-          "primary_scenario_hit_rate": null,
-          "primary_vs_secondary_accuracy_spread": null,
-          "sample_gate": "insufficient_samples",
-          "secondary_scenario_hit_rate": null
-        },
-        "1d": {
-          "close_call_primary_closer_rate": 0.0,
+          "close_call_primary_closer_rate": 1.0,
           "close_call_sample_count": 1,
           "completed_count": 2,
-          "primary_closer_than_secondary_rate": 0.0,
-          "primary_path_mean_absolute_error": 0.027292,
-          "primary_path_median_absolute_error": 0.027292,
-          "primary_scenario_hit_rate": 0.0,
-          "primary_vs_secondary_accuracy_spread": -0.5,
+          "primary_closer_than_secondary_rate": 1.0,
+          "primary_path_mean_absolute_error": 0.00492,
+          "primary_path_median_absolute_error": 0.00492,
+          "primary_scenario_hit_rate": 0.5,
+          "primary_vs_secondary_accuracy_spread": 0.5,
           "sample_gate": "insufficient_samples",
-          "secondary_scenario_hit_rate": 0.5
+          "secondary_scenario_hit_rate": 0.0
+        },
+        "1d": {
+          "close_call_primary_closer_rate": 0.4,
+          "close_call_sample_count": 15,
+          "completed_count": 21,
+          "primary_closer_than_secondary_rate": 0.381,
+          "primary_path_mean_absolute_error": 0.01363,
+          "primary_path_median_absolute_error": 0.011734,
+          "primary_scenario_hit_rate": 0.1429,
+          "primary_vs_secondary_accuracy_spread": -0.2381,
+          "sample_gate": "early_evidence",
+          "secondary_scenario_hit_rate": 0.381
         },
         "20d": {
           "close_call_primary_closer_rate": null,
@@ -415,28 +563,28 @@
           "secondary_scenario_hit_rate": null
         },
         "3d": {
-          "close_call_primary_closer_rate": null,
-          "close_call_sample_count": 0,
-          "completed_count": 0,
-          "primary_closer_than_secondary_rate": null,
-          "primary_path_mean_absolute_error": null,
-          "primary_path_median_absolute_error": null,
-          "primary_scenario_hit_rate": null,
-          "primary_vs_secondary_accuracy_spread": null,
+          "close_call_primary_closer_rate": 0.5333,
+          "close_call_sample_count": 15,
+          "completed_count": 19,
+          "primary_closer_than_secondary_rate": 0.4211,
+          "primary_path_mean_absolute_error": 0.016824,
+          "primary_path_median_absolute_error": 0.01789,
+          "primary_scenario_hit_rate": 0.3158,
+          "primary_vs_secondary_accuracy_spread": -0.0526,
           "sample_gate": "insufficient_samples",
-          "secondary_scenario_hit_rate": null
+          "secondary_scenario_hit_rate": 0.3684
         },
         "5d": {
-          "close_call_primary_closer_rate": null,
-          "close_call_sample_count": 0,
-          "completed_count": 0,
-          "primary_closer_than_secondary_rate": null,
-          "primary_path_mean_absolute_error": null,
-          "primary_path_median_absolute_error": null,
-          "primary_scenario_hit_rate": null,
-          "primary_vs_secondary_accuracy_spread": null,
+          "close_call_primary_closer_rate": 0.4167,
+          "close_call_sample_count": 12,
+          "completed_count": 15,
+          "primary_closer_than_secondary_rate": 0.4,
+          "primary_path_mean_absolute_error": 0.02442,
+          "primary_path_median_absolute_error": 0.02509,
+          "primary_scenario_hit_rate": 0.2,
+          "primary_vs_secondary_accuracy_spread": -0.2667,
           "sample_gate": "insufficient_samples",
-          "secondary_scenario_hit_rate": null
+          "secondary_scenario_hit_rate": 0.4667
         },
         "60d": {
           "close_call_primary_closer_rate": null,
@@ -457,26 +605,26 @@
         "10d": {
           "close_call_primary_closer_rate": null,
           "close_call_sample_count": 0,
-          "completed_count": 0,
-          "primary_closer_than_secondary_rate": null,
-          "primary_path_mean_absolute_error": null,
-          "primary_path_median_absolute_error": null,
-          "primary_scenario_hit_rate": null,
-          "primary_vs_secondary_accuracy_spread": null,
+          "completed_count": 4,
+          "primary_closer_than_secondary_rate": 0.0,
+          "primary_path_mean_absolute_error": 0.020604,
+          "primary_path_median_absolute_error": 0.023682,
+          "primary_scenario_hit_rate": 0.0,
+          "primary_vs_secondary_accuracy_spread": -0.25,
           "sample_gate": "insufficient_samples",
-          "secondary_scenario_hit_rate": null
+          "secondary_scenario_hit_rate": 0.25
         },
         "1d": {
-          "close_call_primary_closer_rate": null,
-          "close_call_sample_count": 0,
-          "completed_count": 3,
-          "primary_closer_than_secondary_rate": 1.0,
-          "primary_path_mean_absolute_error": 0.007873,
-          "primary_path_median_absolute_error": 0.007873,
-          "primary_scenario_hit_rate": 0.0,
-          "primary_vs_secondary_accuracy_spread": 0.0,
+          "close_call_primary_closer_rate": 0.5,
+          "close_call_sample_count": 2,
+          "completed_count": 6,
+          "primary_closer_than_secondary_rate": 0.3333,
+          "primary_path_mean_absolute_error": 0.012252,
+          "primary_path_median_absolute_error": 0.011743,
+          "primary_scenario_hit_rate": 0.1667,
+          "primary_vs_secondary_accuracy_spread": -0.1667,
           "sample_gate": "insufficient_samples",
-          "secondary_scenario_hit_rate": 0.0
+          "secondary_scenario_hit_rate": 0.3333
         },
         "20d": {
           "close_call_primary_closer_rate": null,
@@ -491,12 +639,12 @@
           "secondary_scenario_hit_rate": null
         },
         "3d": {
-          "close_call_primary_closer_rate": null,
-          "close_call_sample_count": 0,
-          "completed_count": 2,
+          "close_call_primary_closer_rate": 0.0,
+          "close_call_sample_count": 2,
+          "completed_count": 6,
           "primary_closer_than_secondary_rate": 0.0,
-          "primary_path_mean_absolute_error": 0.010337,
-          "primary_path_median_absolute_error": 0.010337,
+          "primary_path_mean_absolute_error": 0.015105,
+          "primary_path_median_absolute_error": 0.011788,
           "primary_scenario_hit_rate": 0.0,
           "primary_vs_secondary_accuracy_spread": -0.5,
           "sample_gate": "insufficient_samples",
@@ -505,14 +653,14 @@
         "5d": {
           "close_call_primary_closer_rate": null,
           "close_call_sample_count": 0,
-          "completed_count": 0,
-          "primary_closer_than_secondary_rate": null,
-          "primary_path_mean_absolute_error": null,
-          "primary_path_median_absolute_error": null,
-          "primary_scenario_hit_rate": null,
-          "primary_vs_secondary_accuracy_spread": null,
+          "completed_count": 4,
+          "primary_closer_than_secondary_rate": 0.5,
+          "primary_path_mean_absolute_error": 0.025137,
+          "primary_path_median_absolute_error": 0.028046,
+          "primary_scenario_hit_rate": 0.25,
+          "primary_vs_secondary_accuracy_spread": 0.25,
           "sample_gate": "insufficient_samples",
-          "secondary_scenario_hit_rate": null
+          "secondary_scenario_hit_rate": 0.0
         },
         "60d": {
           "close_call_primary_closer_rate": null,
@@ -531,28 +679,28 @@
     "flow_confirmed": {
       "all": {
         "10d": {
-          "close_call_primary_closer_rate": null,
-          "close_call_sample_count": 0,
-          "completed_count": 0,
-          "primary_closer_than_secondary_rate": null,
-          "primary_path_mean_absolute_error": null,
-          "primary_path_median_absolute_error": null,
-          "primary_scenario_hit_rate": null,
-          "primary_vs_secondary_accuracy_spread": null,
-          "sample_gate": "insufficient_samples",
-          "secondary_scenario_hit_rate": null
-        },
-        "1d": {
-          "close_call_primary_closer_rate": 0.6667,
+          "close_call_primary_closer_rate": 1.0,
           "close_call_sample_count": 3,
           "completed_count": 20,
-          "primary_closer_than_secondary_rate": 0.375,
-          "primary_path_mean_absolute_error": 0.014683,
-          "primary_path_median_absolute_error": 0.012994,
-          "primary_scenario_hit_rate": 0.1,
-          "primary_vs_secondary_accuracy_spread": 0.0,
+          "primary_closer_than_secondary_rate": 0.55,
+          "primary_path_mean_absolute_error": 0.016294,
+          "primary_path_median_absolute_error": 0.011981,
+          "primary_scenario_hit_rate": 0.2,
+          "primary_vs_secondary_accuracy_spread": 0.05,
           "sample_gate": "early_evidence",
-          "secondary_scenario_hit_rate": 0.1
+          "secondary_scenario_hit_rate": 0.15
+        },
+        "1d": {
+          "close_call_primary_closer_rate": 0.56,
+          "close_call_sample_count": 25,
+          "completed_count": 51,
+          "primary_closer_than_secondary_rate": 0.4902,
+          "primary_path_mean_absolute_error": 0.011572,
+          "primary_path_median_absolute_error": 0.009288,
+          "primary_scenario_hit_rate": 0.3725,
+          "primary_vs_secondary_accuracy_spread": 0.098,
+          "sample_gate": "moderate_evidence",
+          "secondary_scenario_hit_rate": 0.2745
         },
         "20d": {
           "close_call_primary_closer_rate": null,
@@ -567,28 +715,28 @@
           "secondary_scenario_hit_rate": null
         },
         "3d": {
-          "close_call_primary_closer_rate": null,
-          "close_call_sample_count": 0,
-          "completed_count": 12,
-          "primary_closer_than_secondary_rate": 0.1667,
-          "primary_path_mean_absolute_error": 0.011453,
-          "primary_path_median_absolute_error": 0.010337,
-          "primary_scenario_hit_rate": 0.0,
-          "primary_vs_secondary_accuracy_spread": -0.3333,
-          "sample_gate": "insufficient_samples",
-          "secondary_scenario_hit_rate": 0.3333
+          "close_call_primary_closer_rate": 0.65,
+          "close_call_sample_count": 20,
+          "completed_count": 44,
+          "primary_closer_than_secondary_rate": 0.3864,
+          "primary_path_mean_absolute_error": 0.012398,
+          "primary_path_median_absolute_error": 0.010146,
+          "primary_scenario_hit_rate": 0.2727,
+          "primary_vs_secondary_accuracy_spread": -0.0682,
+          "sample_gate": "early_evidence",
+          "secondary_scenario_hit_rate": 0.3409
         },
         "5d": {
-          "close_call_primary_closer_rate": null,
-          "close_call_sample_count": 0,
-          "completed_count": 0,
-          "primary_closer_than_secondary_rate": null,
-          "primary_path_mean_absolute_error": null,
-          "primary_path_median_absolute_error": null,
-          "primary_scenario_hit_rate": null,
-          "primary_vs_secondary_accuracy_spread": null,
-          "sample_gate": "insufficient_samples",
-          "secondary_scenario_hit_rate": null
+          "close_call_primary_closer_rate": 0.5333,
+          "close_call_sample_count": 15,
+          "completed_count": 38,
+          "primary_closer_than_secondary_rate": 0.5,
+          "primary_path_mean_absolute_error": 0.017796,
+          "primary_path_median_absolute_error": 0.009471,
+          "primary_scenario_hit_rate": 0.3158,
+          "primary_vs_secondary_accuracy_spread": 0.0789,
+          "sample_gate": "early_evidence",
+          "secondary_scenario_hit_rate": 0.2368
         },
         "60d": {
           "close_call_primary_closer_rate": null,
@@ -683,28 +831,28 @@
     "high_data_completeness": {
       "all": {
         "10d": {
-          "close_call_primary_closer_rate": null,
-          "close_call_sample_count": 0,
-          "completed_count": 0,
-          "primary_closer_than_secondary_rate": null,
-          "primary_path_mean_absolute_error": null,
-          "primary_path_median_absolute_error": null,
-          "primary_scenario_hit_rate": null,
-          "primary_vs_secondary_accuracy_spread": null,
-          "sample_gate": "insufficient_samples",
-          "secondary_scenario_hit_rate": null
-        },
-        "1d": {
-          "close_call_primary_closer_rate": 0.6667,
+          "close_call_primary_closer_rate": 1.0,
           "close_call_sample_count": 3,
           "completed_count": 20,
-          "primary_closer_than_secondary_rate": 0.375,
-          "primary_path_mean_absolute_error": 0.014683,
-          "primary_path_median_absolute_error": 0.012994,
-          "primary_scenario_hit_rate": 0.1,
-          "primary_vs_secondary_accuracy_spread": 0.0,
+          "primary_closer_than_secondary_rate": 0.55,
+          "primary_path_mean_absolute_error": 0.016294,
+          "primary_path_median_absolute_error": 0.011981,
+          "primary_scenario_hit_rate": 0.2,
+          "primary_vs_secondary_accuracy_spread": 0.05,
           "sample_gate": "early_evidence",
-          "secondary_scenario_hit_rate": 0.1
+          "secondary_scenario_hit_rate": 0.15
+        },
+        "1d": {
+          "close_call_primary_closer_rate": 0.5517,
+          "close_call_sample_count": 29,
+          "completed_count": 56,
+          "primary_closer_than_secondary_rate": 0.5,
+          "primary_path_mean_absolute_error": 0.011179,
+          "primary_path_median_absolute_error": 0.008723,
+          "primary_scenario_hit_rate": 0.3571,
+          "primary_vs_secondary_accuracy_spread": 0.0714,
+          "sample_gate": "moderate_evidence",
+          "secondary_scenario_hit_rate": 0.2857
         },
         "20d": {
           "close_call_primary_closer_rate": null,
@@ -719,28 +867,28 @@
           "secondary_scenario_hit_rate": null
         },
         "3d": {
-          "close_call_primary_closer_rate": null,
-          "close_call_sample_count": 0,
-          "completed_count": 12,
-          "primary_closer_than_secondary_rate": 0.1667,
-          "primary_path_mean_absolute_error": 0.011453,
-          "primary_path_median_absolute_error": 0.010337,
-          "primary_scenario_hit_rate": 0.0,
-          "primary_vs_secondary_accuracy_spread": -0.3333,
-          "sample_gate": "insufficient_samples",
-          "secondary_scenario_hit_rate": 0.3333
+          "close_call_primary_closer_rate": 0.5417,
+          "close_call_sample_count": 24,
+          "completed_count": 48,
+          "primary_closer_than_secondary_rate": 0.3542,
+          "primary_path_mean_absolute_error": 0.012928,
+          "primary_path_median_absolute_error": 0.011537,
+          "primary_scenario_hit_rate": 0.25,
+          "primary_vs_secondary_accuracy_spread": -0.1042,
+          "sample_gate": "early_evidence",
+          "secondary_scenario_hit_rate": 0.3542
         },
         "5d": {
-          "close_call_primary_closer_rate": null,
-          "close_call_sample_count": 0,
-          "completed_count": 0,
-          "primary_closer_than_secondary_rate": null,
-          "primary_path_mean_absolute_error": null,
-          "primary_path_median_absolute_error": null,
-          "primary_scenario_hit_rate": null,
-          "primary_vs_secondary_accuracy_spread": null,
-          "sample_gate": "insufficient_samples",
-          "secondary_scenario_hit_rate": null
+          "close_call_primary_closer_rate": 0.4706,
+          "close_call_sample_count": 17,
+          "completed_count": 40,
+          "primary_closer_than_secondary_rate": 0.475,
+          "primary_path_mean_absolute_error": 0.018525,
+          "primary_path_median_absolute_error": 0.01045,
+          "primary_scenario_hit_rate": 0.3,
+          "primary_vs_secondary_accuracy_spread": 0.025,
+          "sample_gate": "early_evidence",
+          "secondary_scenario_hit_rate": 0.275
         },
         "60d": {
           "close_call_primary_closer_rate": null,
@@ -835,28 +983,28 @@
     "options_confirmed": {
       "all": {
         "10d": {
-          "close_call_primary_closer_rate": null,
-          "close_call_sample_count": 0,
-          "completed_count": 0,
-          "primary_closer_than_secondary_rate": null,
-          "primary_path_mean_absolute_error": null,
-          "primary_path_median_absolute_error": null,
-          "primary_scenario_hit_rate": null,
-          "primary_vs_secondary_accuracy_spread": null,
-          "sample_gate": "insufficient_samples",
-          "secondary_scenario_hit_rate": null
-        },
-        "1d": {
-          "close_call_primary_closer_rate": 0.6667,
+          "close_call_primary_closer_rate": 1.0,
           "close_call_sample_count": 3,
           "completed_count": 20,
-          "primary_closer_than_secondary_rate": 0.375,
-          "primary_path_mean_absolute_error": 0.014683,
-          "primary_path_median_absolute_error": 0.012994,
-          "primary_scenario_hit_rate": 0.1,
-          "primary_vs_secondary_accuracy_spread": 0.0,
+          "primary_closer_than_secondary_rate": 0.55,
+          "primary_path_mean_absolute_error": 0.016294,
+          "primary_path_median_absolute_error": 0.011981,
+          "primary_scenario_hit_rate": 0.2,
+          "primary_vs_secondary_accuracy_spread": 0.05,
           "sample_gate": "early_evidence",
-          "secondary_scenario_hit_rate": 0.1
+          "secondary_scenario_hit_rate": 0.15
+        },
+        "1d": {
+          "close_call_primary_closer_rate": 0.6364,
+          "close_call_sample_count": 11,
+          "completed_count": 36,
+          "primary_closer_than_secondary_rate": 0.5,
+          "primary_path_mean_absolute_error": 0.012526,
+          "primary_path_median_absolute_error": 0.008723,
+          "primary_scenario_hit_rate": 0.4167,
+          "primary_vs_secondary_accuracy_spread": 0.1667,
+          "sample_gate": "early_evidence",
+          "secondary_scenario_hit_rate": 0.25
         },
         "20d": {
           "close_call_primary_closer_rate": null,
@@ -871,28 +1019,28 @@
           "secondary_scenario_hit_rate": null
         },
         "3d": {
-          "close_call_primary_closer_rate": null,
-          "close_call_sample_count": 0,
-          "completed_count": 12,
-          "primary_closer_than_secondary_rate": 0.1667,
-          "primary_path_mean_absolute_error": 0.011453,
-          "primary_path_median_absolute_error": 0.010337,
-          "primary_scenario_hit_rate": 0.0,
-          "primary_vs_secondary_accuracy_spread": -0.3333,
-          "sample_gate": "insufficient_samples",
-          "secondary_scenario_hit_rate": 0.3333
+          "close_call_primary_closer_rate": 1.0,
+          "close_call_sample_count": 6,
+          "completed_count": 28,
+          "primary_closer_than_secondary_rate": 0.3571,
+          "primary_path_mean_absolute_error": 0.012609,
+          "primary_path_median_absolute_error": 0.010146,
+          "primary_scenario_hit_rate": 0.2857,
+          "primary_vs_secondary_accuracy_spread": -0.0357,
+          "sample_gate": "early_evidence",
+          "secondary_scenario_hit_rate": 0.3214
         },
         "5d": {
-          "close_call_primary_closer_rate": null,
-          "close_call_sample_count": 0,
-          "completed_count": 0,
-          "primary_closer_than_secondary_rate": null,
-          "primary_path_mean_absolute_error": null,
-          "primary_path_median_absolute_error": null,
-          "primary_scenario_hit_rate": null,
-          "primary_vs_secondary_accuracy_spread": null,
-          "sample_gate": "insufficient_samples",
-          "secondary_scenario_hit_rate": null
+          "close_call_primary_closer_rate": 0.8333,
+          "close_call_sample_count": 6,
+          "completed_count": 28,
+          "primary_closer_than_secondary_rate": 0.5714,
+          "primary_path_mean_absolute_error": 0.016107,
+          "primary_path_median_absolute_error": 0.008924,
+          "primary_scenario_hit_rate": 0.3929,
+          "primary_vs_secondary_accuracy_spread": 0.25,
+          "sample_gate": "early_evidence",
+          "secondary_scenario_hit_rate": 0.1429
         },
         "60d": {
           "close_call_primary_closer_rate": null,
@@ -989,24 +1137,24 @@
         "10d": {
           "close_call_primary_closer_rate": null,
           "close_call_sample_count": 0,
-          "completed_count": 0,
-          "primary_closer_than_secondary_rate": null,
-          "primary_path_mean_absolute_error": null,
-          "primary_path_median_absolute_error": null,
-          "primary_scenario_hit_rate": null,
-          "primary_vs_secondary_accuracy_spread": null,
+          "completed_count": 2,
+          "primary_closer_than_secondary_rate": 1.0,
+          "primary_path_mean_absolute_error": 0.006645,
+          "primary_path_median_absolute_error": 0.006645,
+          "primary_scenario_hit_rate": 0.5,
+          "primary_vs_secondary_accuracy_spread": 0.5,
           "sample_gate": "insufficient_samples",
-          "secondary_scenario_hit_rate": null
+          "secondary_scenario_hit_rate": 0.0
         },
         "1d": {
-          "close_call_primary_closer_rate": null,
-          "close_call_sample_count": 0,
-          "completed_count": 3,
-          "primary_closer_than_secondary_rate": null,
-          "primary_path_mean_absolute_error": null,
-          "primary_path_median_absolute_error": null,
-          "primary_scenario_hit_rate": 0.0,
-          "primary_vs_secondary_accuracy_spread": 0.0,
+          "close_call_primary_closer_rate": 0.0,
+          "close_call_sample_count": 1,
+          "completed_count": 6,
+          "primary_closer_than_secondary_rate": 0.3333,
+          "primary_path_mean_absolute_error": 0.017476,
+          "primary_path_median_absolute_error": 0.015671,
+          "primary_scenario_hit_rate": 0.3333,
+          "primary_vs_secondary_accuracy_spread": 0.3333,
           "sample_gate": "insufficient_samples",
           "secondary_scenario_hit_rate": 0.0
         },
@@ -1023,28 +1171,28 @@
           "secondary_scenario_hit_rate": null
         },
         "3d": {
-          "close_call_primary_closer_rate": null,
-          "close_call_sample_count": 0,
-          "completed_count": 3,
-          "primary_closer_than_secondary_rate": 0.6667,
-          "primary_path_mean_absolute_error": 0.010958,
-          "primary_path_median_absolute_error": 0.005862,
-          "primary_scenario_hit_rate": 0.0,
-          "primary_vs_secondary_accuracy_spread": 0.0,
+          "close_call_primary_closer_rate": 1.0,
+          "close_call_sample_count": 1,
+          "completed_count": 6,
+          "primary_closer_than_secondary_rate": 0.5,
+          "primary_path_mean_absolute_error": 0.014488,
+          "primary_path_median_absolute_error": 0.013586,
+          "primary_scenario_hit_rate": 0.3333,
+          "primary_vs_secondary_accuracy_spread": 0.1667,
           "sample_gate": "insufficient_samples",
-          "secondary_scenario_hit_rate": 0.0
+          "secondary_scenario_hit_rate": 0.1667
         },
         "5d": {
-          "close_call_primary_closer_rate": null,
-          "close_call_sample_count": 0,
-          "completed_count": 0,
-          "primary_closer_than_secondary_rate": null,
-          "primary_path_mean_absolute_error": null,
-          "primary_path_median_absolute_error": null,
-          "primary_scenario_hit_rate": null,
-          "primary_vs_secondary_accuracy_spread": null,
+          "close_call_primary_closer_rate": 0.0,
+          "close_call_sample_count": 1,
+          "completed_count": 6,
+          "primary_closer_than_secondary_rate": 0.5,
+          "primary_path_mean_absolute_error": 0.009195,
+          "primary_path_median_absolute_error": 0.006753,
+          "primary_scenario_hit_rate": 0.3333,
+          "primary_vs_secondary_accuracy_spread": 0.3333,
           "sample_gate": "insufficient_samples",
-          "secondary_scenario_hit_rate": null
+          "secondary_scenario_hit_rate": 0.0
         },
         "60d": {
           "close_call_primary_closer_rate": null,
@@ -1066,8 +1214,8 @@
     "high_confidence_better": "insufficient_samples_for_high_confidence_validation",
     "primary_beats_secondary": "primary_path_not_better_than_secondary"
   },
-  "current_evidence_level": "early_evidence",
-  "generated_at": "2026-06-19T23:43:33.409825+00:00",
+  "current_evidence_level": "moderate_evidence",
+  "generated_at": "2026-07-05T14:58:42.838807+00:00",
   "guardrails": [
     "This scorecard validates probabilistic forecast paths, not trades.",
     "Forecast records are immutable except for future-outcome backfill fields.",
@@ -1076,28 +1224,28 @@
   ],
   "primary_scenario_accuracy": {
     "10d": {
-      "close_call_primary_closer_rate": null,
-      "close_call_sample_count": 0,
-      "completed_count": 0,
-      "primary_closer_than_secondary_rate": null,
-      "primary_path_mean_absolute_error": null,
-      "primary_path_median_absolute_error": null,
-      "primary_scenario_hit_rate": null,
-      "primary_vs_secondary_accuracy_spread": null,
-      "sample_gate": "insufficient_samples",
-      "secondary_scenario_hit_rate": null
-    },
-    "1d": {
-      "close_call_primary_closer_rate": 0.6667,
+      "close_call_primary_closer_rate": 1.0,
       "close_call_sample_count": 3,
       "completed_count": 20,
-      "primary_closer_than_secondary_rate": 0.375,
-      "primary_path_mean_absolute_error": 0.014683,
-      "primary_path_median_absolute_error": 0.012994,
-      "primary_scenario_hit_rate": 0.1,
-      "primary_vs_secondary_accuracy_spread": 0.0,
+      "primary_closer_than_secondary_rate": 0.55,
+      "primary_path_mean_absolute_error": 0.016294,
+      "primary_path_median_absolute_error": 0.011981,
+      "primary_scenario_hit_rate": 0.2,
+      "primary_vs_secondary_accuracy_spread": 0.05,
       "sample_gate": "early_evidence",
-      "secondary_scenario_hit_rate": 0.1
+      "secondary_scenario_hit_rate": 0.15
+    },
+    "1d": {
+      "close_call_primary_closer_rate": 0.5517,
+      "close_call_sample_count": 29,
+      "completed_count": 56,
+      "primary_closer_than_secondary_rate": 0.5,
+      "primary_path_mean_absolute_error": 0.011179,
+      "primary_path_median_absolute_error": 0.008723,
+      "primary_scenario_hit_rate": 0.3571,
+      "primary_vs_secondary_accuracy_spread": 0.0714,
+      "sample_gate": "moderate_evidence",
+      "secondary_scenario_hit_rate": 0.2857
     },
     "20d": {
       "close_call_primary_closer_rate": null,
@@ -1112,28 +1260,28 @@
       "secondary_scenario_hit_rate": null
     },
     "3d": {
-      "close_call_primary_closer_rate": null,
-      "close_call_sample_count": 0,
-      "completed_count": 12,
-      "primary_closer_than_secondary_rate": 0.1667,
-      "primary_path_mean_absolute_error": 0.011453,
-      "primary_path_median_absolute_error": 0.010337,
-      "primary_scenario_hit_rate": 0.0,
-      "primary_vs_secondary_accuracy_spread": -0.3333,
-      "sample_gate": "insufficient_samples",
-      "secondary_scenario_hit_rate": 0.3333
+      "close_call_primary_closer_rate": 0.5417,
+      "close_call_sample_count": 24,
+      "completed_count": 48,
+      "primary_closer_than_secondary_rate": 0.3542,
+      "primary_path_mean_absolute_error": 0.012928,
+      "primary_path_median_absolute_error": 0.011537,
+      "primary_scenario_hit_rate": 0.25,
+      "primary_vs_secondary_accuracy_spread": -0.1042,
+      "sample_gate": "early_evidence",
+      "secondary_scenario_hit_rate": 0.3542
     },
     "5d": {
-      "close_call_primary_closer_rate": null,
-      "close_call_sample_count": 0,
-      "completed_count": 0,
-      "primary_closer_than_secondary_rate": null,
-      "primary_path_mean_absolute_error": null,
-      "primary_path_median_absolute_error": null,
-      "primary_scenario_hit_rate": null,
-      "primary_vs_secondary_accuracy_spread": null,
-      "sample_gate": "insufficient_samples",
-      "secondary_scenario_hit_rate": null
+      "close_call_primary_closer_rate": 0.4706,
+      "close_call_sample_count": 17,
+      "completed_count": 40,
+      "primary_closer_than_secondary_rate": 0.475,
+      "primary_path_mean_absolute_error": 0.018525,
+      "primary_path_median_absolute_error": 0.01045,
+      "primary_scenario_hit_rate": 0.3,
+      "primary_vs_secondary_accuracy_spread": 0.025,
+      "sample_gate": "early_evidence",
+      "secondary_scenario_hit_rate": 0.275
     },
     "60d": {
       "close_call_primary_closer_rate": null,
@@ -1149,14 +1297,16 @@
     }
   },
   "sample_counts": {
-    "completed_10d": 0,
-    "completed_1d": 20,
+    "completed_10d": 20,
+    "completed_1d": 56,
     "completed_20d": 0,
-    "completed_3d": 12,
-    "completed_5d": 0,
+    "completed_3d": 48,
+    "completed_5d": 40,
     "completed_60d": 0,
-    "pending_forecasts": 24,
-    "total_forecasts": 24
+    "deduped_legacy_rows": 0,
+    "pending_forecasts": 60,
+    "raw_forecast_rows": 60,
+    "total_forecasts": 60
   },
   "sample_gate_rules": {
     "sample_20_50": "early_evidence",

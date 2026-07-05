@@ -1,6 +1,6 @@
 {
   "active_model_version": "baseline_v1",
-  "generated_at": "2026-06-19T23:43:33.435195+00:00",
+  "generated_at": "2026-07-05T14:58:42.902303+00:00",
   "guardrails": [
     "Alpha v1 threshold remains frozen at 0.32534311.",
     "Baseline v1 records are immutable except realized-outcome backfills.",
@@ -76,6 +76,20 @@
     {
       "eligible": false,
       "failed_gates": [
+        "3d",
+        "5d",
+        "10d",
+        "20d",
+        "60d"
+      ],
+      "model_version": "challenger_v2_error_learning",
+      "reason": "Forward validation sample gates are not met.",
+      "status": "insufficient_forward_evidence",
+      "wins_vs_baseline": 0
+    },
+    {
+      "eligible": false,
+      "failed_gates": [
         "put_call_available",
         "gamma_available",
         "true_flow_available",
@@ -100,10 +114,10 @@
   ],
   "validation_standards": {
     "forward_completed_samples_by_horizon": {
-      "10d": 0,
+      "10d": 16,
       "20d": 0,
-      "3d": 8,
-      "5d": 0,
+      "3d": 44,
+      "5d": 36,
       "60d": 0
     },
     "high_precision_standard": {
